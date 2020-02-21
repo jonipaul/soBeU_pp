@@ -1,0 +1,82 @@
+2.4478 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+5.0638 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+6.0636 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0A4BF1B0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x07D75E90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1680, 1050]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.0637 	EXP 	window1: recordFrameIntervals = False
+6.2344 	EXP 	window1: recordFrameIntervals = True
+6.4234 	EXP 	window1: recordFrameIntervals = False
+6.5696 	EXP 	Created textWelcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='textWelcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.5711 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.5945 	EXP 	Created textSb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='textSb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.5951 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.6093 	EXP 	textWelcome: autoDraw = True
+9.1113 	DATA 	Keypress: space
+9.1273 	EXP 	textWelcome: autoDraw = False
+9.1273 	EXP 	text_3: autoDraw = True
+9.6457 	EXP 	Imported contitions.xlsx as conditions, 20 conditions, 4 params
+9.6481 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+9.6485 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.tiff'), ('actionLabel', 'trust'), ('correctResponse', 'trust')])
+9.6910 	EXP 	window1: mouseVisible = True
+2.5028 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.5210 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+5.5413 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0A49E1B0>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0A285E90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1680, 1050]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.5413 	EXP 	window1: recordFrameIntervals = False
+5.7116 	EXP 	window1: recordFrameIntervals = True
+5.9010 	EXP 	window1: recordFrameIntervals = False
+6.0471 	EXP 	Created textWelcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='textWelcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.0487 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.0718 	EXP 	Created textSb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='textSb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.0725 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+6.0876 	EXP 	textWelcome: autoDraw = True
+8.4033 	DATA 	Keypress: space
+8.4196 	EXP 	textWelcome: autoDraw = False
+8.4196 	EXP 	text_3: autoDraw = True
+8.9436 	EXP 	Imported contitions.xlsx as conditions, 20 conditions, 4 params
+8.9440 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+8.9444 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.tiff'), ('actionLabel', 'trust'), ('correctResponse', 'trust')])
+8.9873 	EXP 	text_3: autoDraw = False
+8.9873 	EXP 	textSb: text = 'This round you are playing withPaul!'
+8.9873 	EXP 	textSb: autoDraw = True
+10.9253 	EXP 	textSb: autoDraw = False
+10.9253 	EXP 	text_3: autoDraw = True
+11.4056 	EXP 	New trial (rep=0, index=1): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.tiff'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])
+11.4413 	EXP 	text_3: autoDraw = False
+11.4413 	EXP 	textSb: text = 'This round you are playing withLukas!'
+11.4413 	EXP 	textSb: autoDraw = True
+13.4321 	EXP 	textSb: autoDraw = False
+13.4321 	EXP 	text_3: autoDraw = True
+13.9101 	EXP 	New trial (rep=0, index=2): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.tiff'), ('actionLabel', 'trust'), ('correctResponse', 'trust')])
+13.9284 	EXP 	text_3: autoDraw = False
+13.9284 	EXP 	textSb: text = 'This round you are playing withLukas!'
+13.9284 	EXP 	textSb: autoDraw = True
+15.9376 	EXP 	textSb: autoDraw = False
+15.9376 	EXP 	text_3: autoDraw = True
+16.4166 	EXP 	New trial (rep=0, index=3): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.tiff'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])
+16.4335 	EXP 	text_3: autoDraw = False
+16.4335 	EXP 	textSb: text = 'This round you are playing withLukas!'
+16.4335 	EXP 	textSb: autoDraw = True
+18.4235 	EXP 	textSb: autoDraw = False
+18.4235 	EXP 	text_3: autoDraw = True
+18.9050 	EXP 	New trial (rep=0, index=4): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.tiff'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])
+18.9387 	EXP 	text_3: autoDraw = False
+18.9387 	EXP 	textSb: text = 'This round you are playing withPaul!'
+18.9387 	EXP 	textSb: autoDraw = True
+20.9298 	EXP 	textSb: autoDraw = False
+20.9298 	EXP 	text_3: autoDraw = True
+21.4119 	EXP 	New trial (rep=0, index=5): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.tiff'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])
+21.4440 	EXP 	text_3: autoDraw = False
+21.4440 	EXP 	textSb: text = 'This round you are playing withLukas!'
+21.4440 	EXP 	textSb: autoDraw = True
+23.4334 	EXP 	textSb: autoDraw = False
+23.4334 	EXP 	text_3: autoDraw = True
+23.9130 	EXP 	New trial (rep=0, index=6): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.tiff'), ('actionLabel', 'trust'), ('correctResponse', 'trust')])
+23.9466 	EXP 	text_3: autoDraw = False
+23.9466 	EXP 	textSb: text = 'This round you are playing withPaul!'
+23.9466 	EXP 	textSb: autoDraw = True
+25.9361 	EXP 	textSb: autoDraw = False
+25.9361 	EXP 	text_3: autoDraw = True
+26.4149 	EXP 	New trial (rep=0, index=7): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.tiff'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])
+26.4483 	EXP 	text_3: autoDraw = False
+26.4483 	EXP 	textSb: text = 'This round you are playing withLukas!'
+26.4483 	EXP 	textSb: autoDraw = True
+27.4865 	DATA 	Keypress: escape
+27.6066 	EXP 	window1: mouseVisible = True

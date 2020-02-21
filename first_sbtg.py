@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on Sun Feb  2 16:29:01 2020
+    on February 03, 2020, at 10:40
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/jonasnitschke/Documents/first_sbtg.py',
+    originPath='P:\\userdata\\jonasn84\\shared\\experiments\\sbtg_pp\\first_sbtg.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -80,11 +80,11 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
-text = visual.TextStim(win=win, name='text',
+target = visual.TextStim(win=win, name='target',
     text='Hello Participant!\n\n\nPlease press any key to continue',
-    font='TimesNew',
+    font='Arial',
     pos=(0, 0), height=0.1, wrapWidth=None, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    color=playerId, colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=0.0);
 key_resp = keyboard.Keyboard()
@@ -109,7 +109,7 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 key_resp.keys = []
 key_resp.rt = []
 # keep track of which components have finished
-instructionsComponents = [text, key_resp]
+instructionsComponents = [target, key_resp]
 for thisComponent in instructionsComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -133,18 +133,18 @@ while continueRoutine:
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
     
-    # *text* updates
-    if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *target* updates
+    if target.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
-        text.frameNStart = frameN  # exact frame index
-        text.tStart = t  # local t and not account for scr refresh
-        text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-        text.setAutoDraw(True)
+        target.frameNStart = frameN  # exact frame index
+        target.tStart = t  # local t and not account for scr refresh
+        target.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(target, 'tStartRefresh')  # time at next scr refresh
+        target.setAutoDraw(True)
     
     # *key_resp* updates
     waitOnFlip = False
-    if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if key_resp.status == NOT_STARTED and tThisFlip >= 0.5-frameTolerance:
         # keep track of start time/frame for later
         key_resp.frameNStart = frameN  # exact frame index
         key_resp.tStart = t  # local t and not account for scr refresh
@@ -154,7 +154,6 @@ while continueRoutine:
         # keyboard checking is just starting
         waitOnFlip = True
         win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
     if key_resp.status == STARTED and not waitOnFlip:
         theseKeys = key_resp.getKeys(keyList=None, waitRelease=False)
         if len(theseKeys):
@@ -165,6 +164,11 @@ while continueRoutine:
                 endExpNow = True
             key_resp.keys = theseKeys.name  # just the last key pressed
             key_resp.rt = theseKeys.rt
+            # was this 'correct'?
+            if (key_resp.keys == str(correctResponse)) or (key_resp.keys == correctResponse):
+                key_resp.corr = 1
+            else:
+                key_resp.corr = 0
             # a response ends the routine
             continueRoutine = False
     
@@ -189,12 +193,19 @@ while continueRoutine:
 for thisComponent in instructionsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
-thisExp.addData('text.started', text.tStartRefresh)
-thisExp.addData('text.stopped', text.tStopRefresh)
+thisExp.addData('target.started', target.tStartRefresh)
+thisExp.addData('target.stopped', target.tStopRefresh)
 # check responses
 if key_resp.keys in ['', [], None]:  # No response was made
     key_resp.keys = None
+    # was no response the correct answer?!
+    if str(correctResponse).lower() == 'none':
+       key_resp.corr = 1;  # correct non-response
+    else:
+       key_resp.corr = 0;  # failed to respond (incorrectly)
+# store data for thisExp (ExperimentHandler)
 thisExp.addData('key_resp.keys',key_resp.keys)
+thisExp.addData('key_resp.corr', key_resp.corr)
 if key_resp.keys != None:  # we had a response
     thisExp.addData('key_resp.rt', key_resp.rt)
 thisExp.addData('key_resp.started', key_resp.tStartRefresh)
@@ -206,8 +217,8 @@ routineTimer.reset()
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=5, method='random', 
     extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('sbtg_sociel_believe_trust_game/contitions.xlsx'),
-    seed=1234, name='trials')
+    trialList=data.importConditions('sbtg_sociel_believe_trust_game/contitions.xlsx', selection='2:21'),
+    seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
 thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
 # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
