@@ -1,0 +1,806 @@
+2.6250 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.4823 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+5.4757 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0A1F7F90>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0A3ABC90>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1680, 1050]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.4757 	EXP 	window1: recordFrameIntervals = False
+5.6452 	EXP 	window1: recordFrameIntervals = True
+5.8332 	EXP 	window1: recordFrameIntervals = False
+5.8362 	EXP 	Created cB_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_1', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9788 	EXP 	Created textWelcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textWelcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+5.9804 	EXP 	Created cB_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.0549 	EXP 	Created textInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textInstructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.0564 	EXP 	Created cB_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_3', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.0914 	EXP 	Created textServer = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textServer', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.0929 	EXP 	Created cB_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_4', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.0985 	EXP 	Created text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting      ', units='height', win=Window(...), wrapWidth=1)
+6.1033 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting .    ', units='height', win=Window(...), wrapWidth=1)
+6.1082 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting . .  ', units='height', win=Window(...), wrapWidth=1)
+6.1142 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting . . .', units='height', win=Window(...), wrapWidth=1)
+6.1157 	EXP 	Created cB_5 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_5', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.1196 	EXP 	Created idle = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='found', units='height', win=Window(...), wrapWidth=1)
+6.1244 	EXP 	Created idle_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc     ', units='height', win=Window(...), wrapWidth=1)
+6.1328 	EXP 	Created idle_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 2141', units='height', win=Window(...), wrapWidth=1)
+6.1396 	EXP 	Created idle_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 2215', units='height', win=Window(...), wrapWidth=1)
+6.1468 	EXP 	Created idle_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 3229', units='height', win=Window(...), wrapWidth=1)
+6.1520 	EXP 	Created idle_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 4325', units='height', win=Window(...), wrapWidth=1)
+6.1584 	EXP 	Created idle_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 1337', units='height', win=Window(...), wrapWidth=1)
+6.1635 	EXP 	Created ilde_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='ilde_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering      ', units='height', win=Window(...), wrapWidth=1)
+6.1682 	EXP 	Created idle_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering .    ', units='height', win=Window(...), wrapWidth=1)
+6.1730 	EXP 	Created idle_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_10', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering . .  ', units='height', win=Window(...), wrapWidth=1)
+6.1781 	EXP 	Created idle_11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_11', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering . . .', units='height', win=Window(...), wrapWidth=1)
+6.1872 	EXP 	Created idle_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-12.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_12', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='run /serv/234_1/sd connect', units='height', win=Window(...), wrapWidth=1)
+6.1887 	EXP 	Created cB_6 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_6', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2190 	EXP 	Created sBInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='sBInstructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.2205 	EXP 	Created cB_8 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_8', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2365 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.2424 	EXP 	Created imagesbRnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='imagesbRnd', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+6.3084 	EXP 	Created Slider = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=list(...), depth=0, disappear=False, flipVert=False, high=10, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=5.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='Slider', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=[], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=10.0, win=Window(...))
+6.3100 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3116 	EXP 	Created cbFb = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbFb', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3175 	EXP 	Created textFb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textFb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.3190 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3208 	EXP 	Created fixCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='fixCross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.2, 0.2]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+6.3222 	EXP 	Created cB_11 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_11', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3656 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Paul?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.3995 	EXP 	Created rating_2 = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating_2', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.4269 	EXP 	Created rating_5 = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating_5', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Lukas?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.4535 	EXP 	Created rating_6 = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating_6', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.4803 	EXP 	Created rating_3 = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating_3', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How do you feel?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.5062 	EXP 	Created rating_4 = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating_4', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How activated are you right now?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.5077 	EXP 	Created cB_8 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_8', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.5134 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.5159 	EXP 	Created imagesbRnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='imagesbRnd', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+6.5561 	EXP 	Created Slider = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=list(...), depth=0, disappear=False, flipVert=False, high=10, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=5.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='Slider', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=[], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=10.0, win=Window(...))
+6.5577 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.5591 	EXP 	Created cbFb = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbFb', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.5650 	EXP 	Created textFb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textFb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.5665 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.5682 	EXP 	Created fixCross = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=-1.0, fillColor=array([1., 1., 1.]), fillColorSpace='rgb', interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineWidth=1, name='fixCross', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.2, 0.2]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+6.5696 	EXP 	Created cB_10 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_10', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.6517 	EXP 	Created sbEndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='sbEndText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+6.6647 	EXP 	Slider: flipVert = False
+6.6647 	EXP 	Slider: autoLog = True
+6.6647 	EXP 	rating: flipVert = False
+6.6647 	EXP 	rating: autoLog = True
+6.6647 	EXP 	rating_2: flipVert = False
+6.6647 	EXP 	rating_2: autoLog = True
+6.6647 	EXP 	rating_5: flipVert = False
+6.6647 	EXP 	rating_5: autoLog = True
+6.6647 	EXP 	rating_6: flipVert = False
+6.6647 	EXP 	rating_6: autoLog = True
+6.6647 	EXP 	rating_3: flipVert = False
+6.6647 	EXP 	rating_3: autoLog = True
+6.6647 	EXP 	rating_4: flipVert = False
+6.6647 	EXP 	rating_4: autoLog = True
+6.6647 	EXP 	Slider: flipVert = False
+6.6647 	EXP 	Slider: autoLog = True
+6.6647 	EXP 	cB_1: autoDraw = True
+6.6647 	EXP 	textWelcome: autoDraw = True
+8.8841 	DATA 	Keypress: 1
+8.9004 	EXP 	cB_1: autoDraw = False
+8.9004 	EXP 	textWelcome: autoDraw = False
+8.9004 	EXP 	cB_2: autoDraw = True
+8.9004 	EXP 	textInstructions: autoDraw = True
+10.5244 	DATA 	Keypress: 1
+10.5569 	EXP 	cB_2: autoDraw = False
+10.5569 	EXP 	textInstructions: autoDraw = False
+10.5569 	EXP 	cB_3: autoDraw = True
+10.5569 	EXP 	textServer: autoDraw = True
+10.5743 	DATA 	Keypress: 2
+11.8869 	DATA 	Keypress: 1
+11.8875 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+11.8877 	EXP 	New trial (rep=0, index=0): None
+11.9037 	EXP 	cB_3: autoDraw = False
+11.9037 	EXP 	textServer: autoDraw = False
+11.9037 	EXP 	cB_4: autoDraw = True
+11.9037 	EXP 	text_1: autoDraw = True
+12.8767 	EXP 	text_2: autoDraw = True
+12.9125 	EXP 	text_1: autoDraw = False
+13.3711 	EXP 	text_3: autoDraw = True
+13.3881 	EXP 	text_2: autoDraw = False
+13.8813 	EXP 	text_3: autoDraw = False
+13.8813 	EXP 	text_4: autoDraw = True
+14.3956 	EXP 	text_4: autoDraw = False
+14.4131 	EXP 	cB_4: autoDraw = False
+14.4131 	EXP 	text_1: autoDraw = False
+14.4131 	EXP 	text_2: autoDraw = False
+14.4131 	EXP 	text_3: autoDraw = False
+14.4131 	EXP 	text_4: autoDraw = False
+14.4131 	EXP 	cB_5: autoDraw = True
+14.5813 	EXP 	idle: autoDraw = True
+14.8880 	EXP 	idle: autoDraw = False
+14.8880 	EXP 	idle_2: autoDraw = True
+15.0921 	EXP 	idle_2: autoDraw = False
+15.0921 	EXP 	idle_3: autoDraw = True
+15.1963 	EXP 	idle_3: autoDraw = False
+15.1963 	EXP 	idle_4: autoDraw = True
+15.3304 	EXP 	idle_4: autoDraw = False
+15.3304 	EXP 	idle_5: autoDraw = True
+15.4845 	EXP 	idle_5: autoDraw = False
+15.4845 	EXP 	idle_6: autoDraw = True
+15.6377 	EXP 	idle_6: autoDraw = False
+15.6377 	EXP 	idle_7: autoDraw = True
+15.7400 	EXP 	idle_7: autoDraw = False
+15.7400 	EXP 	ilde_8: autoDraw = True
+16.2345 	EXP 	ilde_8: autoDraw = False
+16.2345 	EXP 	idle_9: autoDraw = True
+16.7464 	EXP 	idle_9: autoDraw = False
+16.7464 	EXP 	idle_10: autoDraw = True
+17.2399 	EXP 	idle_11: autoDraw = True
+17.2568 	EXP 	idle_10: autoDraw = False
+17.7335 	EXP 	idle_12: autoDraw = True
+17.7504 	EXP 	idle_11: autoDraw = False
+17.8866 	EXP 	idle_12: autoDraw = False
+18.4141 	EXP 	cB_5: autoDraw = False
+18.4141 	EXP 	idle: autoDraw = False
+18.4141 	EXP 	idle_2: autoDraw = False
+18.4141 	EXP 	idle_3: autoDraw = False
+18.4141 	EXP 	idle_4: autoDraw = False
+18.4141 	EXP 	idle_5: autoDraw = False
+18.4141 	EXP 	idle_6: autoDraw = False
+18.4141 	EXP 	idle_7: autoDraw = False
+18.4141 	EXP 	ilde_8: autoDraw = False
+18.4141 	EXP 	idle_9: autoDraw = False
+18.4141 	EXP 	idle_10: autoDraw = False
+18.4141 	EXP 	idle_11: autoDraw = False
+18.4141 	EXP 	idle_12: autoDraw = False
+18.4141 	EXP 	cB_6: autoDraw = True
+18.5847 	EXP 	sBInstructions: autoDraw = True
+21.5351 	DATA 	Keypress: 1
+21.6076 	EXP 	Imported contitions.xlsx as conditions, 19 conditions, 5 params
+21.6080 	EXP 	Created sequence: random, trialTypes=19, nReps=2, seed=None
+21.6083 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+21.6218 	EXP 	Imported contitions.xlsx as conditions, 19 conditions, 5 params
+21.6221 	EXP 	Created sequence: random, trialTypes=19, nReps=1, seed=None
+21.6225 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+21.6654 	EXP 	RatingScale Slider: reset()
+21.6877 	EXP 	cB_6: autoDraw = False
+21.6877 	EXP 	sBInstructions: autoDraw = False
+21.6877 	EXP 	text: text = 'This round you are playing with Lukas!'
+21.6877 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+21.6877 	EXP 	cB_8: autoDraw = True
+21.6877 	EXP 	text: autoDraw = True
+21.6877 	EXP 	imagesbRnd: autoDraw = True
+21.6877 	EXP 	Slider: autoDraw = True
+22.7452 	DATA 	Keypress: left
+22.9654 	DATA 	Keypress: left
+23.8354 	DATA 	Keypress: return
+23.8392 	DATA 	RatingScale Slider: (key response) rating=3
+23.8392 	DATA 	RatingScale Slider: rating RT=2.173
+23.8393 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 1.082), ('3', 1.303), ('3', 2.173)]
+23.8692 	EXP 	cB_8: autoDraw = False
+23.8692 	EXP 	text: autoDraw = False
+23.8692 	EXP 	imagesbRnd: autoDraw = False
+23.8692 	EXP 	Slider: autoDraw = False
+23.8692 	EXP 	cB_9: autoDraw = True
+24.3992 	EXP 	cB_9: autoDraw = False
+24.3992 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+24.3992 	EXP 	cbFb: autoDraw = True
+24.3992 	EXP 	textFb: autoDraw = True
+26.9106 	DATA 	Keypress: return
+27.3867 	EXP 	cbFb: autoDraw = False
+27.3867 	EXP 	textFb: autoDraw = False
+27.3867 	EXP 	cbBuf: autoDraw = True
+27.5585 	EXP 	fixCross: autoDraw = True
+28.0687 	EXP 	fixCross: autoDraw = False
+28.2568 	EXP 	New trial (rep=0, index=1): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+28.3586 	EXP 	RatingScale Slider: reset()
+28.3772 	EXP 	cbBuf: autoDraw = False
+28.3772 	EXP 	fixCross: autoDraw = False
+28.3772 	EXP 	text: text = 'This round you are playing with Paul!'
+28.3772 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+28.3772 	EXP 	cB_8: autoDraw = True
+28.3772 	EXP 	text: autoDraw = True
+28.3772 	EXP 	imagesbRnd: autoDraw = True
+28.3772 	EXP 	Slider: autoDraw = True
+28.9038 	DATA 	Keypress: 1
+29.3464 	DATA 	Keypress: return
+29.3496 	DATA 	RatingScale Slider: (key response) rating=5
+29.3497 	DATA 	RatingScale Slider: rating RT=0.986
+29.3497 	DATA 	RatingScale Slider: history=[('5', 0.0), ('5', 0.986)]
+29.3801 	EXP 	cB_8: autoDraw = False
+29.3801 	EXP 	text: autoDraw = False
+29.3801 	EXP 	imagesbRnd: autoDraw = False
+29.3801 	EXP 	Slider: autoDraw = False
+29.3801 	EXP 	cB_9: autoDraw = True
+29.9095 	EXP 	cB_9: autoDraw = False
+29.9095 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 5 credits'
+29.9095 	EXP 	cbFb: autoDraw = True
+29.9095 	EXP 	textFb: autoDraw = True
+32.8964 	EXP 	cbFb: autoDraw = False
+32.8964 	EXP 	textFb: autoDraw = False
+32.8964 	EXP 	cbBuf: autoDraw = True
+33.0503 	DATA 	Keypress: return
+33.0669 	EXP 	fixCross: autoDraw = True
+33.5780 	EXP 	fixCross: autoDraw = False
+33.7661 	EXP 	New trial (rep=0, index=2): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+33.8189 	EXP 	RatingScale Slider: reset()
+33.8356 	EXP 	cbBuf: autoDraw = False
+33.8356 	EXP 	fixCross: autoDraw = False
+33.8356 	EXP 	text: text = 'This round you are playing with Paul!'
+33.8356 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+33.8356 	EXP 	cB_8: autoDraw = True
+33.8356 	EXP 	text: autoDraw = True
+33.8356 	EXP 	imagesbRnd: autoDraw = True
+33.8356 	EXP 	Slider: autoDraw = True
+34.1109 	DATA 	Keypress: left
+34.3280 	DATA 	Keypress: left
+34.6514 	DATA 	Keypress: left
+34.8402 	DATA 	Keypress: left
+35.1111 	DATA 	Keypress: return
+35.1149 	DATA 	RatingScale Slider: (key response) rating=2
+35.1150 	DATA 	RatingScale Slider: rating RT=1.295
+35.1150 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.512), ('3', 0.836), ('2', 1.024), ('2', 1.295)]
+35.1448 	EXP 	cB_8: autoDraw = False
+35.1448 	EXP 	text: autoDraw = False
+35.1448 	EXP 	imagesbRnd: autoDraw = False
+35.1448 	EXP 	Slider: autoDraw = False
+35.1448 	EXP 	cB_9: autoDraw = True
+35.6719 	EXP 	cB_9: autoDraw = False
+35.6719 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 2 credits'
+35.6719 	EXP 	cbFb: autoDraw = True
+35.6719 	EXP 	textFb: autoDraw = True
+38.6533 	EXP 	cbFb: autoDraw = False
+38.6533 	EXP 	textFb: autoDraw = False
+38.6533 	EXP 	cbBuf: autoDraw = True
+38.8237 	EXP 	fixCross: autoDraw = True
+39.3336 	EXP 	fixCross: autoDraw = False
+39.5409 	EXP 	New trial (rep=0, index=3): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+39.6135 	EXP 	RatingScale Slider: reset()
+39.6298 	EXP 	cbBuf: autoDraw = False
+39.6298 	EXP 	fixCross: autoDraw = False
+39.6298 	EXP 	text: text = 'This round you are playing with Lukas!'
+39.6298 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+39.6298 	EXP 	cB_8: autoDraw = True
+39.6298 	EXP 	text: autoDraw = True
+39.6298 	EXP 	imagesbRnd: autoDraw = True
+39.6298 	EXP 	Slider: autoDraw = True
+40.2764 	DATA 	Keypress: left
+40.4610 	DATA 	Keypress: left
+40.6689 	DATA 	Keypress: return
+40.6690 	DATA 	RatingScale Slider: (key response) rating=3
+40.6691 	DATA 	RatingScale Slider: rating RT=1.055
+40.6691 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.662), ('3', 0.851), ('3', 1.055)]
+40.6999 	EXP 	cB_8: autoDraw = False
+40.6999 	EXP 	text: autoDraw = False
+40.6999 	EXP 	imagesbRnd: autoDraw = False
+40.6999 	EXP 	Slider: autoDraw = False
+40.6999 	EXP 	cB_9: autoDraw = True
+41.2173 	EXP 	cB_9: autoDraw = False
+41.2173 	EXP 	textFb: text = 'Lukas has decided to reciprocate you receive 3 credits'
+41.2173 	EXP 	cbFb: autoDraw = True
+41.2173 	EXP 	textFb: autoDraw = True
+44.2114 	EXP 	cbFb: autoDraw = False
+44.2114 	EXP 	textFb: autoDraw = False
+44.2114 	EXP 	cbBuf: autoDraw = True
+44.3827 	EXP 	fixCross: autoDraw = True
+44.8950 	EXP 	fixCross: autoDraw = False
+45.1003 	EXP 	New trial (rep=0, index=4): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+45.1648 	EXP 	RatingScale Slider: reset()
+45.1846 	EXP 	cbBuf: autoDraw = False
+45.1846 	EXP 	fixCross: autoDraw = False
+45.1846 	EXP 	text: text = 'This round you are playing with Paul!'
+45.1846 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+45.1846 	EXP 	cB_8: autoDraw = True
+45.1846 	EXP 	text: autoDraw = True
+45.1846 	EXP 	imagesbRnd: autoDraw = True
+45.1846 	EXP 	Slider: autoDraw = True
+45.3889 	DATA 	Keypress: left
+45.5941 	DATA 	Keypress: left
+45.7465 	DATA 	Keypress: left
+46.0083 	DATA 	Keypress: return
+46.0247 	DATA 	RatingScale Slider: (key response) rating=3
+46.0247 	DATA 	RatingScale Slider: rating RT=0.856
+46.0248 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.428), ('3', 0.581), ('3', 0.856)]
+46.0550 	EXP 	cB_8: autoDraw = False
+46.0550 	EXP 	text: autoDraw = False
+46.0550 	EXP 	imagesbRnd: autoDraw = False
+46.0550 	EXP 	Slider: autoDraw = False
+46.0550 	EXP 	cB_9: autoDraw = True
+46.5705 	EXP 	cB_9: autoDraw = False
+46.5705 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 3 credits'
+46.5705 	EXP 	cbFb: autoDraw = True
+46.5705 	EXP 	textFb: autoDraw = True
+49.5650 	EXP 	cbFb: autoDraw = False
+49.5650 	EXP 	textFb: autoDraw = False
+49.5650 	EXP 	cbBuf: autoDraw = True
+49.7370 	EXP 	fixCross: autoDraw = True
+50.2463 	EXP 	fixCross: autoDraw = False
+50.4535 	EXP 	New trial (rep=0, index=5): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+50.5108 	EXP 	RatingScale Slider: reset()
+50.5363 	EXP 	cbBuf: autoDraw = False
+50.5363 	EXP 	fixCross: autoDraw = False
+50.5363 	EXP 	text: text = 'This round you are playing with Paul!'
+50.5363 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+50.5363 	EXP 	cB_8: autoDraw = True
+50.5363 	EXP 	text: autoDraw = True
+50.5363 	EXP 	imagesbRnd: autoDraw = True
+50.5363 	EXP 	Slider: autoDraw = True
+50.9955 	DATA 	Keypress: left
+51.1654 	DATA 	Keypress: left
+51.3870 	DATA 	Keypress: return
+51.3908 	DATA 	RatingScale Slider: (key response) rating=3
+51.3908 	DATA 	RatingScale Slider: rating RT=0.879
+51.3908 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.488), ('3', 0.658), ('3', 0.879)]
+51.4201 	EXP 	cB_8: autoDraw = False
+51.4201 	EXP 	text: autoDraw = False
+51.4201 	EXP 	imagesbRnd: autoDraw = False
+51.4201 	EXP 	Slider: autoDraw = False
+51.4201 	EXP 	cB_9: autoDraw = True
+51.9464 	EXP 	cB_9: autoDraw = False
+51.9464 	EXP 	textFb: text = 'Paul has decided not to cooperate and keep the investment. You received 0 credits'
+51.9464 	EXP 	cbFb: autoDraw = True
+51.9464 	EXP 	textFb: autoDraw = True
+54.9323 	EXP 	cbFb: autoDraw = False
+54.9323 	EXP 	textFb: autoDraw = False
+54.9323 	EXP 	cbBuf: autoDraw = True
+55.1025 	EXP 	fixCross: autoDraw = True
+55.2214 	DATA 	Keypress: left
+55.4263 	DATA 	Keypress: left
+55.6128 	EXP 	fixCross: autoDraw = False
+55.8197 	EXP 	New trial (rep=0, index=6): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+55.8586 	EXP 	RatingScale Slider: reset()
+55.8592 	DATA 	Keypress: return
+55.8861 	EXP 	cbBuf: autoDraw = False
+55.8861 	EXP 	fixCross: autoDraw = False
+55.8861 	EXP 	text: text = 'This round you are playing with Lukas!'
+55.8861 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+55.8861 	EXP 	cB_8: autoDraw = True
+55.8861 	EXP 	text: autoDraw = True
+55.8861 	EXP 	imagesbRnd: autoDraw = True
+55.8861 	EXP 	Slider: autoDraw = True
+56.2775 	DATA 	Keypress: left
+56.4674 	DATA 	Keypress: left
+56.7061 	DATA 	Keypress: return
+56.7098 	DATA 	RatingScale Slider: (key response) rating=3
+56.7099 	DATA 	RatingScale Slider: rating RT=0.846
+56.7099 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.417), ('3', 0.607), ('3', 0.846)]
+56.7398 	EXP 	cB_8: autoDraw = False
+56.7398 	EXP 	text: autoDraw = False
+56.7398 	EXP 	imagesbRnd: autoDraw = False
+56.7398 	EXP 	Slider: autoDraw = False
+56.7398 	EXP 	cB_9: autoDraw = True
+57.2679 	EXP 	cB_9: autoDraw = False
+57.2679 	EXP 	textFb: text = 'Lukas has decided to reciprocate you receive 3 credits'
+57.2679 	EXP 	cbFb: autoDraw = True
+57.2679 	EXP 	textFb: autoDraw = True
+60.2535 	EXP 	cbFb: autoDraw = False
+60.2535 	EXP 	textFb: autoDraw = False
+60.2535 	EXP 	cbBuf: autoDraw = True
+60.4246 	EXP 	fixCross: autoDraw = True
+60.5780 	DATA 	Keypress: left
+60.9347 	EXP 	fixCross: autoDraw = False
+60.9521 	DATA 	Keypress: left
+61.1411 	EXP 	New trial (rep=0, index=7): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+61.1595 	EXP 	RatingScale Slider: reset()
+61.1745 	EXP 	cbBuf: autoDraw = False
+61.1745 	EXP 	fixCross: autoDraw = False
+61.1745 	EXP 	text: text = 'This round you are playing with Lukas!'
+61.1745 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+61.1745 	EXP 	cB_8: autoDraw = True
+61.1745 	EXP 	text: autoDraw = True
+61.1745 	EXP 	imagesbRnd: autoDraw = True
+61.1745 	EXP 	Slider: autoDraw = True
+61.3958 	DATA 	Keypress: left
+61.6844 	DATA 	Keypress: return
+61.6876 	DATA 	RatingScale Slider: (key response) rating=5
+61.6877 	DATA 	RatingScale Slider: rating RT=0.528
+61.6877 	DATA 	RatingScale Slider: history=[('5', 0.0), ('5', 0.528)]
+61.7180 	EXP 	cB_8: autoDraw = False
+61.7180 	EXP 	text: autoDraw = False
+61.7180 	EXP 	imagesbRnd: autoDraw = False
+61.7180 	EXP 	Slider: autoDraw = False
+61.7180 	EXP 	cB_9: autoDraw = True
+62.2481 	EXP 	cB_9: autoDraw = False
+62.2481 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+62.2481 	EXP 	cbFb: autoDraw = True
+62.2481 	EXP 	textFb: autoDraw = True
+65.2329 	EXP 	cbFb: autoDraw = False
+65.2329 	EXP 	textFb: autoDraw = False
+65.2329 	EXP 	cbBuf: autoDraw = True
+65.4019 	EXP 	fixCross: autoDraw = True
+65.9147 	EXP 	fixCross: autoDraw = False
+66.1175 	EXP 	New trial (rep=0, index=8): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+66.1327 	EXP 	RatingScale Slider: reset()
+66.1508 	EXP 	cbBuf: autoDraw = False
+66.1508 	EXP 	fixCross: autoDraw = False
+66.1508 	EXP 	text: text = 'This round you are playing with Lukas!'
+66.1508 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+66.1508 	EXP 	cB_8: autoDraw = True
+66.1508 	EXP 	text: autoDraw = True
+66.1508 	EXP 	imagesbRnd: autoDraw = True
+66.1508 	EXP 	Slider: autoDraw = True
+66.8681 	DATA 	Keypress: left
+67.0595 	DATA 	Keypress: left
+67.3480 	DATA 	Keypress: return
+67.3516 	DATA 	RatingScale Slider: (key response) rating=3
+67.3517 	DATA 	RatingScale Slider: rating RT=1.218
+67.3517 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.738), ('3', 0.926), ('3', 1.218)]
+67.3819 	EXP 	cB_8: autoDraw = False
+67.3819 	EXP 	text: autoDraw = False
+67.3819 	EXP 	imagesbRnd: autoDraw = False
+67.3819 	EXP 	Slider: autoDraw = False
+67.3819 	EXP 	cB_9: autoDraw = True
+67.8919 	EXP 	cB_9: autoDraw = False
+67.8919 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+67.8919 	EXP 	cbFb: autoDraw = True
+67.8919 	EXP 	textFb: autoDraw = True
+70.8928 	EXP 	cbFb: autoDraw = False
+70.8928 	EXP 	textFb: autoDraw = False
+70.8928 	EXP 	cbBuf: autoDraw = True
+71.0647 	EXP 	fixCross: autoDraw = True
+71.5758 	EXP 	fixCross: autoDraw = False
+71.7819 	EXP 	New trial (rep=0, index=9): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+71.8006 	EXP 	RatingScale Slider: reset()
+71.8154 	EXP 	cbBuf: autoDraw = False
+71.8154 	EXP 	fixCross: autoDraw = False
+71.8154 	EXP 	text: text = 'This round you are playing with Lukas!'
+71.8154 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+71.8154 	EXP 	cB_8: autoDraw = True
+71.8154 	EXP 	text: autoDraw = True
+71.8154 	EXP 	imagesbRnd: autoDraw = True
+71.8154 	EXP 	Slider: autoDraw = True
+72.1922 	DATA 	Keypress: left
+72.3981 	DATA 	Keypress: left
+72.5859 	DATA 	Keypress: left
+72.9413 	DATA 	Keypress: return
+72.9453 	DATA 	RatingScale Slider: (key response) rating=3
+72.9454 	DATA 	RatingScale Slider: rating RT=1.144
+72.9454 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.6), ('3', 0.788), ('3', 1.144)]
+72.9748 	EXP 	cB_8: autoDraw = False
+72.9748 	EXP 	text: autoDraw = False
+72.9748 	EXP 	imagesbRnd: autoDraw = False
+72.9748 	EXP 	Slider: autoDraw = False
+72.9748 	EXP 	cB_9: autoDraw = True
+73.4861 	EXP 	cB_9: autoDraw = False
+73.4861 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+73.4861 	EXP 	cbFb: autoDraw = True
+73.4861 	EXP 	textFb: autoDraw = True
+76.4891 	EXP 	cbFb: autoDraw = False
+76.4891 	EXP 	textFb: autoDraw = False
+76.4891 	EXP 	cbBuf: autoDraw = True
+76.6592 	EXP 	fixCross: autoDraw = True
+77.1697 	EXP 	fixCross: autoDraw = False
+77.3741 	EXP 	New trial (rep=0, index=10): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+77.4541 	EXP 	RatingScale Slider: reset()
+77.4751 	EXP 	cbBuf: autoDraw = False
+77.4751 	EXP 	fixCross: autoDraw = False
+77.4751 	EXP 	text: text = 'This round you are playing with Paul!'
+77.4751 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+77.4751 	EXP 	cB_8: autoDraw = True
+77.4751 	EXP 	text: autoDraw = True
+77.4751 	EXP 	imagesbRnd: autoDraw = True
+77.4751 	EXP 	Slider: autoDraw = True
+77.6966 	DATA 	Keypress: left
+77.8840 	DATA 	Keypress: left
+78.0879 	DATA 	Keypress: left
+78.3657 	DATA 	Keypress: return
+78.3827 	DATA 	RatingScale Slider: (key response) rating=3
+78.3827 	DATA 	RatingScale Slider: rating RT=0.924
+78.3828 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.428), ('3', 0.633), ('3', 0.924)]
+78.4126 	EXP 	cB_8: autoDraw = False
+78.4126 	EXP 	text: autoDraw = False
+78.4126 	EXP 	imagesbRnd: autoDraw = False
+78.4126 	EXP 	Slider: autoDraw = False
+78.4126 	EXP 	cB_9: autoDraw = True
+78.9387 	EXP 	cB_9: autoDraw = False
+78.9387 	EXP 	textFb: text = 'Paul has decided not to cooperate and keep the investment. You received 0 credits'
+78.9387 	EXP 	cbFb: autoDraw = True
+78.9387 	EXP 	textFb: autoDraw = True
+81.9208 	EXP 	cbFb: autoDraw = False
+81.9208 	EXP 	textFb: autoDraw = False
+81.9208 	EXP 	cbBuf: autoDraw = True
+82.0937 	EXP 	fixCross: autoDraw = True
+82.6043 	EXP 	fixCross: autoDraw = False
+82.8114 	EXP 	New trial (rep=0, index=11): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+82.8465 	EXP 	RatingScale Slider: reset()
+82.8652 	EXP 	cbBuf: autoDraw = False
+82.8652 	EXP 	fixCross: autoDraw = False
+82.8652 	EXP 	text: text = 'This round you are playing with Lukas!'
+82.8652 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+82.8652 	EXP 	cB_8: autoDraw = True
+82.8652 	EXP 	text: autoDraw = True
+82.8652 	EXP 	imagesbRnd: autoDraw = True
+82.8652 	EXP 	Slider: autoDraw = True
+82.9996 	DATA 	Keypress: right
+83.1837 	DATA 	Keypress: right
+83.3535 	DATA 	Keypress: right
+83.6283 	DATA 	Keypress: right
+83.7804 	DATA 	Keypress: right
+84.0230 	DATA 	Keypress: return
+84.0232 	DATA 	RatingScale Slider: (key response) rating=8
+84.0232 	DATA 	RatingScale Slider: rating RT=1.173
+84.0233 	DATA 	RatingScale Slider: history=[('5', 0.0), ('6', 0.507), ('7', 0.782), ('8', 0.934), ('8', 1.173)]
+84.0534 	EXP 	cB_8: autoDraw = False
+84.0534 	EXP 	text: autoDraw = False
+84.0534 	EXP 	imagesbRnd: autoDraw = False
+84.0534 	EXP 	Slider: autoDraw = False
+84.0534 	EXP 	cB_9: autoDraw = True
+84.5802 	EXP 	cB_9: autoDraw = False
+84.5802 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+84.5802 	EXP 	cbFb: autoDraw = True
+84.5802 	EXP 	textFb: autoDraw = True
+87.5650 	EXP 	cbFb: autoDraw = False
+87.5650 	EXP 	textFb: autoDraw = False
+87.5650 	EXP 	cbBuf: autoDraw = True
+87.7353 	EXP 	fixCross: autoDraw = True
+88.2484 	EXP 	fixCross: autoDraw = False
+88.4554 	EXP 	New trial (rep=0, index=12): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+88.5222 	EXP 	RatingScale Slider: reset()
+88.5427 	EXP 	cbBuf: autoDraw = False
+88.5427 	EXP 	fixCross: autoDraw = False
+88.5427 	EXP 	text: text = 'This round you are playing with Paul!'
+88.5427 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+88.5427 	EXP 	cB_8: autoDraw = True
+88.5427 	EXP 	text: autoDraw = True
+88.5427 	EXP 	imagesbRnd: autoDraw = True
+88.5427 	EXP 	Slider: autoDraw = True
+88.6610 	DATA 	Keypress: left
+88.8472 	DATA 	Keypress: left
+89.0011 	DATA 	Keypress: left
+89.1705 	DATA 	Keypress: left
+89.5125 	DATA 	Keypress: return
+89.5161 	DATA 	RatingScale Slider: (key response) rating=3
+89.5161 	DATA 	RatingScale Slider: rating RT=0.988
+89.5161 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.477), ('3', 0.647), ('3', 0.988)]
+89.5462 	EXP 	cB_8: autoDraw = False
+89.5462 	EXP 	text: autoDraw = False
+89.5462 	EXP 	imagesbRnd: autoDraw = False
+89.5462 	EXP 	Slider: autoDraw = False
+89.5462 	EXP 	cB_9: autoDraw = True
+90.0737 	EXP 	cB_9: autoDraw = False
+90.0737 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 3 credits'
+90.0737 	EXP 	cbFb: autoDraw = True
+90.0737 	EXP 	textFb: autoDraw = True
+93.0649 	EXP 	cbFb: autoDraw = False
+93.0649 	EXP 	textFb: autoDraw = False
+93.0649 	EXP 	cbBuf: autoDraw = True
+93.2346 	EXP 	fixCross: autoDraw = True
+93.5266 	DATA 	Keypress: left
+93.7467 	EXP 	fixCross: autoDraw = False
+93.9347 	EXP 	New trial (rep=0, index=13): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+93.9634 	EXP 	RatingScale Slider: reset()
+93.9849 	EXP 	cbBuf: autoDraw = False
+93.9849 	EXP 	fixCross: autoDraw = False
+93.9849 	EXP 	text: text = 'This round you are playing with Lukas!'
+93.9849 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+93.9849 	EXP 	cB_8: autoDraw = True
+93.9849 	EXP 	text: autoDraw = True
+93.9849 	EXP 	imagesbRnd: autoDraw = True
+93.9849 	EXP 	Slider: autoDraw = True
+94.0532 	DATA 	Keypress: left
+94.2083 	DATA 	Keypress: left
+94.3606 	DATA 	Keypress: left
+94.5311 	DATA 	Keypress: left
+94.7016 	DATA 	Keypress: left
+95.0086 	DATA 	Keypress: return
+95.0124 	DATA 	RatingScale Slider: (key response) rating=3
+95.0125 	DATA 	RatingScale Slider: rating RT=1.046
+95.0125 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.568), ('3', 0.739), ('3', 1.046)]
+95.0418 	EXP 	cB_8: autoDraw = False
+95.0418 	EXP 	text: autoDraw = False
+95.0418 	EXP 	imagesbRnd: autoDraw = False
+95.0418 	EXP 	Slider: autoDraw = False
+95.0418 	EXP 	cB_9: autoDraw = True
+95.5711 	EXP 	cB_9: autoDraw = False
+95.5711 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+95.5711 	EXP 	cbFb: autoDraw = True
+95.5711 	EXP 	textFb: autoDraw = True
+98.5566 	EXP 	cbFb: autoDraw = False
+98.5566 	EXP 	textFb: autoDraw = False
+98.5566 	EXP 	cbBuf: autoDraw = True
+98.7249 	EXP 	fixCross: autoDraw = True
+99.2383 	EXP 	fixCross: autoDraw = False
+99.4432 	EXP 	New trial (rep=0, index=14): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+99.5097 	EXP 	RatingScale Slider: reset()
+99.5285 	EXP 	cbBuf: autoDraw = False
+99.5285 	EXP 	fixCross: autoDraw = False
+99.5285 	EXP 	text: text = 'This round you are playing with Paul!'
+99.5285 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+99.5285 	EXP 	cB_8: autoDraw = True
+99.5285 	EXP 	text: autoDraw = True
+99.5285 	EXP 	imagesbRnd: autoDraw = True
+99.5285 	EXP 	Slider: autoDraw = True
+99.7669 	DATA 	Keypress: left
+99.9555 	DATA 	Keypress: left
+100.0965 	DATA 	Keypress: left
+100.2803 	DATA 	Keypress: left
+100.5344 	DATA 	Keypress: return
+100.5387 	DATA 	RatingScale Slider: (key response) rating=2
+100.5387 	DATA 	RatingScale Slider: rating RT=1.025
+100.5387 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.445), ('3', 0.582), ('2', 0.77), ('2', 1.025)]
+100.5671 	EXP 	cB_8: autoDraw = False
+100.5671 	EXP 	text: autoDraw = False
+100.5671 	EXP 	imagesbRnd: autoDraw = False
+100.5671 	EXP 	Slider: autoDraw = False
+100.5671 	EXP 	cB_9: autoDraw = True
+101.0842 	EXP 	cB_9: autoDraw = False
+101.0842 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 2 credits'
+101.0842 	EXP 	cbFb: autoDraw = True
+101.0842 	EXP 	textFb: autoDraw = True
+104.0756 	EXP 	cbFb: autoDraw = False
+104.0756 	EXP 	textFb: autoDraw = False
+104.0756 	EXP 	cbBuf: autoDraw = True
+104.2460 	EXP 	fixCross: autoDraw = True
+104.4508 	DATA 	Keypress: right
+104.6226 	DATA 	Keypress: right
+104.7583 	EXP 	fixCross: autoDraw = False
+104.8270 	DATA 	Keypress: right
+104.9648 	EXP 	New trial (rep=0, index=15): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+104.9950 	EXP 	RatingScale Slider: reset()
+105.0149 	EXP 	cbBuf: autoDraw = False
+105.0149 	EXP 	fixCross: autoDraw = False
+105.0149 	EXP 	text: text = 'This round you are playing with Lukas!'
+105.0149 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+105.0149 	EXP 	cB_8: autoDraw = True
+105.0149 	EXP 	text: autoDraw = True
+105.0149 	EXP 	imagesbRnd: autoDraw = True
+105.0149 	EXP 	Slider: autoDraw = True
+105.1177 	DATA 	Keypress: left
+105.3057 	DATA 	Keypress: left
+105.4578 	DATA 	Keypress: left
+105.7304 	DATA 	Keypress: return
+105.7343 	DATA 	RatingScale Slider: (key response) rating=4
+105.7343 	DATA 	RatingScale Slider: rating RT=0.735
+105.7343 	DATA 	RatingScale Slider: history=[('5', 0.0), ('4', 0.462), ('4', 0.735)]
+105.7641 	EXP 	cB_8: autoDraw = False
+105.7641 	EXP 	text: autoDraw = False
+105.7641 	EXP 	imagesbRnd: autoDraw = False
+105.7641 	EXP 	Slider: autoDraw = False
+105.7641 	EXP 	cB_9: autoDraw = True
+106.2930 	EXP 	cB_9: autoDraw = False
+106.2930 	EXP 	textFb: text = 'Lukas has decided not to cooperate and keep the investment. You received 0 credits'
+106.2930 	EXP 	cbFb: autoDraw = True
+106.2930 	EXP 	textFb: autoDraw = True
+109.2749 	EXP 	cbFb: autoDraw = False
+109.2749 	EXP 	textFb: autoDraw = False
+109.2749 	EXP 	cbBuf: autoDraw = True
+109.4461 	EXP 	fixCross: autoDraw = True
+109.9583 	EXP 	fixCross: autoDraw = False
+110.1628 	EXP 	New trial (rep=0, index=16): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+110.2293 	EXP 	RatingScale Slider: reset()
+110.2478 	EXP 	cbBuf: autoDraw = False
+110.2478 	EXP 	fixCross: autoDraw = False
+110.2478 	EXP 	text: text = 'This round you are playing with Paul!'
+110.2478 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+110.2478 	EXP 	cB_8: autoDraw = True
+110.2478 	EXP 	text: autoDraw = True
+110.2478 	EXP 	imagesbRnd: autoDraw = True
+110.2478 	EXP 	Slider: autoDraw = True
+115.7552 	DATA 	Keypress: right
+115.9816 	DATA 	Keypress: return
+115.9817 	DATA 	RatingScale Slider: (key response) rating=6
+115.9818 	DATA 	RatingScale Slider: rating RT=5.748
+115.9818 	DATA 	RatingScale Slider: history=[('5', 0.0), ('6', 5.525), ('6', 5.748)]
+116.0121 	EXP 	cB_8: autoDraw = False
+116.0121 	EXP 	text: autoDraw = False
+116.0121 	EXP 	imagesbRnd: autoDraw = False
+116.0121 	EXP 	Slider: autoDraw = False
+116.0121 	EXP 	cB_9: autoDraw = True
+116.5302 	EXP 	cB_9: autoDraw = False
+116.5302 	EXP 	textFb: text = 'Paul has decided to reciprocate you receive 6 credits'
+116.5302 	EXP 	cbFb: autoDraw = True
+116.5302 	EXP 	textFb: autoDraw = True
+119.5236 	EXP 	cbFb: autoDraw = False
+119.5236 	EXP 	textFb: autoDraw = False
+119.5236 	EXP 	cbBuf: autoDraw = True
+119.6934 	EXP 	fixCross: autoDraw = True
+120.2059 	EXP 	fixCross: autoDraw = False
+120.4108 	EXP 	New trial (rep=0, index=17): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+120.4696 	EXP 	RatingScale Slider: reset()
+120.4954 	EXP 	cbBuf: autoDraw = False
+120.4954 	EXP 	fixCross: autoDraw = False
+120.4954 	EXP 	text: text = 'This round you are playing with Paul!'
+120.4954 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+120.4954 	EXP 	cB_8: autoDraw = True
+120.4954 	EXP 	text: autoDraw = True
+120.4954 	EXP 	imagesbRnd: autoDraw = True
+120.4954 	EXP 	Slider: autoDraw = True
+120.9232 	DATA 	Keypress: right
+121.0939 	DATA 	Keypress: right
+121.2342 	DATA 	Keypress: right
+121.5551 	DATA 	Keypress: lshift
+121.5590 	DATA 	Keypress: up
+121.9123 	DATA 	Keypress: return
+121.9163 	DATA 	RatingScale Slider: (key response) rating=8
+121.9163 	DATA 	RatingScale Slider: rating RT=1.446
+121.9163 	DATA 	RatingScale Slider: history=[('5', 0.0), ('6', 0.456), ('7', 0.628), ('8', 0.781), ('8', 1.446)]
+121.9458 	EXP 	cB_8: autoDraw = False
+121.9458 	EXP 	text: autoDraw = False
+121.9458 	EXP 	imagesbRnd: autoDraw = False
+121.9458 	EXP 	Slider: autoDraw = False
+121.9458 	EXP 	cB_9: autoDraw = True
+122.4732 	EXP 	cB_9: autoDraw = False
+122.4732 	EXP 	textFb: text = 'Paul has decided not to cooperate and keep the investment. You received 0 credits'
+122.4732 	EXP 	cbFb: autoDraw = True
+122.4732 	EXP 	textFb: autoDraw = True
+125.4547 	EXP 	cbFb: autoDraw = False
+125.4547 	EXP 	textFb: autoDraw = False
+125.4547 	EXP 	cbBuf: autoDraw = True
+125.6247 	EXP 	fixCross: autoDraw = True
+125.8659 	DATA 	Keypress: right
+126.1382 	EXP 	fixCross: autoDraw = False
+126.1895 	DATA 	Keypress: right
+126.3435 	EXP 	New trial (rep=0, index=18): OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+126.4071 	EXP 	RatingScale Slider: reset()
+126.4076 	DATA 	Keypress: right
+126.4288 	EXP 	cbBuf: autoDraw = False
+126.4288 	EXP 	fixCross: autoDraw = False
+126.4288 	EXP 	text: text = 'This round you are playing with Lukas!'
+126.4288 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+126.4288 	EXP 	cB_8: autoDraw = True
+126.4288 	EXP 	text: autoDraw = True
+126.4288 	EXP 	imagesbRnd: autoDraw = True
+126.4288 	EXP 	Slider: autoDraw = True
+126.5670 	DATA 	Keypress: right
+126.7170 	DATA 	Keypress: right
+126.8703 	DATA 	Keypress: right
+127.0399 	DATA 	Keypress: right
+127.3157 	DATA 	Keypress: return
+127.3193 	DATA 	RatingScale Slider: (key response) rating=7
+127.3194 	DATA 	RatingScale Slider: rating RT=0.908
+127.3194 	DATA 	RatingScale Slider: history=[('5', 0.0), ('6', 0.462), ('7', 0.632), ('7', 0.908)]
+127.3497 	EXP 	cB_8: autoDraw = False
+127.3497 	EXP 	text: autoDraw = False
+127.3497 	EXP 	imagesbRnd: autoDraw = False
+127.3497 	EXP 	Slider: autoDraw = False
+127.3497 	EXP 	cB_9: autoDraw = True
+127.8644 	EXP 	cB_9: autoDraw = False
+127.8644 	EXP 	textFb: text = 'Lukas has decided to reciprocate you receive 7 credits'
+127.8644 	EXP 	cbFb: autoDraw = True
+127.8644 	EXP 	textFb: autoDraw = True
+130.8634 	EXP 	cbFb: autoDraw = False
+130.8634 	EXP 	textFb: autoDraw = False
+130.8634 	EXP 	cbBuf: autoDraw = True
+131.0317 	EXP 	fixCross: autoDraw = True
+131.5428 	EXP 	fixCross: autoDraw = False
+131.7498 	EXP 	RatingScale rating: reset()
+131.7506 	EXP 	RatingScale rating_2: reset()
+131.7515 	EXP 	RatingScale rating_5: reset()
+131.7523 	EXP 	RatingScale rating_6: reset()
+131.7531 	EXP 	RatingScale rating_3: reset()
+131.7539 	EXP 	RatingScale rating_4: reset()
+131.8145 	EXP 	cbBuf: autoDraw = False
+131.8145 	EXP 	fixCross: autoDraw = False
+131.8145 	EXP 	cB_11: autoDraw = True
+131.8145 	EXP 	rating: autoDraw = True
+131.8145 	EXP 	rating_2: autoDraw = True
+131.8145 	EXP 	rating_5: autoDraw = True
+131.8145 	EXP 	rating_6: autoDraw = True
+131.8145 	EXP 	rating_3: autoDraw = True
+131.8145 	EXP 	rating_4: autoDraw = True
+132.3261 	EXP 	cB_11: autoDraw = False
+135.4172 	DATA 	Keypress: right
+135.6052 	DATA 	Keypress: right
+136.0495 	DATA 	Keypress: left
+137.0599 	DATA 	Mouse: Left button down, pos=(848,202)
+137.1788 	DATA 	Mouse:  Left button up, pos=(841,183)
+137.4507 	DATA 	Mouse: Left button down, pos=(843,187)
+137.5728 	DATA 	Mouse:  Left button up, pos=(843,187)
+137.7204 	DATA 	Mouse: Left button down, pos=(913,353)
+137.8434 	DATA 	Mouse:  Left button up, pos=(909,340)
+138.0356 	DATA 	Mouse: Left button down, pos=(909,340)
+138.1005 	DATA 	Mouse:  Left button up, pos=(909,340)
+138.8918 	DATA 	Keypress: return
+138.8920 	DATA 	RatingScale rating_6: (key response) rating=5
+138.8920 	DATA 	RatingScale rating_6: rating RT=7.113
+138.8920 	DATA 	RatingScale rating_6: history=[(None, 0.0), (5, 5.963), (5, 7.113)]
+138.9218 	EXP 	New trial (rep=0, index=1): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+138.9663 	EXP 	Imported contitions.xlsx as conditions, 19 conditions, 5 params
+138.9666 	EXP 	Created sequence: random, trialTypes=19, nReps=1, seed=None
+138.9670 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+139.0689 	EXP 	RatingScale Slider: reset()
+139.0877 	EXP 	cB_11: autoDraw = False
+139.0877 	EXP 	rating: autoDraw = False
+139.0877 	EXP 	rating_2: autoDraw = False
+139.0877 	EXP 	rating_5: autoDraw = False
+139.0877 	EXP 	rating_6: autoDraw = False
+139.0877 	EXP 	rating_3: autoDraw = False
+139.0877 	EXP 	rating_4: autoDraw = False
+139.0877 	EXP 	text: text = 'This round you are playing with Paul!'
+139.0877 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+139.0877 	EXP 	cB_8: autoDraw = True
+139.0877 	EXP 	text: autoDraw = True
+139.0877 	EXP 	imagesbRnd: autoDraw = True
+139.0877 	EXP 	Slider: autoDraw = True
+140.2157 	DATA 	Keypress: escape
+140.7035 	EXP 	window1: mouseVisible = True
