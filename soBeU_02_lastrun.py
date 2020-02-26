@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on February 26, 2020, at 10:12
+    on February 26, 2020, at 10:20
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -87,17 +87,16 @@ textWelcomeText =(
 'If you have any questions please ask the experimenter for help. \n\n'
 'Press any key to continue'
 )
-textWelcomeText = str(textWelcomeText)
 
-textInstructionsText= """
-You have been randomly assigned to condition B. \n\n
-In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n
-You will make investments and try to maximize your gains (credits).\n\n
-Following a choice you will receive a short feedback on how the other player has acted.\n
-At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n
-see next page for more information.\n
-Press \'c\' to continue.
-"""
+textInstructionsText= (
+'You have been randomly assigned to condition B. \n\n'
+'In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n'
+'You will make investments and try to maximize your gains (credits).\n\n'
+'Following a choice you will receive a short feedback on how the other player has acted.\n'
+'At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n'
+'see next page for more information.\n'
+'Press c to continue.'
+)
 
 textInstructionsText2 = """
 The goal is to maximize your gains.\n
@@ -115,7 +114,7 @@ The toal for this round is 12.5 credits.
 5 credits that you did not invest, plus 7.5 from the investement that you received back.
 The other player gains 7.5 credits.
 
-Press \'c\' to continue.
+Press c to continue.
 """
 
 textProfileText = """
@@ -128,17 +127,17 @@ textServerText= """
 We will now connect you to the the other Players through the Server.\n
 This might take a minute.\n
 Please contact the Experimenter if your Computer is unabled to connect.\n
-Press \'c\' to continue.
+Press c to continue.
 """
 
 textInstructionsSb = """
 You are now ready to start with the experiment. \n
 On the next screens you will make decisions on how to engage with other players.\n\n
-Make a choice using your \'left\' or \'right\' keys and confirm with \'enter\'
+Make a choice using your left or right keys and confirm with enter
 
 Note, all decisions (yours and others) happen simultaneously, and not in response to each other.
 
-Press \'c\' to begin.
+Press c to begin.
 """
 
 textSbText = 'How much do you want to invest?'
