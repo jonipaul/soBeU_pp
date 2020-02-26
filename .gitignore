@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -38,3 +39,45 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+=======
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Backup files
+*.bak
+~$*.xls*
+~$*.doc*
+~$*.ppt*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# OS generated files
+.DS_Store
+.directory
+.gdb_history
+ehthumbs.db
+Icon?
+*.orig
+old
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+>>>>>>> a2640077243630c143a5bec044958bb8c7a841b2

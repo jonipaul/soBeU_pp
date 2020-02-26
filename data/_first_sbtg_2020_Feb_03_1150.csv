@@ -1,3 +1,0 @@
-﻿playerId,avatarFile,actionLabel,correctResponse,trialsSb.thisRepN,trialsSb.thisTrialN,trialsSb.thisN,trialsSb.thisIndex,textWelcome.started,textWelcome.stopped,keyWelcome.keys,keyWelcome.rt,keyWelcome.started,keyWelcome.stopped,text_3.started,text_3.stopped,image.started,image.stopped,textSb.started,textSb.stopped,participant,session,date,expName,psychopyVersion,frameRate,
-,,,,,,,,9.804281300050206,None,space,0.8008742000092752,11.79514649999328,None,,,,,,,,001,2020_Feb_03_1150,first_sbtg,3.2.4,58.6961242950912,
-Paul,images/avatar1.tiff,defect,defect,0,0,0,7,,,,,,,16.122080700006336,None,13.124043000047095,None,14.182213700027205,None,,001,2020_Feb_03_1150,first_sbtg,3.2.4,58.6961242950912,

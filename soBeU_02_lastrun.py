@@ -2,7 +2,11 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
+<<<<<<< HEAD
     on February 26, 2020, at 11:12
+=======
+    on February 26, 2020, at 10:34
+>>>>>>> a2640077243630c143a5bec044958bb8c7a841b2
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
