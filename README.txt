@@ -5,6 +5,7 @@ To do:
 - Names vs neutral descriptions (Player A,... v Paul, ...)
 - First four trials should be high coop for all players (easy fix = trial Round; but best?)
 - Adaptive post-10 round questions 
+- JS errors (""" quotation marks are an issue) <- does not update on pavlovia (uses the old code)
 
 
 v.02: 2502-2020

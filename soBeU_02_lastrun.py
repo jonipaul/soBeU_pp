@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on February 25, 2020, at 15:37
+    on February 26, 2020, at 11:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -80,22 +80,23 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "wScr"
 wScrClock = core.Clock()
-textWelcomeText = """
-Dear Participant, \n
-Welcome to our experiement! \n
-Please carefully go over the instructions on the following pages. \n
-If you have any questions please ask the experimenter for help. \n\n
-Press any key to continue
-"""
-textInstructionsText= """
-You have been randomly assigned to condition B. \n\n
-In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n
-You will make investments and try to maximize your gains (credits).\n\n
-Following a choice you will receive a short feedback on how the other player has acted.\n
-At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n
-see next page for more information.\n
-Press \'c\' to continue.
-"""
+textWelcomeText =(
+'Dear Participant, \n'
+'Welcome to our experiement! \n'
+'Please carefully go over the instructions on the following pages. \n'
+'If you have any questions please ask the experimenter for help. \n\n'
+'Press any key to continue'
+)
+
+textInstructionsText= (
+'You have been randomly assigned to condition B. \n\n'
+'In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n'
+'You will make investments and try to maximize your gains (credits).\n\n'
+'Following a choice you will receive a short feedback on how the other player has acted.\n'
+'At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n'
+'see next page for more information.\n'
+'Press c to continue.'
+)
 
 textInstructionsText2 = """
 The goal is to maximize your gains.\n
@@ -113,7 +114,7 @@ The toal for this round is 12.5 credits.
 5 credits that you did not invest, plus 7.5 from the investement that you received back.
 The other player gains 7.5 credits.
 
-Press \'c\' to continue.
+Press c to continue.
 """
 
 textProfileText = """
@@ -126,20 +127,20 @@ textServerText= """
 We will now connect you to the the other Players through the Server.\n
 This might take a minute.\n
 Please contact the Experimenter if your Computer is unabled to connect.\n
-Press \'c\' to continue.
+Press c to continue.
 """
 
 textInstructionsSb = """
 You are now ready to start with the experiment. \n
 On the next screens you will make decisions on how to engage with other players.\n\n
-Make a choice using your \'left\' or \'right\' keys and confirm with \'enter\'
+Make a choice using your left or right keys and confirm with enter
 
 Note, all decisions (yours and others) happen simultaneously, and not in response to each other.
 
-Press \'c\' to begin.
+Press c to begin.
 """
 
-textSbText = """ How much do you want to invest?"""
+textSbText = 'How much do you want to invest?'
 
 textSbFeed1 = ' has decided to return '
 textSbFeed2 = ' percent of your investment. \n\n'
@@ -161,7 +162,7 @@ cB_1 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textWelcome = visual.TextStim(win=win, name='textWelcome',
-    text=textWelcomeText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -180,7 +181,7 @@ cB_2 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textInstructions = visual.TextStim(win=win, name='textInstructions',
-    text=textInstructionsText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -199,7 +200,7 @@ cB_12 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 textInstructions_2 = visual.TextStim(win=win, name='textInstructions_2',
-    text=textInstructionsText2,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -220,7 +221,7 @@ cB = visual.Rect(
 import string
 allLetters = list(string.ascii_lowercase)
 displayText = visual.TextStim(win=win, name='displayText',
-    text=textProfileText,
+    text='default text',
     font='Arial',
     pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -245,7 +246,7 @@ cB_3 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textServer = visual.TextStim(win=win, name='textServer',
-    text=textServerText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -434,7 +435,7 @@ imagesbRnd = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 sbChoice = visual.RatingScale(win=win, name='sbChoice', marker='triangle', size=1.0, pos=[0.0, -0.4], choices=['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], tickHeight=-1, markerStart='5')
 text_6 = visual.TextStim(win=win, name='text_6',
-    text=textSbText,
+    text='default text',
     font='Arial',
     pos=(0, -0.1), height=0.025, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -493,13 +494,13 @@ cbBuf = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-fixCross = visual.ShapeStim(
-    win=win, name='fixCross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+text_8 = visual.TextStim(win=win, name='text_8',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.4, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "sbQu"
 sbQuClock = core.Clock()
@@ -538,13 +539,13 @@ cbBuf = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-fixCross = visual.ShapeStim(
-    win=win, name='fixCross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+text_8 = visual.TextStim(win=win, name='text_8',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.4, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "sbEnd"
 sbEndClock = core.Clock()
@@ -556,7 +557,7 @@ cB_10 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 sbEndText = visual.TextStim(win=win, name='sbEndText',
-    text=textEndText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -570,6 +571,8 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 
 # ------Prepare to start Routine "wScr"-------
 # update component parameters for each repeat
+textWelcome.setText(textWelcomeText
+)
 keyWelcome.keys = []
 keyWelcome.rt = []
 out_0.keys = []
@@ -717,6 +720,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wIns"-------
 # update component parameters for each repeat
+textInstructions.setText(textInstructionsText)
 keyInstructions.keys = []
 keyInstructions.rt = []
 out_1.keys = []
@@ -864,6 +868,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wIns2"-------
 # update component parameters for each repeat
+textInstructions_2.setText(textInstructionsText2)
 keyInstructions_2.keys = []
 keyInstructions_2.rt = []
 out_3.keys = []
@@ -1014,6 +1019,8 @@ routineTimer.reset()
 modify = False
 text.text = ''
 event.clearEvents('keyboard')
+displayText.setText(textProfileText)
+copyText.setText('')
 out.keys = []
 out.rt = []
 # keep track of which components have finished
@@ -1155,6 +1162,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wSer"-------
 # update component parameters for each repeat
+textServer.setText(textServerText)
 keyServer.keys = []
 keyServer.rt = []
 out_2.keys = []
@@ -1958,6 +1966,7 @@ for thisTrial in trials:
         text.setText('This round you are playing with ' + playerId + '!')
         imagesbRnd.setImage(avatarFile)
         sbChoice.reset()
+        text_6.setText(textSbText)
         # keep track of which components have finished
         sbRndComponents = [cB_8, text, imagesbRnd, sbChoice, text_6]
         for thisComponent in sbRndComponents:
@@ -2347,10 +2356,10 @@ for thisTrial in trials:
         sbLoop.addData('out_Fb.stopped', out_Fb.tStopRefresh)
         
         # ------Prepare to start Routine "bufFix"-------
-        routineTimer.add(0.900000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
-        bufFixComponents = [cbBuf, fixCross]
+        bufFixComponents = [cbBuf, text_8]
         for thisComponent in bufFixComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2384,29 +2393,29 @@ for thisTrial in trials:
                 cbBuf.setAutoDraw(True)
             if cbBuf.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > cbBuf.tStartRefresh + .9-frameTolerance:
+                if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
                     # keep track of stop time/frame for later
                     cbBuf.tStop = t  # not accounting for scr refresh
                     cbBuf.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
                     cbBuf.setAutoDraw(False)
             
-            # *fixCross* updates
-            if fixCross.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
+            # *text_8* updates
+            if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
                 # keep track of start time/frame for later
-                fixCross.frameNStart = frameN  # exact frame index
-                fixCross.tStart = t  # local t and not account for scr refresh
-                fixCross.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(fixCross, 'tStartRefresh')  # time at next scr refresh
-                fixCross.setAutoDraw(True)
-            if fixCross.status == STARTED:
+                text_8.frameNStart = frameN  # exact frame index
+                text_8.tStart = t  # local t and not account for scr refresh
+                text_8.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+                text_8.setAutoDraw(True)
+            if text_8.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > fixCross.tStartRefresh + .5-frameTolerance:
+                if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
                     # keep track of stop time/frame for later
-                    fixCross.tStop = t  # not accounting for scr refresh
-                    fixCross.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(fixCross, 'tStopRefresh')  # time at next scr refresh
-                    fixCross.setAutoDraw(False)
+                    text_8.tStop = t  # not accounting for scr refresh
+                    text_8.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
+                    text_8.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2431,8 +2440,8 @@ for thisTrial in trials:
                 thisComponent.setAutoDraw(False)
         sbLoop.addData('cbBuf.started', cbBuf.tStartRefresh)
         sbLoop.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-        sbLoop.addData('fixCross.started', fixCross.tStartRefresh)
-        sbLoop.addData('fixCross.stopped', fixCross.tStopRefresh)
+        sbLoop.addData('text_8.started', text_8.tStartRefresh)
+        sbLoop.addData('text_8.stopped', text_8.tStopRefresh)
         thisExp.nextEntry()
         
     # completed 2 repeats of 'sbLoop'
@@ -2666,10 +2675,10 @@ for thisTrial in trials:
     
     
     # ------Prepare to start Routine "bufFix"-------
-    routineTimer.add(0.900000)
+    routineTimer.add(1.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
-    bufFixComponents = [cbBuf, fixCross]
+    bufFixComponents = [cbBuf, text_8]
     for thisComponent in bufFixComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2703,29 +2712,29 @@ for thisTrial in trials:
             cbBuf.setAutoDraw(True)
         if cbBuf.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cbBuf.tStartRefresh + .9-frameTolerance:
+            if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
                 # keep track of stop time/frame for later
                 cbBuf.tStop = t  # not accounting for scr refresh
                 cbBuf.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
                 cbBuf.setAutoDraw(False)
         
-        # *fixCross* updates
-        if fixCross.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
+        # *text_8* updates
+        if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
             # keep track of start time/frame for later
-            fixCross.frameNStart = frameN  # exact frame index
-            fixCross.tStart = t  # local t and not account for scr refresh
-            fixCross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixCross, 'tStartRefresh')  # time at next scr refresh
-            fixCross.setAutoDraw(True)
-        if fixCross.status == STARTED:
+            text_8.frameNStart = frameN  # exact frame index
+            text_8.tStart = t  # local t and not account for scr refresh
+            text_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+            text_8.setAutoDraw(True)
+        if text_8.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixCross.tStartRefresh + .5-frameTolerance:
+            if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
                 # keep track of stop time/frame for later
-                fixCross.tStop = t  # not accounting for scr refresh
-                fixCross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(fixCross, 'tStopRefresh')  # time at next scr refresh
-                fixCross.setAutoDraw(False)
+                text_8.tStop = t  # not accounting for scr refresh
+                text_8.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
+                text_8.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2750,8 +2759,8 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     trials.addData('cbBuf.started', cbBuf.tStartRefresh)
     trials.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-    trials.addData('fixCross.started', fixCross.tStartRefresh)
-    trials.addData('fixCross.stopped', fixCross.tStopRefresh)
+    trials.addData('text_8.started', text_8.tStartRefresh)
+    trials.addData('text_8.stopped', text_8.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 2 repeats of 'trials'
@@ -2760,6 +2769,7 @@ for thisTrial in trials:
 # ------Prepare to start Routine "sbEnd"-------
 routineTimer.add(30.000000)
 # update component parameters for each repeat
+sbEndText.setText(textEndText)
 sbEndKey.keys = []
 sbEndKey.rt = []
 # keep track of which components have finished
