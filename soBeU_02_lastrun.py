@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on February 25, 2020, at 15:37
+    on February 26, 2020, at 09:52
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -493,13 +493,13 @@ cbBuf = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-fixCross = visual.ShapeStim(
-    win=win, name='fixCross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+text_8 = visual.TextStim(win=win, name='text_8',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.4, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "sbQu"
 sbQuClock = core.Clock()
@@ -538,13 +538,13 @@ cbBuf = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-fixCross = visual.ShapeStim(
-    win=win, name='fixCross', vertices='cross',
-    size=(0.1, 0.1),
-    ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
-    opacity=1, depth=-1.0, interpolate=True)
+text_8 = visual.TextStim(win=win, name='text_8',
+    text='+',
+    font='Arial',
+    pos=(0, 0), height=0.4, wrapWidth=None, ori=0, 
+    color='white', colorSpace='rgb', opacity=1, 
+    languageStyle='LTR',
+    depth=-1.0);
 
 # Initialize components for Routine "sbEnd"
 sbEndClock = core.Clock()
@@ -2347,10 +2347,10 @@ for thisTrial in trials:
         sbLoop.addData('out_Fb.stopped', out_Fb.tStopRefresh)
         
         # ------Prepare to start Routine "bufFix"-------
-        routineTimer.add(0.900000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
-        bufFixComponents = [cbBuf, fixCross]
+        bufFixComponents = [cbBuf, text_8]
         for thisComponent in bufFixComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -2384,29 +2384,29 @@ for thisTrial in trials:
                 cbBuf.setAutoDraw(True)
             if cbBuf.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > cbBuf.tStartRefresh + .9-frameTolerance:
+                if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
                     # keep track of stop time/frame for later
                     cbBuf.tStop = t  # not accounting for scr refresh
                     cbBuf.frameNStop = frameN  # exact frame index
                     win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
                     cbBuf.setAutoDraw(False)
             
-            # *fixCross* updates
-            if fixCross.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
+            # *text_8* updates
+            if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
                 # keep track of start time/frame for later
-                fixCross.frameNStart = frameN  # exact frame index
-                fixCross.tStart = t  # local t and not account for scr refresh
-                fixCross.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(fixCross, 'tStartRefresh')  # time at next scr refresh
-                fixCross.setAutoDraw(True)
-            if fixCross.status == STARTED:
+                text_8.frameNStart = frameN  # exact frame index
+                text_8.tStart = t  # local t and not account for scr refresh
+                text_8.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+                text_8.setAutoDraw(True)
+            if text_8.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > fixCross.tStartRefresh + .5-frameTolerance:
+                if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
                     # keep track of stop time/frame for later
-                    fixCross.tStop = t  # not accounting for scr refresh
-                    fixCross.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(fixCross, 'tStopRefresh')  # time at next scr refresh
-                    fixCross.setAutoDraw(False)
+                    text_8.tStop = t  # not accounting for scr refresh
+                    text_8.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
+                    text_8.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2431,8 +2431,8 @@ for thisTrial in trials:
                 thisComponent.setAutoDraw(False)
         sbLoop.addData('cbBuf.started', cbBuf.tStartRefresh)
         sbLoop.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-        sbLoop.addData('fixCross.started', fixCross.tStartRefresh)
-        sbLoop.addData('fixCross.stopped', fixCross.tStopRefresh)
+        sbLoop.addData('text_8.started', text_8.tStartRefresh)
+        sbLoop.addData('text_8.stopped', text_8.tStopRefresh)
         thisExp.nextEntry()
         
     # completed 2 repeats of 'sbLoop'
@@ -2666,10 +2666,10 @@ for thisTrial in trials:
     
     
     # ------Prepare to start Routine "bufFix"-------
-    routineTimer.add(0.900000)
+    routineTimer.add(1.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
-    bufFixComponents = [cbBuf, fixCross]
+    bufFixComponents = [cbBuf, text_8]
     for thisComponent in bufFixComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2703,29 +2703,29 @@ for thisTrial in trials:
             cbBuf.setAutoDraw(True)
         if cbBuf.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cbBuf.tStartRefresh + .9-frameTolerance:
+            if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
                 # keep track of stop time/frame for later
                 cbBuf.tStop = t  # not accounting for scr refresh
                 cbBuf.frameNStop = frameN  # exact frame index
                 win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
                 cbBuf.setAutoDraw(False)
         
-        # *fixCross* updates
-        if fixCross.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
+        # *text_8* updates
+        if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
             # keep track of start time/frame for later
-            fixCross.frameNStart = frameN  # exact frame index
-            fixCross.tStart = t  # local t and not account for scr refresh
-            fixCross.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(fixCross, 'tStartRefresh')  # time at next scr refresh
-            fixCross.setAutoDraw(True)
-        if fixCross.status == STARTED:
+            text_8.frameNStart = frameN  # exact frame index
+            text_8.tStart = t  # local t and not account for scr refresh
+            text_8.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+            text_8.setAutoDraw(True)
+        if text_8.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > fixCross.tStartRefresh + .5-frameTolerance:
+            if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
                 # keep track of stop time/frame for later
-                fixCross.tStop = t  # not accounting for scr refresh
-                fixCross.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(fixCross, 'tStopRefresh')  # time at next scr refresh
-                fixCross.setAutoDraw(False)
+                text_8.tStop = t  # not accounting for scr refresh
+                text_8.frameNStop = frameN  # exact frame index
+                win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
+                text_8.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2750,8 +2750,8 @@ for thisTrial in trials:
             thisComponent.setAutoDraw(False)
     trials.addData('cbBuf.started', cbBuf.tStartRefresh)
     trials.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-    trials.addData('fixCross.started', fixCross.tStartRefresh)
-    trials.addData('fixCross.stopped', fixCross.tStopRefresh)
+    trials.addData('text_8.started', text_8.tStartRefresh)
+    trials.addData('text_8.stopped', text_8.tStopRefresh)
     thisExp.nextEntry()
     
 # completed 2 repeats of 'trials'
