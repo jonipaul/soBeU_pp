@@ -79,7 +79,6 @@ dialogCancelScheduler.add(quitPsychoJS, '', false);
 
 psychoJS.start({expName, expInfo});
 
-var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
@@ -99,82 +98,84 @@ function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
-var wScrClock;
-var cB_1;
-var textWelcome;
-var keyWelcome;
-var out_0;
-var wInsClock;
-var cB_2;
-var textInstructions;
-var keyInstructions;
-var out_1;
-var wIns2Clock;
-var cB_12;
-var textInstructions_2;
-var keyInstructions_2;
-var out_3;
-var wPflClock;
-var cB;
-var displayText;
-var copyText;
-var out;
-var wSerClock;
-var cB_3;
-var textServer;
-var keyServer;
-var out_2;
-var bufRou_2Clock;
-var cB_4;
-var text_1;
-var text_2;
-var text_3;
-var text_4;
-var bufEndClock;
-var cB_5;
-var idle;
-var idle_2;
-var idle_3;
-var idle_4;
-var idle_5;
-var idle_6;
-var idle_7;
-var ilde_8;
-var idle_9;
-var idle_10;
-var idle_11;
-var idle_12;
-var sbInClock;
-var cB_6;
-var sBInstructions;
-var keySbInstructions;
-var out_sb;
-var sbRndClock;
-var cB_8;
-var text;
-var imagesbRnd;
-var text_6;
-var bufRandClock;
-var cB_9;
-var text_7;
-var sbFbClock;
-var cbFb;
-var textFb;
-var out_Fb;
-var bufFixClock;
-var cbBuf;
-var text_8;
-var sbQuClock;
-var cB_11;
-var sbEndClock;
-var cB_10;
-var sbEndText;
-var sbEndKey;
-var globalClock;
-var routineTimer;
 function experimentInit() {
   // Initialize components for Routine "wScr"
   wScrClock = new util.Clock();
+  textWelcomeText ="""
+  Dear Participant, \n
+  Welcome to our experiement! \n
+  Please carefully go over the instructions on the following pages. \n
+  If you have any questions please ask the experimenter for help. \n\n
+  Press any key to continue
+  """
+  textWelcomeText = str(textWelcomeText)
+  
+  textInstructionsText= """
+  You have been randomly assigned to condition B. \n\n
+  In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n
+  You will make investments and try to maximize your gains (credits).\n\n
+  Following a choice you will receive a short feedback on how the other player has acted.\n
+  At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n
+  see next page for more information.\n
+  Press \'c\' to continue.
+  """
+  
+  textInstructionsText2 = """
+  The goal is to maximize your gains.\n
+  Every round you will receive an endowment of 10 credits.
+  You will have the choice to invest part (or all) of these credits in another player.
+  The credits that you invest get triple when transfered to the other player.
+  The other player can then decide what to do with that investment. 
+  They will then have to decide how many credits they want to send back to you (0% - 200%).
+  
+  For example:
+  You decide to invest 5 credits. That money gets tripled to 15 credits.
+  The other player decides to send back 150% of the investment.
+  
+  The toal for this round is 12.5 credits.
+  5 credits that you did not invest, plus 7.5 from the investement that you received back.
+  The other player gains 7.5 credits.
+  
+  Press \'c\' to continue.
+  """
+  
+  textProfileText = """
+  Please type your player-name: \n
+  Importantly, this is not supposed to be your real name, just a name that other players can identify you with.
+  Type a name, and press 'enter' when you are ready.
+  """
+  
+  textServerText= """
+  We will now connect you to the the other Players through the Server.\n
+  This might take a minute.\n
+  Please contact the Experimenter if your Computer is unabled to connect.\n
+  Press \'c\' to continue.
+  """
+  
+  textInstructionsSb = """
+  You are now ready to start with the experiment. \n
+  On the next screens you will make decisions on how to engage with other players.\n\n
+  Make a choice using your \'left\' or \'right\' keys and confirm with \'enter\'
+  
+  Note, all decisions (yours and others) happen simultaneously, and not in response to each other.
+  
+  Press \'c\' to begin.
+  """
+  
+  textSbText = """ How much do you want to invest?"""
+  
+  textSbFeed1 = ' has decided to return '
+  textSbFeed2 = ' percent of your investment. \n\n'
+  textSbFeed3 = 'Your return is '
+  textSbFeed4 = ' credits!\n\n'
+  textSbFeed5 = 'Your total gain for this round is '
+  
+  textEndText = """Thank you for participating.
+  
+  This part of the experiment is now completed.
+  """
+  
+  bufText = """waiting for other player"""
   cB_1 = new visual.Rect ({
     win: psychoJS.window, name: 'cB_1', 
     width: [4, 4][0], height: [4, 4][1],
@@ -732,9 +733,6 @@ function experimentInit() {
   return Scheduler.Event.NEXT;
 }
 
-var t;
-var frameN;
-var wScrComponents;
 function wScrRoutineBegin() {
   //------Prepare to start Routine 'wScr'-------
   t = 0;
@@ -759,7 +757,6 @@ function wScrRoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var continueRoutine;
 function wScrRoutineEachFrame() {
   //------Loop for each frame of Routine 'wScr'-------
   let continueRoutine = true; // until we're told otherwise
@@ -867,7 +864,6 @@ function wScrRoutineEachFrame() {
   }
 }
 
-
 function wScrRoutineEnd() {
   //------Ending Routine 'wScr'-------
   for (const thisComponent of wScrComponents) {
@@ -895,7 +891,6 @@ function wScrRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var wInsComponents;
 function wInsRoutineBegin() {
   //------Prepare to start Routine 'wIns'-------
   t = 0;
@@ -919,7 +914,6 @@ function wInsRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function wInsRoutineEachFrame() {
   //------Loop for each frame of Routine 'wIns'-------
@@ -1028,7 +1022,6 @@ function wInsRoutineEachFrame() {
   }
 }
 
-
 function wInsRoutineEnd() {
   //------Ending Routine 'wIns'-------
   for (const thisComponent of wInsComponents) {
@@ -1056,7 +1049,6 @@ function wInsRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var wIns2Components;
 function wIns2RoutineBegin() {
   //------Prepare to start Routine 'wIns2'-------
   t = 0;
@@ -1080,7 +1072,6 @@ function wIns2RoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function wIns2RoutineEachFrame() {
   //------Loop for each frame of Routine 'wIns2'-------
@@ -1189,7 +1180,6 @@ function wIns2RoutineEachFrame() {
   }
 }
 
-
 function wIns2RoutineEnd() {
   //------Ending Routine 'wIns2'-------
   for (const thisComponent of wIns2Components) {
@@ -1217,8 +1207,6 @@ function wIns2RoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var modify;
-var wPflComponents;
 function wPflRoutineBegin() {
   //------Prepare to start Routine 'wPfl'-------
   t = 0;
@@ -1243,7 +1231,6 @@ function wPflRoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var textAdd;
 function wPflRoutineEachFrame() {
   //------Loop for each frame of Routine 'wPfl'-------
   let continueRoutine = true; // until we're told otherwise
@@ -1357,7 +1344,6 @@ function wPflRoutineEachFrame() {
   }
 }
 
-
 function wPflRoutineEnd() {
   //------Ending Routine 'wPfl'-------
   for (const thisComponent of wPflComponents) {
@@ -1380,7 +1366,6 @@ function wPflRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var wSerComponents;
 function wSerRoutineBegin() {
   //------Prepare to start Routine 'wSer'-------
   t = 0;
@@ -1404,7 +1389,6 @@ function wSerRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function wSerRoutineEachFrame() {
   //------Loop for each frame of Routine 'wSer'-------
@@ -1513,7 +1497,6 @@ function wSerRoutineEachFrame() {
   }
 }
 
-
 function wSerRoutineEnd() {
   //------Ending Routine 'wSer'-------
   for (const thisComponent of wSerComponents) {
@@ -1541,8 +1524,6 @@ function wSerRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var bufferLoop;
-var currentLoop;
 function bufferLoopLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   bufferLoop = new TrialHandler({
@@ -1566,14 +1547,12 @@ function bufferLoopLoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-
 function bufferLoopLoopEnd() {
   psychoJS.experiment.removeLoop(bufferLoop);
 
   return Scheduler.Event.NEXT;
 }
 
-var trials;
 function trialsLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials = new TrialHandler({
@@ -1609,7 +1588,6 @@ function trialsLoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-var sbLoop;
 function sbLoopLoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   sbLoop = new TrialHandler({
@@ -1642,14 +1620,12 @@ function sbLoopLoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-
 function sbLoopLoopEnd() {
   psychoJS.experiment.removeLoop(sbLoop);
 
   return Scheduler.Event.NEXT;
 }
 
-var sliders_1;
 function sliders_1LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   sliders_1 = new TrialHandler({
@@ -1673,14 +1649,12 @@ function sliders_1LoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-
 function sliders_1LoopEnd() {
   psychoJS.experiment.removeLoop(sliders_1);
 
   return Scheduler.Event.NEXT;
 }
 
-var trials_2;
 function trials_2LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials_2 = new TrialHandler({
@@ -1704,13 +1678,11 @@ function trials_2LoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-
 function trials_2LoopEnd() {
   psychoJS.experiment.removeLoop(trials_2);
 
   return Scheduler.Event.NEXT;
 }
-
 
 function trialsLoopEnd() {
   psychoJS.experiment.removeLoop(trials);
@@ -1718,7 +1690,6 @@ function trialsLoopEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var bufRou_2Components;
 function bufRou_2RoutineBegin() {
   //------Prepare to start Routine 'bufRou_2'-------
   t = 0;
@@ -1741,7 +1712,6 @@ function bufRou_2RoutineBegin() {
   return Scheduler.Event.NEXT;
 }
 
-var frameRemains;
 function bufRou_2RoutineEachFrame() {
   //------Loop for each frame of Routine 'bufRou_2'-------
   let continueRoutine = true; // until we're told otherwise
@@ -1840,7 +1810,6 @@ function bufRou_2RoutineEachFrame() {
   }
 }
 
-
 function bufRou_2RoutineEnd() {
   //------Ending Routine 'bufRou_2'-------
   for (const thisComponent of bufRou_2Components) {
@@ -1851,7 +1820,6 @@ function bufRou_2RoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var bufEndComponents;
 function bufEndRoutineBegin() {
   //------Prepare to start Routine 'bufEnd'-------
   t = 0;
@@ -1881,7 +1849,6 @@ function bufEndRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function bufEndRoutineEachFrame() {
   //------Loop for each frame of Routine 'bufEnd'-------
@@ -2085,7 +2052,6 @@ function bufEndRoutineEachFrame() {
   }
 }
 
-
 function bufEndRoutineEnd() {
   //------Ending Routine 'bufEnd'-------
   for (const thisComponent of bufEndComponents) {
@@ -2096,7 +2062,6 @@ function bufEndRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var sbInComponents;
 function sbInRoutineBegin() {
   //------Prepare to start Routine 'sbIn'-------
   t = 0;
@@ -2121,7 +2086,6 @@ function sbInRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function sbInRoutineEachFrame() {
   //------Loop for each frame of Routine 'sbIn'-------
@@ -2230,7 +2194,6 @@ function sbInRoutineEachFrame() {
   }
 }
 
-
 function sbInRoutineEnd() {
   //------Ending Routine 'sbIn'-------
   for (const thisComponent of sbInComponents) {
@@ -2258,7 +2221,6 @@ function sbInRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var sbRndComponents;
 function sbRndRoutineBegin() {
   //------Prepare to start Routine 'sbRnd'-------
   t = 0;
@@ -2280,7 +2242,6 @@ function sbRndRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function sbRndRoutineEachFrame() {
   //------Loop for each frame of Routine 'sbRnd'-------
@@ -2351,7 +2312,6 @@ function sbRndRoutineEachFrame() {
   }
 }
 
-
 function sbRndRoutineEnd() {
   //------Ending Routine 'sbRnd'-------
   for (const thisComponent of sbRndComponents) {
@@ -2365,7 +2325,6 @@ function sbRndRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var bufRandComponents;
 function bufRandRoutineBegin() {
   //------Prepare to start Routine 'bufRand'-------
   t = 0;
@@ -2384,7 +2343,6 @@ function bufRandRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function bufRandRoutineEachFrame() {
   //------Loop for each frame of Routine 'bufRand'-------
@@ -2445,7 +2403,6 @@ function bufRandRoutineEachFrame() {
   }
 }
 
-
 function bufRandRoutineEnd() {
   //------Ending Routine 'bufRand'-------
   for (const thisComponent of bufRandComponents) {
@@ -2459,7 +2416,6 @@ function bufRandRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var sbFbComponents;
 function sbFbRoutineBegin() {
   //------Prepare to start Routine 'sbFb'-------
   t = 0;
@@ -2482,7 +2438,6 @@ function sbFbRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function sbFbRoutineEachFrame() {
   //------Loop for each frame of Routine 'sbFb'-------
@@ -2576,7 +2531,6 @@ function sbFbRoutineEachFrame() {
   }
 }
 
-
 function sbFbRoutineEnd() {
   //------Ending Routine 'sbFb'-------
   for (const thisComponent of sbFbComponents) {
@@ -2594,7 +2548,6 @@ function sbFbRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var bufFixComponents;
 function bufFixRoutineBegin() {
   //------Prepare to start Routine 'bufFix'-------
   t = 0;
@@ -2613,7 +2566,6 @@ function bufFixRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function bufFixRoutineEachFrame() {
   //------Loop for each frame of Routine 'bufFix'-------
@@ -2674,7 +2626,6 @@ function bufFixRoutineEachFrame() {
   }
 }
 
-
 function bufFixRoutineEnd() {
   //------Ending Routine 'bufFix'-------
   for (const thisComponent of bufFixComponents) {
@@ -2685,7 +2636,6 @@ function bufFixRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var sbQuComponents;
 function sbQuRoutineBegin() {
   //------Prepare to start Routine 'sbQu'-------
   t = 0;
@@ -2702,7 +2652,6 @@ function sbQuRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function sbQuRoutineEachFrame() {
   //------Loop for each frame of Routine 'sbQu'-------
@@ -2746,7 +2695,6 @@ function sbQuRoutineEachFrame() {
   }
 }
 
-
 function sbQuRoutineEnd() {
   //------Ending Routine 'sbQu'-------
   for (const thisComponent of sbQuComponents) {
@@ -2760,7 +2708,6 @@ function sbQuRoutineEnd() {
   return Scheduler.Event.NEXT;
 }
 
-var sbEndComponents;
 function sbEndRoutineBegin() {
   //------Prepare to start Routine 'sbEnd'-------
   t = 0;
@@ -2782,7 +2729,6 @@ function sbEndRoutineBegin() {
   
   return Scheduler.Event.NEXT;
 }
-
 
 function sbEndRoutineEachFrame() {
   //------Loop for each frame of Routine 'sbEnd'-------
@@ -2876,7 +2822,6 @@ function sbEndRoutineEachFrame() {
   }
 }
 
-
 function sbEndRoutineEnd() {
   //------Ending Routine 'sbEnd'-------
   for (const thisComponent of sbEndComponents) {
@@ -2893,7 +2838,6 @@ function sbEndRoutineEnd() {
   sbEndKey.stop();
   return Scheduler.Event.NEXT;
 }
-
 
 function endLoopIteration({thisScheduler, isTrials=true}) {
   // ------Prepare for next entry------
@@ -2912,7 +2856,6 @@ function endLoopIteration({thisScheduler, isTrials=true}) {
   };
 }
 
-
 function importConditions(loop) {
   const trialIndex = loop.getTrialIndex();
   return function () {
@@ -2921,7 +2864,6 @@ function importConditions(loop) {
     return Scheduler.Event.NEXT;
     };
 }
-
 
 function quitPsychoJS(message, isCompleted) {
   // Check for and save orphaned data
