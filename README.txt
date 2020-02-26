@@ -7,6 +7,8 @@ To do:
 - Adaptive post-10 round questions 
 - JS errors (""" quotation marks are an issue) <- does not update on pavlovia (uses the old code)
 
+-sync erros github-gitlab-pavlovia
+
 
 v.02: 2502-2020
 - probabilistic responses
