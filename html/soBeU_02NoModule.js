@@ -179,7 +179,7 @@ function experimentInit() {
   textWelcome = new visual.TextStim({
     win: psychoJS.window,
     name: 'textWelcome',
-    text: textWelcomeText,
+    text: 'Dear Participant, \\n\nWelcome to our experiement! \\n\nPlease carefully go over the instructions on the following pages. \\n\nIf you have any questions please ask the experimenter for help. \\n\\n\nPress any key to continue',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
