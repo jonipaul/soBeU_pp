@@ -188,7 +188,7 @@ function experimentInit() {
   textWelcome = new visual.TextStim({
     win: psychoJS.window,
     name: 'textWelcome',
-    text: textWelcomeText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -214,7 +214,7 @@ function experimentInit() {
   textInstructions = new visual.TextStim({
     win: psychoJS.window,
     name: 'textInstructions',
-    text: textInstructionsText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -240,7 +240,7 @@ function experimentInit() {
   textInstructions_2 = new visual.TextStim({
     win: psychoJS.window,
     name: 'textInstructions_2',
-    text: textInstructionsText2,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -266,7 +266,7 @@ function experimentInit() {
   displayText = new visual.TextStim({
     win: psychoJS.window,
     name: 'displayText',
-    text: textProfileText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0.1], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -301,7 +301,7 @@ function experimentInit() {
   textServer = new visual.TextStim({
     win: psychoJS.window,
     name: 'textServer',
-    text: textServerText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
@@ -716,7 +716,7 @@ function experimentInit() {
   sbEndText = new visual.TextStim({
     win: psychoJS.window,
     name: 'sbEndText',
-    text: textEndText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
@@ -739,6 +739,7 @@ function wScrRoutineBegin() {
   wScrClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  textWelcome.setText(textWelcomeText);
   keyWelcome.keys = undefined;
   keyWelcome.rt = undefined;
   out_0.keys = undefined;
@@ -897,6 +898,7 @@ function wInsRoutineBegin() {
   wInsClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  textInstructions.setText(textInstructionsText);
   keyInstructions.keys = undefined;
   keyInstructions.rt = undefined;
   out_1.keys = undefined;
@@ -1055,6 +1057,7 @@ function wIns2RoutineBegin() {
   wIns2Clock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  textInstructions_2.setText(textInstructionsText2);
   keyInstructions_2.keys = undefined;
   keyInstructions_2.rt = undefined;
   out_3.keys = undefined;
@@ -1215,6 +1218,8 @@ function wPflRoutineBegin() {
   // update component parameters for each repeat
   modify = false;
   text.text = '';
+  displayText.setText(textProfileText);
+  copyText.setText('');
   out.keys = undefined;
   out.rt = undefined;
   // keep track of which components have finished
@@ -1372,6 +1377,7 @@ function wSerRoutineBegin() {
   wSerClock.reset(); // clock
   frameN = -1;
   // update component parameters for each repeat
+  textServer.setText(textServerText);
   keyServer.keys = undefined;
   keyServer.rt = undefined;
   out_2.keys = undefined;
@@ -2715,6 +2721,7 @@ function sbEndRoutineBegin() {
   frameN = -1;
   routineTimer.add(30.000000);
   // update component parameters for each repeat
+  sbEndText.setText(textEndText);
   sbEndKey.keys = undefined;
   sbEndKey.rt = undefined;
   // keep track of which components have finished
