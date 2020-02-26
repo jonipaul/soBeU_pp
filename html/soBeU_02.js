@@ -571,7 +571,7 @@ function experimentInit() {
   text_6 = new visual.TextStim({
     win: psychoJS.window,
     name: 'text_6',
-    text: textSbText,
+    text: 'default text',
     font: 'Arial',
     units : undefined, 
     pos: [0, (- 0.1)], height: 0.025,  wrapWidth: undefined, ori: 0,
@@ -2235,6 +2235,7 @@ function sbRndRoutineBegin() {
   // update component parameters for each repeat
   text.setText((('This round you are playing with ' + playerId) + '!'));
   imagesbRnd.setImage(avatarFile);
+  text_6.setText(textSbText);
   // keep track of which components have finished
   sbRndComponents = [];
   sbRndComponents.push(cB_8);

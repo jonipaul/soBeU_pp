@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on February 26, 2020, at 09:52
+    on February 26, 2020, at 10:12
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -80,13 +80,15 @@ defaultKeyboard = keyboard.Keyboard()
 
 # Initialize components for Routine "wScr"
 wScrClock = core.Clock()
-textWelcomeText = """
-Dear Participant, \n
-Welcome to our experiement! \n
-Please carefully go over the instructions on the following pages. \n
-If you have any questions please ask the experimenter for help. \n\n
-Press any key to continue
-"""
+textWelcomeText =(
+'Dear Participant, \n'
+'Welcome to our experiement! \n'
+'Please carefully go over the instructions on the following pages. \n'
+'If you have any questions please ask the experimenter for help. \n\n'
+'Press any key to continue'
+)
+textWelcomeText = str(textWelcomeText)
+
 textInstructionsText= """
 You have been randomly assigned to condition B. \n\n
 In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n
@@ -139,7 +141,7 @@ Note, all decisions (yours and others) happen simultaneously, and not in respons
 Press \'c\' to begin.
 """
 
-textSbText = """ How much do you want to invest?"""
+textSbText = 'How much do you want to invest?'
 
 textSbFeed1 = ' has decided to return '
 textSbFeed2 = ' percent of your investment. \n\n'
@@ -161,7 +163,7 @@ cB_1 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textWelcome = visual.TextStim(win=win, name='textWelcome',
-    text=textWelcomeText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -180,7 +182,7 @@ cB_2 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textInstructions = visual.TextStim(win=win, name='textInstructions',
-    text=textInstructionsText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -199,7 +201,7 @@ cB_12 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 textInstructions_2 = visual.TextStim(win=win, name='textInstructions_2',
-    text=textInstructionsText2,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -220,7 +222,7 @@ cB = visual.Rect(
 import string
 allLetters = list(string.ascii_lowercase)
 displayText = visual.TextStim(win=win, name='displayText',
-    text=textProfileText,
+    text='default text',
     font='Arial',
     pos=(0, 0.1), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -245,7 +247,7 @@ cB_3 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=-1.0, interpolate=True)
 textServer = visual.TextStim(win=win, name='textServer',
-    text=textServerText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.03, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -434,7 +436,7 @@ imagesbRnd = visual.ImageStim(
     texRes=128, interpolate=True, depth=-2.0)
 sbChoice = visual.RatingScale(win=win, name='sbChoice', marker='triangle', size=1.0, pos=[0.0, -0.4], choices=['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'], tickHeight=-1, markerStart='5')
 text_6 = visual.TextStim(win=win, name='text_6',
-    text=textSbText,
+    text='default text',
     font='Arial',
     pos=(0, -0.1), height=0.025, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -556,7 +558,7 @@ cB_10 = visual.Rect(
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
 sbEndText = visual.TextStim(win=win, name='sbEndText',
-    text=textEndText,
+    text='default text',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=None, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -570,6 +572,8 @@ routineTimer = core.CountdownTimer()  # to track time remaining of each (non-sli
 
 # ------Prepare to start Routine "wScr"-------
 # update component parameters for each repeat
+textWelcome.setText(textWelcomeText
+)
 keyWelcome.keys = []
 keyWelcome.rt = []
 out_0.keys = []
@@ -717,6 +721,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wIns"-------
 # update component parameters for each repeat
+textInstructions.setText(textInstructionsText)
 keyInstructions.keys = []
 keyInstructions.rt = []
 out_1.keys = []
@@ -864,6 +869,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wIns2"-------
 # update component parameters for each repeat
+textInstructions_2.setText(textInstructionsText2)
 keyInstructions_2.keys = []
 keyInstructions_2.rt = []
 out_3.keys = []
@@ -1014,6 +1020,8 @@ routineTimer.reset()
 modify = False
 text.text = ''
 event.clearEvents('keyboard')
+displayText.setText(textProfileText)
+copyText.setText('')
 out.keys = []
 out.rt = []
 # keep track of which components have finished
@@ -1155,6 +1163,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "wSer"-------
 # update component parameters for each repeat
+textServer.setText(textServerText)
 keyServer.keys = []
 keyServer.rt = []
 out_2.keys = []
@@ -1958,6 +1967,7 @@ for thisTrial in trials:
         text.setText('This round you are playing with ' + playerId + '!')
         imagesbRnd.setImage(avatarFile)
         sbChoice.reset()
+        text_6.setText(textSbText)
         # keep track of which components have finished
         sbRndComponents = [cB_8, text, imagesbRnd, sbChoice, text_6]
         for thisComponent in sbRndComponents:
@@ -2760,6 +2770,7 @@ for thisTrial in trials:
 # ------Prepare to start Routine "sbEnd"-------
 routineTimer.add(30.000000)
 # update component parameters for each repeat
+sbEndText.setText(textEndText)
 sbEndKey.keys = []
 sbEndKey.rt = []
 # keep track of which components have finished
