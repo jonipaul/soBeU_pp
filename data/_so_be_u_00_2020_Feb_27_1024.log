@@ -1,0 +1,1483 @@
+2.6034 	WARNING 	Import Error: No module named 'psychtoolbox'. Using event module for keyboard component.
+4.4311 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1680, 1050]. Using actual size
+5.4298 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([0., 0., 0.]), colorSpace='rgb', fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0A4C2E70>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0A1DBB70>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1680, 1050]), stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.4298 	EXP 	window1: recordFrameIntervals = False
+5.5997 	EXP 	window1: recordFrameIntervals = True
+5.7882 	EXP 	window1: recordFrameIntervals = False
+5.7910 	EXP 	Created cB_1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_1', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9040 	EXP 	Created textWelcome = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textWelcome', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+5.9056 	EXP 	Created cB_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_2', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9114 	EXP 	Created textInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textInstructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+5.9129 	EXP 	Created cB_12 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_12', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9187 	EXP 	Created textInstructions_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textInstructions_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+5.9203 	EXP 	Created cB = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9346 	EXP 	Created displayText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='displayText', opacity=1.0, ori=0, pos=array([0. , 0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+5.9358 	EXP 	Created copyText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='copyText', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+5.9373 	EXP 	Created cB_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_3', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9430 	EXP 	Created textServer = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textServer', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+5.9445 	EXP 	Created cB_4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_4', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9542 	EXP 	Created text_1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_1', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting      ', units='height', win=Window(...), wrapWidth=1)
+5.9606 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting .    ', units='height', win=Window(...), wrapWidth=1)
+5.9657 	EXP 	Created text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting . .  ', units='height', win=Window(...), wrapWidth=1)
+5.9717 	EXP 	Created text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='connecting . . .', units='height', win=Window(...), wrapWidth=1)
+5.9732 	EXP 	Created cB_5 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_5', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+5.9772 	EXP 	Created idle = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='found', units='height', win=Window(...), wrapWidth=1)
+5.9840 	EXP 	Created idle_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_2', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc     ', units='height', win=Window(...), wrapWidth=1)
+5.9924 	EXP 	Created idle_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_3', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 2141', units='height', win=Window(...), wrapWidth=1)
+5.9993 	EXP 	Created idle_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_4', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 2215', units='height', win=Window(...), wrapWidth=1)
+6.0065 	EXP 	Created idle_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_5', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 3229', units='height', win=Window(...), wrapWidth=1)
+6.0119 	EXP 	Created idle_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_6', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 4325', units='height', win=Window(...), wrapWidth=1)
+6.0185 	EXP 	Created idle_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='init proc 1337', units='height', win=Window(...), wrapWidth=1)
+6.0247 	EXP 	Created ilde_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='ilde_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering      ', units='height', win=Window(...), wrapWidth=1)
+6.0300 	EXP 	Created idle_9 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-9.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_9', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering .    ', units='height', win=Window(...), wrapWidth=1)
+6.0350 	EXP 	Created idle_10 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-10.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_10', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering . .  ', units='height', win=Window(...), wrapWidth=1)
+6.0404 	EXP 	Created idle_11 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-11.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_11', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='buffering . . .', units='height', win=Window(...), wrapWidth=1)
+6.0508 	EXP 	Created idle_12 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-12.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='idle_12', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='run /serv/234_1/sd connect', units='height', win=Window(...), wrapWidth=1)
+6.0523 	EXP 	Created cB_6 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_6', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.0577 	EXP 	Created sBInstructions = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='sBInstructions', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.0592 	EXP 	Created cB_8 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_8', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.0737 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.0795 	EXP 	Created imagesbRnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='imagesbRnd', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+6.1471 	EXP 	Created sbChoice = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=list(...), depth=0, disappear=False, flipVert=False, high=10, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=5.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='sbChoice', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=[], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=10.0, win=Window(...))
+6.1587 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.1602 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.1657 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.1672 	EXP 	Created cbFb = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbFb', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.1727 	EXP 	Created textFb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textFb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.1742 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2382 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+6.2397 	EXP 	Created cB_11 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_11', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2617 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.2631 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2688 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.2703 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2727 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+6.2742 	EXP 	Created cB_8 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_8', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.2800 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.2821 	EXP 	Created imagesbRnd = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='imagesbRnd', opacity=1.0, ori=0.0, pos=array([0. , 0.2]), size=array([0.2, 0.2]), texRes=128, units='height', win=Window(...))
+6.3237 	EXP 	Created sbChoice = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=list(...), depth=0, disappear=False, flipVert=False, high=10, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=0, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=5.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='sbChoice', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=[], rightKeys=['right'], scale='<default>', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=10.0, win=Window(...))
+6.3293 	EXP 	Created text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='text_6', opacity=1.0, ori=0, pos=array([ 0. , -0.1]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.3308 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3364 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.3379 	EXP 	Created cbFb = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbFb', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3434 	EXP 	Created textFb = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='textFb', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.3449 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3474 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+6.3489 	EXP 	Created cB_11 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_11', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3662 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+6.3677 	EXP 	Created cB_9 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_9', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3735 	EXP 	Created text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='text_7', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.3751 	EXP 	Created cbBuf = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=0.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cbBuf', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3783 	EXP 	Created text_8 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.4, italic=False, languageStyle='LTR', name='text_8', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='+', units='height', win=Window(...), wrapWidth=1)
+6.3800 	EXP 	Created cB_10 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace=None, contrast=1.0, depth=-1.0, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1., 1., 1.]), lineWidth=1, name='cB_10', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([1., 1.]), units='height', vertices=ndarray(...), win=Window(...))
+6.3857 	EXP 	Created sbEndText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='sbEndText', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+6.4480 	EXP 	sbChoice: flipVert = False
+6.4480 	EXP 	sbChoice: autoLog = True
+6.4480 	EXP 	rating: flipVert = False
+6.4480 	EXP 	rating: autoLog = True
+6.4480 	EXP 	sbChoice: flipVert = False
+6.4480 	EXP 	sbChoice: autoLog = True
+6.4480 	EXP 	rating: flipVert = False
+6.4480 	EXP 	rating: autoLog = True
+6.4480 	EXP 	textWelcome: text = 'Dear Participant, \nWelcome to our experiement! \nPlease carefully go over the instructions on the following pages. \nIf you have any questions please ask the experimenter for help. \n\nPress any key to continue'
+6.4480 	EXP 	cB_1: autoDraw = True
+6.4480 	EXP 	textWelcome: autoDraw = True
+7.3771 	DATA 	Keypress: 1
+7.4776 	EXP 	cB_1: autoDraw = False
+7.4776 	EXP 	textWelcome: autoDraw = False
+7.4776 	EXP 	textInstructions: text = 'You have been randomly assigned to condition B. \n\nIn the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\nYou will make investments and try to maximize your gains (credits).\n\nFollowing a choice you will receive a short feedback on how the other player has acted.\nAt the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\nsee next page for more information.\nPress c to continue.'
+7.4776 	EXP 	cB_2: autoDraw = True
+7.4776 	EXP 	textInstructions: autoDraw = True
+8.7770 	DATA 	Keypress: 1
+8.9122 	EXP 	cB_2: autoDraw = False
+8.9122 	EXP 	textInstructions: autoDraw = False
+8.9122 	EXP 	textInstructions_2: text = '\nThe goal is to maximize your gains.\n\nEvery round you will receive an endowment of 10 credits.\nYou will have the choice to invest part (or all) of these credits in another player.\nThe credits that you invest get triple when transfered to the other player.\nThe other player can then decide what to do with that investment. \nThey will then have to decide how many credits they want to send back to you (0% - 200%).\n\nFor example:\nYou decide to invest 5 credits. That money gets tripled to 15 credits.\nThe other player decides to send back 150% of the investment.\n\nThe toal for this round is 12.5 credits.\n5 credits that you did not invest, plus 7.5 from the investement that you received back.\nThe other player gains 7.5 credits.\n\nPress c to continue.\n'
+8.9122 	EXP 	cB_12: autoDraw = True
+8.9122 	EXP 	textInstructions_2: autoDraw = True
+10.4704 	DATA 	Keypress: 1
+10.5237 	EXP 	cB_12: autoDraw = False
+10.5237 	EXP 	textInstructions_2: autoDraw = False
+10.5237 	EXP 	text: text = ''
+10.5237 	EXP 	displayText: text = "\nPlease type your player-name: \n\nImportantly, this is not supposed to be your real name, just a name that other players can identify you with.\nType a name, and press 'enter' when you are ready.\n"
+10.5237 	EXP 	copyText: text = ''
+10.5237 	EXP 	cB: autoDraw = True
+10.5237 	EXP 	displayText: autoDraw = True
+10.5237 	EXP 	copyText: autoDraw = True
+12.4734 	DATA 	Keypress: lshift
+12.4903 	EXP 	copyText: text = ''
+12.7618 	DATA 	Keypress: r
+12.7797 	EXP 	text: text = 'R'
+12.7797 	EXP 	copyText: text = 'R'
+12.8468 	DATA 	Keypress: o
+12.8640 	EXP 	text: text = 'Ro'
+12.8640 	EXP 	copyText: text = 'Ro'
+13.0361 	DATA 	Keypress: n
+13.0555 	EXP 	text: text = 'Ron'
+13.0555 	EXP 	copyText: text = 'Ron'
+13.1873 	DATA 	Keypress: n
+13.2059 	EXP 	text: text = 'Ronn'
+13.2059 	EXP 	copyText: text = 'Ronn'
+13.3067 	DATA 	Keypress: y
+13.3257 	EXP 	text: text = 'Ronny'
+13.3257 	EXP 	copyText: text = 'Ronny'
+13.4606 	DATA 	Keypress: return
+13.5113 	EXP 	copyText: text = 'Ronny'
+13.5113 	EXP 	cB: autoDraw = False
+13.5113 	EXP 	displayText: autoDraw = False
+13.5113 	EXP 	copyText: autoDraw = False
+13.5113 	EXP 	textServer: text = '\nWe will now connect you to the the other Players through the Server.\n\nThis might take a minute.\n\nPlease contact the Experimenter if your Computer is unabled to connect.\n\nPress c to continue.\n'
+13.5113 	EXP 	cB_3: autoDraw = True
+13.5113 	EXP 	textServer: autoDraw = True
+15.1555 	DATA 	Keypress: c
+16.1114 	DATA 	Keypress: c
+16.1119 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+16.1122 	EXP 	New trial (rep=0, index=0): None
+16.1280 	EXP 	cB_3: autoDraw = False
+16.1280 	EXP 	textServer: autoDraw = False
+16.1280 	EXP 	cB_4: autoDraw = True
+16.1280 	EXP 	text_1: autoDraw = True
+17.1060 	EXP 	text_2: autoDraw = True
+17.1404 	EXP 	text_1: autoDraw = False
+17.6039 	EXP 	text_3: autoDraw = True
+17.6213 	EXP 	text_2: autoDraw = False
+18.1012 	EXP 	text_4: autoDraw = True
+18.1180 	EXP 	text_3: autoDraw = False
+18.6162 	EXP 	text_4: autoDraw = False
+18.6331 	EXP 	cB_4: autoDraw = False
+18.6331 	EXP 	text_1: autoDraw = False
+18.6331 	EXP 	text_2: autoDraw = False
+18.6331 	EXP 	text_3: autoDraw = False
+18.6331 	EXP 	text_4: autoDraw = False
+18.6331 	EXP 	cB_5: autoDraw = True
+18.8015 	EXP 	idle: autoDraw = True
+19.1110 	EXP 	idle: autoDraw = False
+19.1110 	EXP 	idle_2: autoDraw = True
+19.3176 	EXP 	idle_2: autoDraw = False
+19.3176 	EXP 	idle_3: autoDraw = True
+19.4009 	EXP 	idle_3: autoDraw = False
+19.4009 	EXP 	idle_4: autoDraw = True
+19.5558 	EXP 	idle_4: autoDraw = False
+19.5558 	EXP 	idle_5: autoDraw = True
+19.7125 	EXP 	idle_5: autoDraw = False
+19.7125 	EXP 	idle_6: autoDraw = True
+19.8505 	EXP 	idle_6: autoDraw = False
+19.8505 	EXP 	idle_7: autoDraw = True
+19.9524 	EXP 	idle_7: autoDraw = False
+19.9524 	EXP 	ilde_8: autoDraw = True
+20.4671 	EXP 	ilde_8: autoDraw = False
+20.4671 	EXP 	idle_9: autoDraw = True
+20.9615 	EXP 	idle_10: autoDraw = True
+20.9784 	EXP 	idle_9: autoDraw = False
+21.4569 	EXP 	idle_11: autoDraw = True
+21.4742 	EXP 	idle_10: autoDraw = False
+21.9522 	EXP 	idle_12: autoDraw = True
+21.9701 	EXP 	idle_11: autoDraw = False
+22.1065 	EXP 	idle_12: autoDraw = False
+22.6849 	EXP 	cB_5: autoDraw = False
+22.6849 	EXP 	idle: autoDraw = False
+22.6849 	EXP 	idle_2: autoDraw = False
+22.6849 	EXP 	idle_3: autoDraw = False
+22.6849 	EXP 	idle_4: autoDraw = False
+22.6849 	EXP 	idle_5: autoDraw = False
+22.6849 	EXP 	idle_6: autoDraw = False
+22.6849 	EXP 	idle_7: autoDraw = False
+22.6849 	EXP 	ilde_8: autoDraw = False
+22.6849 	EXP 	idle_9: autoDraw = False
+22.6849 	EXP 	idle_10: autoDraw = False
+22.6849 	EXP 	idle_11: autoDraw = False
+22.6849 	EXP 	idle_12: autoDraw = False
+22.6849 	EXP 	sBInstructions: text = 'Hi Ronny!\nYou are now ready to start with the experiment. \n\nOn the next screens you will make decisions on how to engage with other players.\n\n\nMake a choice using your left or right keys and confirm with enter\n\nNote, all decisions (yours and others) happen simultaneously, and not in response to each other.\n\nPress c to begin.\n'
+22.6849 	EXP 	cB_6: autoDraw = True
+22.8721 	EXP 	sBInstructions: autoDraw = True
+23.9666 	DATA 	Keypress: c
+24.9771 	DATA 	Keypress: return
+25.5434 	DATA 	Keypress: c
+25.5805 	EXP 	Imported contitions.xlsx as conditions, 3 conditions, 6 params
+25.5808 	EXP 	Created sequence: random, trialTypes=3, nReps=2, seed=None
+25.5812 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+25.6572 	EXP 	RatingScale sbChoice: reset()
+25.6979 	EXP 	cB_6: autoDraw = False
+25.6979 	EXP 	sBInstructions: autoDraw = False
+25.6979 	EXP 	text: text = 'This round you are playing with Paul!'
+25.6979 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+25.6979 	EXP 	text_6: text = 'How much do you want to invest?'
+25.6979 	EXP 	cB_8: autoDraw = True
+25.6979 	EXP 	text: autoDraw = True
+25.6979 	EXP 	imagesbRnd: autoDraw = True
+25.6979 	EXP 	sbChoice: autoDraw = True
+25.6979 	EXP 	text_6: autoDraw = True
+26.4979 	DATA 	Keypress: left
+26.8916 	DATA 	Keypress: return
+26.8955 	DATA 	RatingScale sbChoice: (key response) rating=4
+26.8956 	DATA 	RatingScale sbChoice: rating RT=1.221
+26.8956 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 0.826), ('4', 1.221)]
+26.9294 	EXP 	cB_8: autoDraw = False
+26.9294 	EXP 	text: autoDraw = False
+26.9294 	EXP 	imagesbRnd: autoDraw = False
+26.9294 	EXP 	sbChoice: autoDraw = False
+26.9294 	EXP 	text_6: autoDraw = False
+26.9294 	EXP 	text_7: text = 'waiting for other player'
+26.9294 	EXP 	cB_9: autoDraw = True
+26.9294 	EXP 	text_7: autoDraw = True
+28.9502 	EXP 	cB_9: autoDraw = False
+28.9502 	EXP 	text_7: autoDraw = False
+28.9502 	EXP 	cB_9: autoDraw = False
+28.9502 	EXP 	text_7: autoDraw = False
+28.9502 	EXP 	textFb: text = 'Paul has decided to return 200 percent of your investment. \n\nYour return is 8 credits!\n\nYour total gain for this round is 14 credits!\n\n'
+28.9502 	EXP 	cbFb: autoDraw = True
+28.9502 	EXP 	textFb: autoDraw = True
+33.9393 	EXP 	cbFb: autoDraw = False
+33.9393 	EXP 	textFb: autoDraw = False
+33.9393 	EXP 	cbBuf: autoDraw = True
+34.1091 	EXP 	text_8: autoDraw = True
+34.7244 	EXP 	text_8: autoDraw = False
+34.9308 	EXP 	New trial (rep=0, index=1): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+34.9779 	EXP 	RatingScale sbChoice: reset()
+34.9964 	EXP 	cbBuf: autoDraw = False
+34.9964 	EXP 	text_8: autoDraw = False
+34.9964 	EXP 	text: text = 'This round you are playing with Lukas!'
+34.9964 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+34.9964 	EXP 	text_6: text = 'How much do you want to invest?'
+34.9964 	EXP 	cB_8: autoDraw = True
+34.9964 	EXP 	text: autoDraw = True
+34.9964 	EXP 	imagesbRnd: autoDraw = True
+34.9964 	EXP 	sbChoice: autoDraw = True
+34.9964 	EXP 	text_6: autoDraw = True
+35.8467 	DATA 	Keypress: right
+36.0508 	DATA 	Keypress: right
+36.3454 	DATA 	Keypress: return
+36.3455 	DATA 	RatingScale sbChoice: (key response) rating=7
+36.3455 	DATA 	RatingScale sbChoice: rating RT=1.367
+36.3456 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.871), ('7', 1.076), ('7', 1.367)]
+36.3753 	EXP 	cB_8: autoDraw = False
+36.3753 	EXP 	text: autoDraw = False
+36.3753 	EXP 	imagesbRnd: autoDraw = False
+36.3753 	EXP 	sbChoice: autoDraw = False
+36.3753 	EXP 	text_6: autoDraw = False
+36.3753 	EXP 	text_7: text = 'waiting for other player'
+36.3753 	EXP 	cB_9: autoDraw = True
+36.3753 	EXP 	text_7: autoDraw = True
+38.4156 	EXP 	cB_9: autoDraw = False
+38.4156 	EXP 	text_7: autoDraw = False
+38.4156 	EXP 	cB_9: autoDraw = False
+38.4156 	EXP 	text_7: autoDraw = False
+38.4156 	EXP 	textFb: text = 'Lukas has decided to return 200 percent of your investment. \n\nYour return is 14 credits!\n\nYour total gain for this round is 17 credits!\n\n'
+38.4156 	EXP 	cbFb: autoDraw = True
+38.4156 	EXP 	textFb: autoDraw = True
+43.3906 	EXP 	cbFb: autoDraw = False
+43.3906 	EXP 	textFb: autoDraw = False
+43.3906 	EXP 	cbBuf: autoDraw = True
+43.5628 	EXP 	text_8: autoDraw = True
+44.1788 	EXP 	text_8: autoDraw = False
+44.3667 	EXP 	New trial (rep=0, index=2): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+44.3853 	EXP 	RatingScale sbChoice: reset()
+44.4002 	EXP 	cbBuf: autoDraw = False
+44.4002 	EXP 	text_8: autoDraw = False
+44.4002 	EXP 	text: text = 'This round you are playing with Lukas!'
+44.4002 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+44.4002 	EXP 	text_6: text = 'How much do you want to invest?'
+44.4002 	EXP 	cB_8: autoDraw = True
+44.4002 	EXP 	text: autoDraw = True
+44.4002 	EXP 	imagesbRnd: autoDraw = True
+44.4002 	EXP 	sbChoice: autoDraw = True
+44.4002 	EXP 	text_6: autoDraw = True
+45.2861 	DATA 	Keypress: right
+45.4796 	DATA 	Keypress: right
+45.7466 	DATA 	Keypress: return
+45.7502 	DATA 	RatingScale sbChoice: (key response) rating=7
+45.7502 	DATA 	RatingScale sbChoice: rating RT=1.364
+45.7502 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.903), ('7', 1.094), ('7', 1.364)]
+45.8002 	EXP 	cB_8: autoDraw = False
+45.8002 	EXP 	text: autoDraw = False
+45.8002 	EXP 	imagesbRnd: autoDraw = False
+45.8002 	EXP 	sbChoice: autoDraw = False
+45.8002 	EXP 	text_6: autoDraw = False
+45.8002 	EXP 	text_7: text = 'waiting for other player'
+45.8002 	EXP 	cB_9: autoDraw = True
+45.8002 	EXP 	cB_9: autoDraw = False
+45.8002 	EXP 	text_7: autoDraw = True
+45.8002 	EXP 	text_7: autoDraw = False
+45.8002 	EXP 	cB_9: autoDraw = False
+45.8002 	EXP 	text_7: autoDraw = False
+45.8002 	EXP 	textFb: text = 'Lukas has decided to return 100 percent of your investment. \n\nYour return is 7 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+45.8002 	EXP 	cbFb: autoDraw = True
+45.8002 	EXP 	textFb: autoDraw = True
+50.7948 	EXP 	cbFb: autoDraw = False
+50.7948 	EXP 	textFb: autoDraw = False
+50.7948 	EXP 	cbBuf: autoDraw = True
+50.9653 	EXP 	text_8: autoDraw = True
+51.5798 	EXP 	text_8: autoDraw = False
+51.7677 	EXP 	New trial (rep=1, index=0): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+51.7863 	EXP 	RatingScale sbChoice: reset()
+51.8012 	EXP 	cbBuf: autoDraw = False
+51.8012 	EXP 	text_8: autoDraw = False
+51.8012 	EXP 	text: text = 'This round you are playing with Lukas!'
+51.8012 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+51.8012 	EXP 	text_6: text = 'How much do you want to invest?'
+51.8012 	EXP 	cB_8: autoDraw = True
+51.8012 	EXP 	text: autoDraw = True
+51.8012 	EXP 	imagesbRnd: autoDraw = True
+51.8012 	EXP 	sbChoice: autoDraw = True
+51.8012 	EXP 	text_6: autoDraw = True
+52.3993 	DATA 	Keypress: right
+52.5898 	DATA 	Keypress: right
+52.7279 	DATA 	Keypress: right
+52.9797 	DATA 	Keypress: return
+52.9834 	DATA 	RatingScale sbChoice: (key response) rating=8
+52.9834 	DATA 	RatingScale sbChoice: rating RT=1.197
+52.9834 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.613), ('7', 0.803), ('8', 0.941), ('8', 1.196)]
+53.0139 	EXP 	cB_8: autoDraw = False
+53.0139 	EXP 	text: autoDraw = False
+53.0139 	EXP 	imagesbRnd: autoDraw = False
+53.0139 	EXP 	sbChoice: autoDraw = False
+53.0139 	EXP 	text_6: autoDraw = False
+53.0139 	EXP 	text_7: text = 'waiting for other player'
+53.0139 	EXP 	cB_9: autoDraw = True
+53.0139 	EXP 	text_7: autoDraw = True
+55.0495 	EXP 	cB_9: autoDraw = False
+55.0495 	EXP 	text_7: autoDraw = False
+55.0495 	EXP 	cB_9: autoDraw = False
+55.0495 	EXP 	text_7: autoDraw = False
+55.0495 	EXP 	textFb: text = 'Lukas has decided to return 200 percent of your investment. \n\nYour return is 16 credits!\n\nYour total gain for this round is 18 credits!\n\n'
+55.0495 	EXP 	cbFb: autoDraw = True
+55.0495 	EXP 	textFb: autoDraw = True
+59.3964 	DATA 	Keypress: return
+60.0461 	EXP 	cbFb: autoDraw = False
+60.0461 	EXP 	textFb: autoDraw = False
+60.0461 	EXP 	cbBuf: autoDraw = True
+60.2160 	EXP 	text_8: autoDraw = True
+60.8156 	EXP 	text_8: autoDraw = False
+61.0224 	EXP 	New trial (rep=1, index=1): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+61.1023 	EXP 	RatingScale sbChoice: reset()
+61.1219 	EXP 	cbBuf: autoDraw = False
+61.1219 	EXP 	text_8: autoDraw = False
+61.1219 	EXP 	text: text = 'This round you are playing with Paul!'
+61.1219 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+61.1219 	EXP 	text_6: text = 'How much do you want to invest?'
+61.1219 	EXP 	cB_8: autoDraw = True
+61.1219 	EXP 	text: autoDraw = True
+61.1219 	EXP 	imagesbRnd: autoDraw = True
+61.1219 	EXP 	sbChoice: autoDraw = True
+61.1219 	EXP 	text_6: autoDraw = True
+61.5504 	DATA 	Keypress: right
+61.7174 	DATA 	Keypress: right
+61.9739 	DATA 	Keypress: return
+61.9776 	DATA 	RatingScale sbChoice: (key response) rating=7
+61.9777 	DATA 	RatingScale sbChoice: rating RT=0.875
+61.9777 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.448), ('7', 0.618), ('7', 0.875)]
+62.0063 	EXP 	cB_8: autoDraw = False
+62.0063 	EXP 	text: autoDraw = False
+62.0063 	EXP 	imagesbRnd: autoDraw = False
+62.0063 	EXP 	sbChoice: autoDraw = False
+62.0063 	EXP 	text_6: autoDraw = False
+62.0063 	EXP 	text_7: text = 'waiting for other player'
+62.0063 	EXP 	cB_9: autoDraw = True
+62.0063 	EXP 	text_7: autoDraw = True
+64.0270 	EXP 	cB_9: autoDraw = False
+64.0270 	EXP 	text_7: autoDraw = False
+64.0270 	EXP 	cB_9: autoDraw = False
+64.0270 	EXP 	text_7: autoDraw = False
+64.0270 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 7 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+64.0270 	EXP 	cbFb: autoDraw = True
+64.0270 	EXP 	textFb: autoDraw = True
+69.0157 	EXP 	cbFb: autoDraw = False
+69.0157 	EXP 	textFb: autoDraw = False
+69.0157 	EXP 	cbBuf: autoDraw = True
+69.1871 	EXP 	text_8: autoDraw = True
+69.7870 	EXP 	text_8: autoDraw = False
+70.0086 	EXP 	New trial (rep=1, index=2): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)])
+70.0798 	EXP 	RatingScale sbChoice: reset()
+70.0991 	EXP 	cbBuf: autoDraw = False
+70.0991 	EXP 	text_8: autoDraw = False
+70.0991 	EXP 	text: text = 'This round you are playing with Lukas!'
+70.0991 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+70.0991 	EXP 	text_6: text = 'How much do you want to invest?'
+70.0991 	EXP 	cB_8: autoDraw = True
+70.0991 	EXP 	text: autoDraw = True
+70.0991 	EXP 	imagesbRnd: autoDraw = True
+70.0991 	EXP 	sbChoice: autoDraw = True
+70.0991 	EXP 	text_6: autoDraw = True
+70.6239 	DATA 	Keypress: right
+70.8286 	DATA 	Keypress: right
+70.9787 	DATA 	Keypress: right
+71.2061 	DATA 	Keypress: return
+71.2062 	DATA 	RatingScale sbChoice: (key response) rating=8
+71.2063 	DATA 	RatingScale sbChoice: rating RT=1.123
+71.2063 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.54), ('7', 0.745), ('8', 0.899), ('8', 1.123)]
+71.2366 	EXP 	cB_8: autoDraw = False
+71.2366 	EXP 	text: autoDraw = False
+71.2366 	EXP 	imagesbRnd: autoDraw = False
+71.2366 	EXP 	sbChoice: autoDraw = False
+71.2366 	EXP 	text_6: autoDraw = False
+71.2366 	EXP 	text_7: text = 'waiting for other player'
+71.2366 	EXP 	cB_9: autoDraw = True
+71.2366 	EXP 	text_7: autoDraw = True
+72.2622 	EXP 	cB_9: autoDraw = False
+72.2622 	EXP 	text_7: autoDraw = False
+72.2622 	EXP 	cB_9: autoDraw = False
+72.2622 	EXP 	text_7: autoDraw = False
+72.2622 	EXP 	textFb: text = 'Lukas has decided to return 100 percent of your investment. \n\nYour return is 8 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+72.2622 	EXP 	cbFb: autoDraw = True
+72.2622 	EXP 	textFb: autoDraw = True
+77.2568 	EXP 	cbFb: autoDraw = False
+77.2568 	EXP 	textFb: autoDraw = False
+77.2568 	EXP 	cbBuf: autoDraw = True
+77.4269 	EXP 	text_8: autoDraw = True
+78.0424 	EXP 	text_8: autoDraw = False
+78.2717 	EXP 	Imported sliders.xlsx as conditions, 6 conditions, 5 params
+78.2720 	EXP 	Created sequence: sequential, trialTypes=6, nReps=1, seed=None
+78.2724 	EXP 	New trial (rep=0, index=0): OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+78.3104 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Paul?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+78.3114 	EXP 	RatingScale rating: reset()
+78.3310 	EXP 	cbBuf: autoDraw = False
+78.3310 	EXP 	text_8: autoDraw = False
+78.3310 	EXP 	rating: flipVert = False
+78.3310 	EXP 	rating: autoLog = True
+78.3310 	EXP 	cB_11: autoDraw = True
+78.3310 	EXP 	rating: autoDraw = True
+79.0120 	DATA 	Keypress: right
+79.2348 	DATA 	Keypress: right
+79.5071 	DATA 	Keypress: return
+79.5093 	DATA 	RatingScale rating: (key response) rating=6
+79.5093 	DATA 	RatingScale rating: rating RT=1.197
+79.5094 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.702), (6, 0.925), (6, 1.197)]
+79.5252 	EXP 	New trial (rep=0, index=1): OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+79.5584 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+79.5592 	EXP 	RatingScale rating: reset()
+79.5767 	EXP 	cB_11: autoDraw = False
+79.5767 	EXP 	rating: autoDraw = False
+79.5767 	EXP 	rating: flipVert = False
+79.5767 	EXP 	rating: autoLog = True
+79.5767 	EXP 	cB_11: autoDraw = True
+79.5767 	EXP 	rating: autoDraw = True
+80.1708 	DATA 	Keypress: right
+80.3930 	DATA 	Keypress: right
+80.6339 	DATA 	Keypress: return
+80.6361 	DATA 	RatingScale rating: (key response) rating=6
+80.6361 	DATA 	RatingScale rating: rating RT=1.076
+80.6362 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.613), (6, 0.836), (6, 1.076)]
+80.6517 	EXP 	New trial (rep=0, index=2): OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+80.6828 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Lukas?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+80.6837 	EXP 	RatingScale rating: reset()
+80.7010 	EXP 	cB_11: autoDraw = False
+80.7010 	EXP 	rating: autoDraw = False
+80.7010 	EXP 	rating: flipVert = False
+80.7010 	EXP 	rating: autoLog = True
+80.7010 	EXP 	cB_11: autoDraw = True
+80.7010 	EXP 	rating: autoDraw = True
+81.1074 	DATA 	Keypress: right
+81.3126 	DATA 	Keypress: right
+81.4674 	DATA 	Keypress: right
+81.7229 	DATA 	Keypress: return
+81.7251 	DATA 	RatingScale rating: (key response) rating=7
+81.7252 	DATA 	RatingScale rating: rating RT=1.041
+81.7252 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.425), (6, 0.631), (7, 0.785), (7, 1.041)]
+81.7411 	EXP 	New trial (rep=0, index=3): OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+81.7748 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+81.7758 	EXP 	RatingScale rating: reset()
+81.7942 	EXP 	cB_11: autoDraw = False
+81.7942 	EXP 	rating: autoDraw = False
+81.7942 	EXP 	rating: flipVert = False
+81.7942 	EXP 	rating: autoLog = True
+81.7942 	EXP 	cB_11: autoDraw = True
+81.7942 	EXP 	rating: autoDraw = True
+82.3188 	DATA 	Keypress: right
+82.5081 	DATA 	Keypress: right
+82.7613 	DATA 	Keypress: return
+82.7637 	DATA 	RatingScale rating: (key response) rating=6
+82.7637 	DATA 	RatingScale rating: rating RT=0.987
+82.7638 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.544), (6, 0.732), (6, 0.987)]
+82.7795 	EXP 	New trial (rep=0, index=4): OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')])
+82.8074 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How do you feel?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+82.8082 	EXP 	RatingScale rating: reset()
+82.8292 	EXP 	cB_11: autoDraw = False
+82.8292 	EXP 	rating: autoDraw = False
+82.8292 	EXP 	rating: flipVert = False
+82.8292 	EXP 	rating: autoLog = True
+82.8292 	EXP 	cB_11: autoDraw = True
+82.8292 	EXP 	rating: autoDraw = True
+83.4580 	DATA 	Keypress: right
+83.6461 	DATA 	Keypress: right
+83.8525 	DATA 	Keypress: return
+83.8547 	DATA 	RatingScale rating: (key response) rating=6
+83.8548 	DATA 	RatingScale rating: rating RT=1.046
+83.8548 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.651), (6, 0.84), (6, 1.046)]
+83.8704 	EXP 	New trial (rep=0, index=5): OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])
+83.8985 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How activated are you right now?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+83.8993 	EXP 	RatingScale rating: reset()
+83.9201 	EXP 	cB_11: autoDraw = False
+83.9201 	EXP 	rating: autoDraw = False
+83.9201 	EXP 	rating: flipVert = False
+83.9201 	EXP 	rating: autoLog = True
+83.9201 	EXP 	cB_11: autoDraw = True
+83.9201 	EXP 	rating: autoDraw = True
+84.3627 	DATA 	Keypress: right
+85.2507 	DATA 	Keypress: return
+85.2529 	DATA 	RatingScale rating: (key response) rating=5
+85.2529 	DATA 	RatingScale rating: rating RT=1.353
+85.2530 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.465), (5, 1.353)]
+85.2686 	EXP 	Created sequence: random, trialTypes=1, nReps=4, seed=None
+85.2688 	EXP 	New trial (rep=0, index=0): None
+85.2843 	EXP 	cB_11: autoDraw = False
+85.2843 	EXP 	rating: autoDraw = False
+85.2843 	EXP 	text_7: text = 'waiting for other player'
+85.2843 	EXP 	cB_9: autoDraw = True
+85.2843 	EXP 	text_7: autoDraw = True
+89.2725 	EXP 	New trial (rep=1, index=0): None
+89.2884 	EXP 	cB_9: autoDraw = False
+89.2884 	EXP 	text_7: autoDraw = False
+89.2884 	EXP 	cB_9: autoDraw = False
+89.2884 	EXP 	text_7: autoDraw = False
+89.2884 	EXP 	text_7: text = 'waiting for other player'
+89.2884 	EXP 	cB_9: autoDraw = True
+89.2884 	EXP 	text_7: autoDraw = True
+90.2816 	EXP 	New trial (rep=2, index=0): None
+90.2977 	EXP 	cB_9: autoDraw = False
+90.2977 	EXP 	text_7: autoDraw = False
+90.2977 	EXP 	cB_9: autoDraw = False
+90.2977 	EXP 	text_7: autoDraw = False
+90.2977 	EXP 	text_7: text = 'waiting for other player'
+90.2977 	EXP 	cB_9: autoDraw = True
+90.2977 	EXP 	text_7: autoDraw = True
+91.2905 	EXP 	New trial (rep=3, index=0): None
+91.3065 	EXP 	cB_9: autoDraw = False
+91.3065 	EXP 	text_7: autoDraw = False
+91.3065 	EXP 	cB_9: autoDraw = False
+91.3065 	EXP 	text_7: autoDraw = False
+91.3065 	EXP 	text_7: text = 'waiting for other player'
+91.3065 	EXP 	cB_9: autoDraw = True
+91.3065 	EXP 	text_7: autoDraw = True
+95.3067 	EXP 	cB_9: autoDraw = False
+95.3067 	EXP 	text_7: autoDraw = False
+95.3067 	EXP 	cB_9: autoDraw = False
+95.3067 	EXP 	text_7: autoDraw = False
+95.3067 	EXP 	cbBuf: autoDraw = True
+95.4792 	EXP 	text_8: autoDraw = True
+96.0784 	EXP 	text_8: autoDraw = False
+96.2992 	EXP 	Created sequence: random, trialTypes=1, nReps=1, seed=None
+96.2995 	EXP 	New trial (rep=0, index=0): None
+96.3189 	EXP 	Imported contitions.xlsx as conditions, 20 conditions, 6 params
+96.3192 	EXP 	Created sequence: random, trialTypes=20, nReps=1, seed=None
+96.3196 	EXP 	New trial (rep=0, index=0): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+96.3951 	EXP 	RatingScale sbChoice: reset()
+96.4174 	EXP 	cbBuf: autoDraw = False
+96.4174 	EXP 	text_8: autoDraw = False
+96.4174 	EXP 	text: text = 'This round you are playing with Paul!'
+96.4174 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+96.4174 	EXP 	text_6: text = 'How much do you want to invest?'
+96.4174 	EXP 	cB_8: autoDraw = True
+96.4174 	EXP 	text: autoDraw = True
+96.4174 	EXP 	imagesbRnd: autoDraw = True
+96.4174 	EXP 	sbChoice: autoDraw = True
+96.4174 	EXP 	text_6: autoDraw = True
+99.5178 	DATA 	Keypress: left
+99.7270 	DATA 	Keypress: left
+101.3445 	DATA 	Keypress: right
+101.5486 	DATA 	Keypress: right
+101.7864 	DATA 	Keypress: right
+101.9561 	DATA 	Keypress: return
+101.9599 	DATA 	RatingScale sbChoice: (key response) rating=6
+101.9600 	DATA 	RatingScale sbChoice: rating RT=5.564
+101.9600 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 3.125), ('3', 3.331), ('4', 4.949), ('5', 5.157), ('6', 5.395), ('6', 5.564)]
+101.9900 	EXP 	cB_8: autoDraw = False
+101.9900 	EXP 	text: autoDraw = False
+101.9900 	EXP 	imagesbRnd: autoDraw = False
+101.9900 	EXP 	sbChoice: autoDraw = False
+101.9900 	EXP 	text_6: autoDraw = False
+101.9900 	EXP 	text_7: text = 'waiting for other player'
+101.9900 	EXP 	cB_9: autoDraw = True
+101.9900 	EXP 	text_7: autoDraw = True
+103.0198 	EXP 	cB_9: autoDraw = False
+103.0198 	EXP 	text_7: autoDraw = False
+103.0198 	EXP 	cB_9: autoDraw = False
+103.0198 	EXP 	text_7: autoDraw = False
+103.0198 	EXP 	textFb: text = 'Paul has decided to return 200 percent of your investment. \n\nYour return is 12 credits!\n\nYour total gain for this round is 16 credits!\n\n'
+103.0198 	EXP 	cbFb: autoDraw = True
+103.0198 	EXP 	textFb: autoDraw = True
+108.0060 	EXP 	cbFb: autoDraw = False
+108.0060 	EXP 	textFb: autoDraw = False
+108.0060 	EXP 	cbBuf: autoDraw = True
+108.1766 	EXP 	text_8: autoDraw = True
+108.7762 	EXP 	text_8: autoDraw = False
+108.9996 	EXP 	New trial (rep=0, index=1): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+109.0676 	EXP 	RatingScale sbChoice: reset()
+109.0844 	EXP 	cbBuf: autoDraw = False
+109.0844 	EXP 	text_8: autoDraw = False
+109.0844 	EXP 	text: text = 'This round you are playing with Paul!'
+109.0844 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+109.0844 	EXP 	text_6: text = 'How much do you want to invest?'
+109.0844 	EXP 	cB_8: autoDraw = True
+109.0844 	EXP 	text: autoDraw = True
+109.0844 	EXP 	imagesbRnd: autoDraw = True
+109.0844 	EXP 	sbChoice: autoDraw = True
+109.0844 	EXP 	text_6: autoDraw = True
+109.4088 	DATA 	Keypress: right
+109.6282 	DATA 	Keypress: right
+109.8319 	DATA 	Keypress: return
+109.8355 	DATA 	RatingScale sbChoice: (key response) rating=6
+109.8355 	DATA 	RatingScale sbChoice: rating RT=0.767
+109.8355 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.563), ('6', 0.767)]
+109.8658 	EXP 	cB_8: autoDraw = False
+109.8658 	EXP 	text: autoDraw = False
+109.8658 	EXP 	imagesbRnd: autoDraw = False
+109.8658 	EXP 	sbChoice: autoDraw = False
+109.8658 	EXP 	text_6: autoDraw = False
+109.8658 	EXP 	text_7: text = 'waiting for other player'
+109.8658 	EXP 	cB_9: autoDraw = True
+109.8658 	EXP 	text_7: autoDraw = True
+111.8871 	EXP 	cB_9: autoDraw = False
+111.8871 	EXP 	text_7: autoDraw = False
+111.8871 	EXP 	cB_9: autoDraw = False
+111.8871 	EXP 	text_7: autoDraw = False
+111.8871 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 6 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+111.8871 	EXP 	cbFb: autoDraw = True
+111.8871 	EXP 	textFb: autoDraw = True
+116.8750 	EXP 	cbFb: autoDraw = False
+116.8750 	EXP 	textFb: autoDraw = False
+116.8750 	EXP 	cbBuf: autoDraw = True
+117.0456 	EXP 	text_8: autoDraw = True
+117.6460 	EXP 	text_8: autoDraw = False
+117.8535 	EXP 	New trial (rep=0, index=2): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+117.9080 	EXP 	RatingScale sbChoice: reset()
+117.9244 	EXP 	cbBuf: autoDraw = False
+117.9244 	EXP 	text_8: autoDraw = False
+117.9244 	EXP 	text: text = 'This round you are playing with Paul!'
+117.9244 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+117.9244 	EXP 	text_6: text = 'How much do you want to invest?'
+117.9244 	EXP 	cB_8: autoDraw = True
+117.9244 	EXP 	text: autoDraw = True
+117.9244 	EXP 	imagesbRnd: autoDraw = True
+117.9244 	EXP 	sbChoice: autoDraw = True
+117.9244 	EXP 	text_6: autoDraw = True
+117.9738 	DATA 	Keypress: right
+118.1939 	DATA 	Keypress: right
+118.3645 	DATA 	Keypress: right
+118.5180 	DATA 	Keypress: right
+118.8284 	DATA 	Keypress: return
+118.8445 	DATA 	RatingScale sbChoice: (key response) rating=7
+118.8445 	DATA 	RatingScale sbChoice: rating RT=0.936
+118.8446 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.459), ('7', 0.613), ('7', 0.936)]
+118.8749 	EXP 	cB_8: autoDraw = False
+118.8749 	EXP 	text: autoDraw = False
+118.8749 	EXP 	imagesbRnd: autoDraw = False
+118.8749 	EXP 	sbChoice: autoDraw = False
+118.8749 	EXP 	text_6: autoDraw = False
+118.8749 	EXP 	text_7: text = 'waiting for other player'
+118.8749 	EXP 	cB_9: autoDraw = True
+118.8749 	EXP 	text_7: autoDraw = True
+119.9037 	EXP 	cB_9: autoDraw = False
+119.9037 	EXP 	text_7: autoDraw = False
+119.9037 	EXP 	cB_9: autoDraw = False
+119.9037 	EXP 	text_7: autoDraw = False
+119.9037 	EXP 	textFb: text = 'Paul has decided to return 200 percent of your investment. \n\nYour return is 14 credits!\n\nYour total gain for this round is 17 credits!\n\n'
+119.9037 	EXP 	cbFb: autoDraw = True
+119.9037 	EXP 	textFb: autoDraw = True
+124.6106 	DATA 	Keypress: right
+124.9001 	EXP 	cbFb: autoDraw = False
+124.9001 	EXP 	textFb: autoDraw = False
+124.9001 	EXP 	cbBuf: autoDraw = True
+125.0718 	EXP 	text_8: autoDraw = True
+125.4814 	DATA 	Keypress: right
+125.6715 	EXP 	text_8: autoDraw = False
+125.8744 	EXP 	New trial (rep=0, index=3): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+125.9318 	EXP 	RatingScale sbChoice: reset()
+125.9484 	EXP 	cbBuf: autoDraw = False
+125.9484 	EXP 	text_8: autoDraw = False
+125.9484 	EXP 	text: text = 'This round you are playing with Paul!'
+125.9484 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+125.9484 	EXP 	text_6: text = 'How much do you want to invest?'
+125.9484 	EXP 	cB_8: autoDraw = True
+125.9484 	EXP 	text: autoDraw = True
+125.9484 	EXP 	imagesbRnd: autoDraw = True
+125.9484 	EXP 	sbChoice: autoDraw = True
+125.9484 	EXP 	text_6: autoDraw = True
+126.0276 	DATA 	Keypress: right
+126.2344 	DATA 	Keypress: right
+126.4081 	DATA 	Keypress: right
+126.7283 	DATA 	Keypress: return
+126.7320 	DATA 	RatingScale sbChoice: (key response) rating=6
+126.7320 	DATA 	RatingScale sbChoice: rating RT=0.800
+126.7320 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.476), ('6', 0.8)]
+126.7618 	EXP 	cB_8: autoDraw = False
+126.7618 	EXP 	text: autoDraw = False
+126.7618 	EXP 	imagesbRnd: autoDraw = False
+126.7618 	EXP 	sbChoice: autoDraw = False
+126.7618 	EXP 	text_6: autoDraw = False
+126.7618 	EXP 	text_7: text = 'waiting for other player'
+126.7618 	EXP 	cB_9: autoDraw = True
+126.7618 	EXP 	text_7: autoDraw = True
+128.7827 	EXP 	cB_9: autoDraw = False
+128.7827 	EXP 	text_7: autoDraw = False
+128.7827 	EXP 	cB_9: autoDraw = False
+128.7827 	EXP 	text_7: autoDraw = False
+128.7827 	EXP 	textFb: text = 'Paul has decided to return 200 percent of your investment. \n\nYour return is 12 credits!\n\nYour total gain for this round is 16 credits!\n\n'
+128.7827 	EXP 	cbFb: autoDraw = True
+128.7827 	EXP 	textFb: autoDraw = True
+133.7699 	EXP 	cbFb: autoDraw = False
+133.7699 	EXP 	textFb: autoDraw = False
+133.7699 	EXP 	cbBuf: autoDraw = True
+133.9404 	EXP 	text_8: autoDraw = True
+134.5410 	EXP 	text_8: autoDraw = False
+134.7652 	EXP 	New trial (rep=0, index=4): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+134.8300 	EXP 	RatingScale sbChoice: reset()
+134.8496 	EXP 	cbBuf: autoDraw = False
+134.8496 	EXP 	text_8: autoDraw = False
+134.8496 	EXP 	text: text = 'This round you are playing with Lukas!'
+134.8496 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+134.8496 	EXP 	text_6: text = 'How much do you want to invest?'
+134.8496 	EXP 	cB_8: autoDraw = True
+134.8496 	EXP 	text: autoDraw = True
+134.8496 	EXP 	imagesbRnd: autoDraw = True
+134.8496 	EXP 	sbChoice: autoDraw = True
+134.8496 	EXP 	text_6: autoDraw = True
+135.6183 	DATA 	Keypress: right
+135.8030 	DATA 	Keypress: right
+136.0437 	DATA 	Keypress: return
+136.0475 	DATA 	RatingScale sbChoice: (key response) rating=7
+136.0476 	DATA 	RatingScale sbChoice: rating RT=1.214
+136.0476 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.788), ('7', 0.973), ('7', 1.214)]
+136.0775 	EXP 	cB_8: autoDraw = False
+136.0775 	EXP 	text: autoDraw = False
+136.0775 	EXP 	imagesbRnd: autoDraw = False
+136.0775 	EXP 	sbChoice: autoDraw = False
+136.0775 	EXP 	text_6: autoDraw = False
+136.0775 	EXP 	text_7: text = 'waiting for other player'
+136.0775 	EXP 	cB_9: autoDraw = True
+136.0775 	EXP 	text_7: autoDraw = True
+138.0961 	EXP 	cB_9: autoDraw = False
+138.0961 	EXP 	text_7: autoDraw = False
+138.0961 	EXP 	cB_9: autoDraw = False
+138.0961 	EXP 	text_7: autoDraw = False
+138.0961 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 3 credits!\n\n'
+138.0961 	EXP 	cbFb: autoDraw = True
+138.0961 	EXP 	textFb: autoDraw = True
+143.0955 	EXP 	cbFb: autoDraw = False
+143.0955 	EXP 	textFb: autoDraw = False
+143.0955 	EXP 	cbBuf: autoDraw = True
+143.2674 	EXP 	text_8: autoDraw = True
+143.8818 	EXP 	text_8: autoDraw = False
+144.0687 	EXP 	New trial (rep=0, index=5): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+144.1432 	EXP 	RatingScale sbChoice: reset()
+144.1699 	EXP 	cbBuf: autoDraw = False
+144.1699 	EXP 	text_8: autoDraw = False
+144.1699 	EXP 	text: text = 'This round you are playing with Paul!'
+144.1699 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+144.1699 	EXP 	text_6: text = 'How much do you want to invest?'
+144.1699 	EXP 	cB_8: autoDraw = True
+144.1699 	EXP 	text: autoDraw = True
+144.1699 	EXP 	imagesbRnd: autoDraw = True
+144.1699 	EXP 	sbChoice: autoDraw = True
+144.1699 	EXP 	text_6: autoDraw = True
+144.5312 	DATA 	Keypress: right
+144.7670 	DATA 	Keypress: right
+145.0403 	DATA 	Keypress: return
+145.0441 	DATA 	RatingScale sbChoice: (key response) rating=7
+145.0442 	DATA 	RatingScale sbChoice: rating RT=0.900
+145.0442 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.404), ('7', 0.627), ('7', 0.9)]
+145.0738 	EXP 	cB_8: autoDraw = False
+145.0738 	EXP 	text: autoDraw = False
+145.0738 	EXP 	imagesbRnd: autoDraw = False
+145.0738 	EXP 	sbChoice: autoDraw = False
+145.0738 	EXP 	text_6: autoDraw = False
+145.0738 	EXP 	text_7: text = 'waiting for other player'
+145.0738 	EXP 	cB_9: autoDraw = True
+145.0738 	EXP 	text_7: autoDraw = True
+146.1074 	EXP 	cB_9: autoDraw = False
+146.1074 	EXP 	text_7: autoDraw = False
+146.1074 	EXP 	cB_9: autoDraw = False
+146.1074 	EXP 	text_7: autoDraw = False
+146.1074 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 7 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+146.1074 	EXP 	cbFb: autoDraw = True
+146.1074 	EXP 	textFb: autoDraw = True
+151.1018 	EXP 	cbFb: autoDraw = False
+151.1018 	EXP 	textFb: autoDraw = False
+151.1018 	EXP 	cbBuf: autoDraw = True
+151.2720 	EXP 	text_8: autoDraw = True
+151.8709 	EXP 	text_8: autoDraw = False
+152.0764 	EXP 	New trial (rep=0, index=6): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+152.1334 	EXP 	RatingScale sbChoice: reset()
+152.1499 	EXP 	cbBuf: autoDraw = False
+152.1499 	EXP 	text_8: autoDraw = False
+152.1499 	EXP 	text: text = 'This round you are playing with Paul!'
+152.1499 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+152.1499 	EXP 	text_6: text = 'How much do you want to invest?'
+152.1499 	EXP 	cB_8: autoDraw = True
+152.1499 	EXP 	text: autoDraw = True
+152.1499 	EXP 	imagesbRnd: autoDraw = True
+152.1499 	EXP 	sbChoice: autoDraw = True
+152.1499 	EXP 	text_6: autoDraw = True
+152.8258 	DATA 	Keypress: right
+153.1662 	DATA 	Keypress: return
+153.1698 	DATA 	RatingScale sbChoice: (key response) rating=6
+153.1698 	DATA 	RatingScale sbChoice: rating RT=1.036
+153.1698 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.695), ('6', 1.036)]
+153.2007 	EXP 	cB_8: autoDraw = False
+153.2007 	EXP 	text: autoDraw = False
+153.2007 	EXP 	imagesbRnd: autoDraw = False
+153.2007 	EXP 	sbChoice: autoDraw = False
+153.2007 	EXP 	text_6: autoDraw = False
+153.2007 	EXP 	text_7: text = 'waiting for other player'
+153.2007 	EXP 	cB_9: autoDraw = True
+153.2007 	EXP 	text_7: autoDraw = True
+155.2204 	EXP 	cB_9: autoDraw = False
+155.2204 	EXP 	text_7: autoDraw = False
+155.2204 	EXP 	cB_9: autoDraw = False
+155.2204 	EXP 	text_7: autoDraw = False
+155.2204 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 6 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+155.2204 	EXP 	cbFb: autoDraw = True
+155.2204 	EXP 	textFb: autoDraw = True
+160.2036 	EXP 	cbFb: autoDraw = False
+160.2036 	EXP 	textFb: autoDraw = False
+160.2036 	EXP 	cbBuf: autoDraw = True
+160.3746 	EXP 	text_8: autoDraw = True
+160.9902 	EXP 	text_8: autoDraw = False
+161.1962 	EXP 	New trial (rep=0, index=7): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+161.2377 	EXP 	RatingScale sbChoice: reset()
+161.2636 	EXP 	cbBuf: autoDraw = False
+161.2636 	EXP 	text_8: autoDraw = False
+161.2636 	EXP 	text: text = 'This round you are playing with Lukas!'
+161.2636 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+161.2636 	EXP 	text_6: text = 'How much do you want to invest?'
+161.2636 	EXP 	cB_8: autoDraw = True
+161.2636 	EXP 	text: autoDraw = True
+161.2636 	EXP 	imagesbRnd: autoDraw = True
+161.2636 	EXP 	sbChoice: autoDraw = True
+161.2636 	EXP 	text_6: autoDraw = True
+161.8084 	DATA 	Keypress: right
+162.0481 	DATA 	Keypress: right
+162.2006 	DATA 	Keypress: right
+162.4057 	DATA 	Keypress: return
+162.4102 	DATA 	RatingScale sbChoice: (key response) rating=8
+162.4102 	DATA 	RatingScale sbChoice: rating RT=1.169
+162.4103 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.57), ('7', 0.81), ('8', 0.962), ('8', 1.168)]
+162.4390 	EXP 	cB_8: autoDraw = False
+162.4390 	EXP 	text: autoDraw = False
+162.4390 	EXP 	imagesbRnd: autoDraw = False
+162.4390 	EXP 	sbChoice: autoDraw = False
+162.4390 	EXP 	text_6: autoDraw = False
+162.4390 	EXP 	text_7: text = 'waiting for other player'
+162.4390 	EXP 	cB_9: autoDraw = True
+162.4390 	EXP 	text_7: autoDraw = True
+167.4718 	EXP 	cB_9: autoDraw = False
+167.4718 	EXP 	text_7: autoDraw = False
+167.4718 	EXP 	cB_9: autoDraw = False
+167.4718 	EXP 	text_7: autoDraw = False
+167.4718 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 2 credits!\n\n'
+167.4718 	EXP 	cbFb: autoDraw = True
+167.4718 	EXP 	textFb: autoDraw = True
+172.4690 	EXP 	cbFb: autoDraw = False
+172.4690 	EXP 	textFb: autoDraw = False
+172.4690 	EXP 	cbBuf: autoDraw = True
+172.6422 	EXP 	text_8: autoDraw = True
+173.2439 	EXP 	text_8: autoDraw = False
+173.4500 	EXP 	New trial (rep=0, index=8): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+173.5256 	EXP 	RatingScale sbChoice: reset()
+173.5512 	EXP 	cbBuf: autoDraw = False
+173.5512 	EXP 	text_8: autoDraw = False
+173.5512 	EXP 	text: text = 'This round you are playing with Paul!'
+173.5512 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+173.5512 	EXP 	text_6: text = 'How much do you want to invest?'
+173.5512 	EXP 	cB_8: autoDraw = True
+173.5512 	EXP 	text: autoDraw = True
+173.5512 	EXP 	imagesbRnd: autoDraw = True
+173.5512 	EXP 	sbChoice: autoDraw = True
+173.5512 	EXP 	text_6: autoDraw = True
+174.3522 	DATA 	Keypress: right
+174.5286 	DATA 	Keypress: right
+174.7315 	DATA 	Keypress: right
+174.8982 	DATA 	Keypress: right
+175.0525 	DATA 	Keypress: right
+175.3958 	DATA 	Keypress: return
+175.3996 	DATA 	RatingScale sbChoice: (key response) rating=10
+175.3996 	DATA 	RatingScale sbChoice: rating RT=1.873
+175.3996 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('6', 0.829), ('7', 1.003), ('8', 1.205), ('9', 1.376), ('10', 1.53), ('10', 1.873)]
+175.4297 	EXP 	cB_8: autoDraw = False
+175.4297 	EXP 	text: autoDraw = False
+175.4297 	EXP 	imagesbRnd: autoDraw = False
+175.4297 	EXP 	sbChoice: autoDraw = False
+175.4297 	EXP 	text_6: autoDraw = False
+175.4297 	EXP 	text_7: text = 'waiting for other player'
+175.4297 	EXP 	cB_9: autoDraw = True
+175.4297 	EXP 	text_7: autoDraw = True
+179.4574 	EXP 	cB_9: autoDraw = False
+179.4574 	EXP 	text_7: autoDraw = False
+179.4574 	EXP 	cB_9: autoDraw = False
+179.4574 	EXP 	text_7: autoDraw = False
+179.4574 	EXP 	textFb: text = 'Paul has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 0 credits!\n\n'
+179.4574 	EXP 	cbFb: autoDraw = True
+179.4574 	EXP 	textFb: autoDraw = True
+184.4564 	EXP 	cbFb: autoDraw = False
+184.4564 	EXP 	textFb: autoDraw = False
+184.4564 	EXP 	cbBuf: autoDraw = True
+184.6282 	EXP 	text_8: autoDraw = True
+185.2271 	EXP 	text_8: autoDraw = False
+185.4334 	EXP 	New trial (rep=0, index=9): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+185.4721 	EXP 	RatingScale sbChoice: reset()
+185.5003 	EXP 	cbBuf: autoDraw = False
+185.5003 	EXP 	text_8: autoDraw = False
+185.5003 	EXP 	text: text = 'This round you are playing with Lukas!'
+185.5003 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+185.5003 	EXP 	text_6: text = 'How much do you want to invest?'
+185.5003 	EXP 	cB_8: autoDraw = True
+185.5003 	EXP 	text: autoDraw = True
+185.5003 	EXP 	imagesbRnd: autoDraw = True
+185.5003 	EXP 	sbChoice: autoDraw = True
+185.5003 	EXP 	text_6: autoDraw = True
+186.8457 	DATA 	Keypress: left
+187.0338 	DATA 	Keypress: left
+187.1720 	DATA 	Keypress: left
+187.3273 	DATA 	Keypress: left
+188.0577 	DATA 	Keypress: return
+188.0613 	DATA 	RatingScale sbChoice: (key response) rating=1
+188.0614 	DATA 	RatingScale sbChoice: rating RT=2.586
+188.0614 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 1.373), ('3', 1.562), ('2', 1.7), ('1', 1.852), ('1', 2.586)]
+188.0916 	EXP 	cB_8: autoDraw = False
+188.0916 	EXP 	text: autoDraw = False
+188.0916 	EXP 	imagesbRnd: autoDraw = False
+188.0916 	EXP 	sbChoice: autoDraw = False
+188.0916 	EXP 	text_6: autoDraw = False
+188.0916 	EXP 	text_7: text = 'waiting for other player'
+188.0916 	EXP 	cB_9: autoDraw = True
+188.0916 	EXP 	text_7: autoDraw = True
+192.1136 	EXP 	cB_9: autoDraw = False
+192.1136 	EXP 	text_7: autoDraw = False
+192.1136 	EXP 	cB_9: autoDraw = False
+192.1136 	EXP 	text_7: autoDraw = False
+192.1136 	EXP 	textFb: text = 'Lukas has decided to return 200 percent of your investment. \n\nYour return is 2 credits!\n\nYour total gain for this round is 11 credits!\n\n'
+192.1136 	EXP 	cbFb: autoDraw = True
+192.1136 	EXP 	textFb: autoDraw = True
+197.1022 	EXP 	cbFb: autoDraw = False
+197.1022 	EXP 	textFb: autoDraw = False
+197.1022 	EXP 	cbBuf: autoDraw = True
+197.2716 	EXP 	text_8: autoDraw = True
+197.8866 	EXP 	text_8: autoDraw = False
+198.0932 	EXP 	New trial (rep=0, index=10): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+198.1687 	EXP 	RatingScale sbChoice: reset()
+198.1942 	EXP 	cbBuf: autoDraw = False
+198.1942 	EXP 	text_8: autoDraw = False
+198.1942 	EXP 	text: text = 'This round you are playing with Paul!'
+198.1942 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+198.1942 	EXP 	text_6: text = 'How much do you want to invest?'
+198.1942 	EXP 	cB_8: autoDraw = True
+198.1942 	EXP 	text: autoDraw = True
+198.1942 	EXP 	imagesbRnd: autoDraw = True
+198.1942 	EXP 	sbChoice: autoDraw = True
+198.1942 	EXP 	text_6: autoDraw = True
+199.7269 	DATA 	Keypress: left
+200.3086 	DATA 	Keypress: return
+200.3125 	DATA 	RatingScale sbChoice: (key response) rating=4
+200.3126 	DATA 	RatingScale sbChoice: rating RT=2.143
+200.3126 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 1.561), ('4', 2.143)]
+200.3420 	EXP 	cB_8: autoDraw = False
+200.3420 	EXP 	text: autoDraw = False
+200.3420 	EXP 	imagesbRnd: autoDraw = False
+200.3420 	EXP 	sbChoice: autoDraw = False
+200.3420 	EXP 	text_6: autoDraw = False
+200.3420 	EXP 	text_7: text = 'waiting for other player'
+200.3420 	EXP 	cB_9: autoDraw = True
+200.3420 	EXP 	text_7: autoDraw = True
+202.3590 	EXP 	cB_9: autoDraw = False
+202.3590 	EXP 	text_7: autoDraw = False
+202.3590 	EXP 	cB_9: autoDraw = False
+202.3590 	EXP 	text_7: autoDraw = False
+202.3590 	EXP 	textFb: text = 'Paul has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 6 credits!\n\n'
+202.3590 	EXP 	cbFb: autoDraw = True
+202.3590 	EXP 	textFb: autoDraw = True
+207.3454 	EXP 	cbFb: autoDraw = False
+207.3454 	EXP 	textFb: autoDraw = False
+207.3454 	EXP 	cbBuf: autoDraw = True
+207.5184 	EXP 	text_8: autoDraw = True
+208.1334 	EXP 	text_8: autoDraw = False
+208.3387 	EXP 	New trial (rep=0, index=11): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+208.3771 	EXP 	RatingScale sbChoice: reset()
+208.4060 	EXP 	cbBuf: autoDraw = False
+208.4060 	EXP 	text_8: autoDraw = False
+208.4060 	EXP 	text: text = 'This round you are playing with Lukas!'
+208.4060 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+208.4060 	EXP 	text_6: text = 'How much do you want to invest?'
+208.4060 	EXP 	cB_8: autoDraw = True
+208.4060 	EXP 	text: autoDraw = True
+208.4060 	EXP 	imagesbRnd: autoDraw = True
+208.4060 	EXP 	sbChoice: autoDraw = True
+208.4060 	EXP 	text_6: autoDraw = True
+210.2114 	DATA 	Keypress: return
+210.2147 	DATA 	RatingScale sbChoice: (key response) rating=5
+210.2148 	DATA 	RatingScale sbChoice: rating RT=1.833
+210.2148 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('5', 1.833)]
+210.2465 	EXP 	cB_8: autoDraw = False
+210.2465 	EXP 	text: autoDraw = False
+210.2465 	EXP 	imagesbRnd: autoDraw = False
+210.2465 	EXP 	sbChoice: autoDraw = False
+210.2465 	EXP 	text_6: autoDraw = False
+210.2465 	EXP 	text_7: text = 'waiting for other player'
+210.2465 	EXP 	cB_9: autoDraw = True
+210.2465 	EXP 	text_7: autoDraw = True
+215.2671 	EXP 	cB_9: autoDraw = False
+215.2671 	EXP 	text_7: autoDraw = False
+215.2671 	EXP 	cB_9: autoDraw = False
+215.2671 	EXP 	text_7: autoDraw = False
+215.2671 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 5 credits!\n\n'
+215.2671 	EXP 	cbFb: autoDraw = True
+215.2671 	EXP 	textFb: autoDraw = True
+220.2568 	EXP 	cbFb: autoDraw = False
+220.2568 	EXP 	textFb: autoDraw = False
+220.2568 	EXP 	cbBuf: autoDraw = True
+220.4291 	EXP 	text_8: autoDraw = True
+221.0289 	EXP 	text_8: autoDraw = False
+221.2505 	EXP 	New trial (rep=0, index=12): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+221.2719 	EXP 	RatingScale sbChoice: reset()
+221.2868 	EXP 	cbBuf: autoDraw = False
+221.2868 	EXP 	text_8: autoDraw = False
+221.2868 	EXP 	text: text = 'This round you are playing with Lukas!'
+221.2868 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+221.2868 	EXP 	text_6: text = 'How much do you want to invest?'
+221.2868 	EXP 	cB_8: autoDraw = True
+221.2868 	EXP 	text: autoDraw = True
+221.2868 	EXP 	imagesbRnd: autoDraw = True
+221.2868 	EXP 	sbChoice: autoDraw = True
+221.2868 	EXP 	text_6: autoDraw = True
+222.6958 	DATA 	Keypress: left
+222.9052 	DATA 	Keypress: left
+223.0760 	DATA 	Keypress: left
+223.2437 	DATA 	Keypress: left
+223.7191 	DATA 	Keypress: return
+223.7230 	DATA 	RatingScale sbChoice: (key response) rating=1
+223.7231 	DATA 	RatingScale sbChoice: rating RT=2.451
+223.7231 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 1.427), ('3', 1.649), ('2', 1.804), ('1', 1.975), ('1', 2.451)]
+223.7527 	EXP 	cB_8: autoDraw = False
+223.7527 	EXP 	text: autoDraw = False
+223.7527 	EXP 	imagesbRnd: autoDraw = False
+223.7527 	EXP 	sbChoice: autoDraw = False
+223.7527 	EXP 	text_6: autoDraw = False
+223.7527 	EXP 	text_7: text = 'waiting for other player'
+223.7527 	EXP 	cB_9: autoDraw = True
+223.7527 	EXP 	text_7: autoDraw = True
+225.7729 	EXP 	cB_9: autoDraw = False
+225.7729 	EXP 	text_7: autoDraw = False
+225.7729 	EXP 	cB_9: autoDraw = False
+225.7729 	EXP 	text_7: autoDraw = False
+225.7729 	EXP 	textFb: text = 'Lukas has decided to return 100 percent of your investment. \n\nYour return is 1 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+225.7729 	EXP 	cbFb: autoDraw = True
+225.7729 	EXP 	textFb: autoDraw = True
+230.7709 	EXP 	cbFb: autoDraw = False
+230.7709 	EXP 	textFb: autoDraw = False
+230.7709 	EXP 	cbBuf: autoDraw = True
+230.9429 	EXP 	text_8: autoDraw = True
+231.5436 	EXP 	text_8: autoDraw = False
+231.7493 	EXP 	New trial (rep=0, index=13): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)])
+231.8324 	EXP 	RatingScale sbChoice: reset()
+231.8509 	EXP 	cbBuf: autoDraw = False
+231.8509 	EXP 	text_8: autoDraw = False
+231.8509 	EXP 	text: text = 'This round you are playing with Paul!'
+231.8509 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+231.8509 	EXP 	text_6: text = 'How much do you want to invest?'
+231.8509 	EXP 	cB_8: autoDraw = True
+231.8509 	EXP 	text: autoDraw = True
+231.8509 	EXP 	imagesbRnd: autoDraw = True
+231.8509 	EXP 	sbChoice: autoDraw = True
+231.8509 	EXP 	text_6: autoDraw = True
+233.5870 	DATA 	Keypress: return
+233.5903 	DATA 	RatingScale sbChoice: (key response) rating=5
+233.5903 	DATA 	RatingScale sbChoice: rating RT=1.757
+233.5904 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('5', 1.757)]
+233.6205 	EXP 	cB_8: autoDraw = False
+233.6205 	EXP 	text: autoDraw = False
+233.6205 	EXP 	imagesbRnd: autoDraw = False
+233.6205 	EXP 	sbChoice: autoDraw = False
+233.6205 	EXP 	text_6: autoDraw = False
+233.6205 	EXP 	text_7: text = 'waiting for other player'
+233.6205 	EXP 	cB_9: autoDraw = True
+233.6205 	EXP 	text_7: autoDraw = True
+237.6515 	EXP 	cB_9: autoDraw = False
+237.6515 	EXP 	text_7: autoDraw = False
+237.6515 	EXP 	cB_9: autoDraw = False
+237.6515 	EXP 	text_7: autoDraw = False
+237.6515 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 5 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+237.6515 	EXP 	cbFb: autoDraw = True
+237.6515 	EXP 	textFb: autoDraw = True
+241.6341 	DATA 	Keypress: return
+242.6396 	EXP 	cbFb: autoDraw = False
+242.6396 	EXP 	textFb: autoDraw = False
+242.6396 	EXP 	cbBuf: autoDraw = True
+242.8109 	EXP 	text_8: autoDraw = True
+243.4106 	EXP 	text_8: autoDraw = False
+243.6329 	EXP 	New trial (rep=0, index=14): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+243.6662 	EXP 	RatingScale sbChoice: reset()
+243.6852 	EXP 	cbBuf: autoDraw = False
+243.6852 	EXP 	text_8: autoDraw = False
+243.6852 	EXP 	text: text = 'This round you are playing with Lukas!'
+243.6852 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+243.6852 	EXP 	text_6: text = 'How much do you want to invest?'
+243.6852 	EXP 	cB_8: autoDraw = True
+243.6852 	EXP 	text: autoDraw = True
+243.6852 	EXP 	imagesbRnd: autoDraw = True
+243.6852 	EXP 	sbChoice: autoDraw = True
+243.6852 	EXP 	text_6: autoDraw = True
+245.7098 	DATA 	Keypress: return
+245.7132 	DATA 	RatingScale sbChoice: (key response) rating=5
+245.7132 	DATA 	RatingScale sbChoice: rating RT=2.043
+245.7133 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('5', 2.043)]
+245.7440 	EXP 	cB_8: autoDraw = False
+245.7440 	EXP 	text: autoDraw = False
+245.7440 	EXP 	imagesbRnd: autoDraw = False
+245.7440 	EXP 	sbChoice: autoDraw = False
+245.7440 	EXP 	text_6: autoDraw = False
+245.7440 	EXP 	text_7: text = 'waiting for other player'
+245.7440 	EXP 	cB_9: autoDraw = True
+245.7440 	EXP 	text_7: autoDraw = True
+249.7673 	EXP 	cB_9: autoDraw = False
+249.7673 	EXP 	text_7: autoDraw = False
+249.7673 	EXP 	cB_9: autoDraw = False
+249.7673 	EXP 	text_7: autoDraw = False
+249.7673 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 5 credits!\n\n'
+249.7673 	EXP 	cbFb: autoDraw = True
+249.7673 	EXP 	textFb: autoDraw = True
+254.7551 	EXP 	cbFb: autoDraw = False
+254.7551 	EXP 	textFb: autoDraw = False
+254.7551 	EXP 	cbBuf: autoDraw = True
+254.9258 	EXP 	text_8: autoDraw = True
+255.5411 	EXP 	text_8: autoDraw = False
+255.7467 	EXP 	New trial (rep=0, index=15): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+255.7618 	EXP 	RatingScale sbChoice: reset()
+255.7799 	EXP 	cbBuf: autoDraw = False
+255.7799 	EXP 	text_8: autoDraw = False
+255.7799 	EXP 	text: text = 'This round you are playing with Lukas!'
+255.7799 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+255.7799 	EXP 	text_6: text = 'How much do you want to invest?'
+255.7799 	EXP 	cB_8: autoDraw = True
+255.7799 	EXP 	text: autoDraw = True
+255.7799 	EXP 	imagesbRnd: autoDraw = True
+255.7799 	EXP 	sbChoice: autoDraw = True
+255.7799 	EXP 	text_6: autoDraw = True
+256.9527 	DATA 	Keypress: left
+258.3238 	DATA 	Keypress: left
+258.4924 	DATA 	Keypress: left
+258.6451 	DATA 	Keypress: left
+258.8007 	DATA 	Keypress: left
+258.9521 	DATA 	Keypress: left
+259.2074 	DATA 	Keypress: return
+259.2111 	DATA 	RatingScale sbChoice: (key response) rating=0
+259.2112 	DATA 	RatingScale sbChoice: rating RT=3.449
+259.2112 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 1.194), ('3', 2.562), ('2', 2.734), ('1', 2.887), ('0', 3.042), ('0', 3.449)]
+259.2406 	EXP 	cB_8: autoDraw = False
+259.2406 	EXP 	text: autoDraw = False
+259.2406 	EXP 	imagesbRnd: autoDraw = False
+259.2406 	EXP 	sbChoice: autoDraw = False
+259.2406 	EXP 	text_6: autoDraw = False
+259.2406 	EXP 	text_7: text = 'waiting for other player'
+259.2406 	EXP 	cB_9: autoDraw = True
+259.2406 	EXP 	text_7: autoDraw = True
+260.2660 	EXP 	cB_9: autoDraw = False
+260.2660 	EXP 	text_7: autoDraw = False
+260.2660 	EXP 	cB_9: autoDraw = False
+260.2660 	EXP 	text_7: autoDraw = False
+260.2660 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+260.2660 	EXP 	cbFb: autoDraw = True
+260.2660 	EXP 	textFb: autoDraw = True
+265.2623 	EXP 	cbFb: autoDraw = False
+265.2623 	EXP 	textFb: autoDraw = False
+265.2623 	EXP 	cbBuf: autoDraw = True
+265.4333 	EXP 	text_8: autoDraw = True
+266.0341 	EXP 	text_8: autoDraw = False
+266.2394 	EXP 	New trial (rep=0, index=16): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+266.2584 	EXP 	RatingScale sbChoice: reset()
+266.2733 	EXP 	cbBuf: autoDraw = False
+266.2733 	EXP 	text_8: autoDraw = False
+266.2733 	EXP 	text: text = 'This round you are playing with Lukas!'
+266.2733 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+266.2733 	EXP 	text_6: text = 'How much do you want to invest?'
+266.2733 	EXP 	cB_8: autoDraw = True
+266.2733 	EXP 	text: autoDraw = True
+266.2733 	EXP 	imagesbRnd: autoDraw = True
+266.2733 	EXP 	sbChoice: autoDraw = True
+266.2733 	EXP 	text_6: autoDraw = True
+267.4122 	DATA 	Keypress: left
+268.2830 	DATA 	Keypress: left
+268.4363 	DATA 	Keypress: left
+268.5717 	DATA 	Keypress: left
+268.7247 	DATA 	Keypress: left
+269.0829 	DATA 	Keypress: return
+269.0866 	DATA 	RatingScale sbChoice: (key response) rating=0
+269.0866 	DATA 	RatingScale sbChoice: rating RT=2.828
+269.0866 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 1.156), ('3', 2.028), ('2', 2.181), ('1', 2.316), ('0', 2.47), ('0', 2.828)]
+269.1160 	EXP 	cB_8: autoDraw = False
+269.1160 	EXP 	text: autoDraw = False
+269.1160 	EXP 	imagesbRnd: autoDraw = False
+269.1160 	EXP 	sbChoice: autoDraw = False
+269.1160 	EXP 	text_6: autoDraw = False
+269.1160 	EXP 	text_7: text = 'waiting for other player'
+269.1160 	EXP 	cB_9: autoDraw = True
+269.1160 	EXP 	text_7: autoDraw = True
+270.1259 	EXP 	cB_9: autoDraw = False
+270.1259 	EXP 	text_7: autoDraw = False
+270.1259 	EXP 	cB_9: autoDraw = False
+270.1259 	EXP 	text_7: autoDraw = False
+270.1259 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+270.1259 	EXP 	cbFb: autoDraw = True
+270.1259 	EXP 	textFb: autoDraw = True
+275.1349 	EXP 	cbFb: autoDraw = False
+275.1349 	EXP 	textFb: autoDraw = False
+275.1349 	EXP 	cbBuf: autoDraw = True
+275.3048 	EXP 	text_8: autoDraw = True
+275.9056 	EXP 	text_8: autoDraw = False
+276.1137 	EXP 	New trial (rep=0, index=17): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)])
+276.1425 	EXP 	RatingScale sbChoice: reset()
+276.1622 	EXP 	cbBuf: autoDraw = False
+276.1622 	EXP 	text_8: autoDraw = False
+276.1622 	EXP 	text: text = 'This round you are playing with Lukas!'
+276.1622 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+276.1622 	EXP 	text_6: text = 'How much do you want to invest?'
+276.1622 	EXP 	cB_8: autoDraw = True
+276.1622 	EXP 	text: autoDraw = True
+276.1622 	EXP 	imagesbRnd: autoDraw = True
+276.1622 	EXP 	sbChoice: autoDraw = True
+276.1622 	EXP 	text_6: autoDraw = True
+276.6220 	DATA 	Keypress: left
+277.3369 	DATA 	Keypress: left
+277.4782 	DATA 	Keypress: left
+277.6465 	DATA 	Keypress: left
+277.7856 	DATA 	Keypress: left
+278.0867 	DATA 	Keypress: return
+278.0904 	DATA 	RatingScale sbChoice: (key response) rating=0
+278.0904 	DATA 	RatingScale sbChoice: rating RT=1.947
+278.0905 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 0.482), ('3', 1.198), ('2', 1.335), ('1', 1.507), ('0', 1.643), ('0', 1.947)]
+278.1210 	EXP 	cB_8: autoDraw = False
+278.1210 	EXP 	text: autoDraw = False
+278.1210 	EXP 	imagesbRnd: autoDraw = False
+278.1210 	EXP 	sbChoice: autoDraw = False
+278.1210 	EXP 	text_6: autoDraw = False
+278.1210 	EXP 	text_7: text = 'waiting for other player'
+278.1210 	EXP 	cB_9: autoDraw = True
+278.1210 	EXP 	text_7: autoDraw = True
+279.1296 	EXP 	cB_9: autoDraw = False
+279.1296 	EXP 	text_7: autoDraw = False
+279.1296 	EXP 	cB_9: autoDraw = False
+279.1296 	EXP 	text_7: autoDraw = False
+279.1296 	EXP 	textFb: text = 'Lukas has decided to return 0 percent of your investment. \n\nYour return is 0 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+279.1296 	EXP 	cbFb: autoDraw = True
+279.1296 	EXP 	textFb: autoDraw = True
+284.1405 	EXP 	cbFb: autoDraw = False
+284.1405 	EXP 	textFb: autoDraw = False
+284.1405 	EXP 	cbBuf: autoDraw = True
+284.3119 	EXP 	text_8: autoDraw = True
+284.9125 	EXP 	text_8: autoDraw = False
+285.1182 	EXP 	New trial (rep=0, index=18): OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+285.1968 	EXP 	RatingScale sbChoice: reset()
+285.2192 	EXP 	cbBuf: autoDraw = False
+285.2192 	EXP 	text_8: autoDraw = False
+285.2192 	EXP 	text: text = 'This round you are playing with Paul!'
+285.2192 	EXP 	imagesbRnd: image = 'images/avatar1.jpg'
+285.2192 	EXP 	text_6: text = 'How much do you want to invest?'
+285.2192 	EXP 	cB_8: autoDraw = True
+285.2192 	EXP 	text: autoDraw = True
+285.2192 	EXP 	imagesbRnd: autoDraw = True
+285.2192 	EXP 	sbChoice: autoDraw = True
+285.2192 	EXP 	text_6: autoDraw = True
+286.0713 	DATA 	Keypress: left
+286.2814 	DATA 	Keypress: left
+286.5178 	DATA 	Keypress: left
+286.7191 	DATA 	Keypress: left
+287.0482 	DATA 	Keypress: right
+287.2477 	DATA 	Keypress: right
+287.4177 	DATA 	Keypress: right
+287.5753 	DATA 	Keypress: right
+287.7306 	DATA 	Keypress: right
+287.8816 	DATA 	Keypress: right
+288.2206 	DATA 	Keypress: return
+288.2244 	DATA 	RatingScale sbChoice: (key response) rating=7
+288.2244 	DATA 	RatingScale sbChoice: rating RT=3.027
+288.2245 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 0.877), ('3', 1.084), ('2', 1.324), ('1', 1.525), ('2', 1.851), ('3', 2.054), ('4', 2.224), ('5', 2.378), ('6', 2.533), ('7', 2.688), ('7', 3.027)]
+288.2551 	EXP 	cB_8: autoDraw = False
+288.2551 	EXP 	text: autoDraw = False
+288.2551 	EXP 	imagesbRnd: autoDraw = False
+288.2551 	EXP 	sbChoice: autoDraw = False
+288.2551 	EXP 	text_6: autoDraw = False
+288.2551 	EXP 	text_7: text = 'waiting for other player'
+288.2551 	EXP 	cB_9: autoDraw = True
+288.2551 	EXP 	text_7: autoDraw = True
+290.2784 	EXP 	cB_9: autoDraw = False
+290.2784 	EXP 	text_7: autoDraw = False
+290.2784 	EXP 	cB_9: autoDraw = False
+290.2784 	EXP 	text_7: autoDraw = False
+290.2784 	EXP 	textFb: text = 'Paul has decided to return 100 percent of your investment. \n\nYour return is 7 credits!\n\nYour total gain for this round is 10 credits!\n\n'
+290.2784 	EXP 	cbFb: autoDraw = True
+290.2784 	EXP 	textFb: autoDraw = True
+295.2754 	EXP 	cbFb: autoDraw = False
+295.2754 	EXP 	textFb: autoDraw = False
+295.2754 	EXP 	cbBuf: autoDraw = True
+295.4453 	EXP 	text_8: autoDraw = True
+296.0474 	EXP 	text_8: autoDraw = False
+296.2551 	EXP 	New trial (rep=0, index=19): OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)])
+296.2929 	EXP 	RatingScale sbChoice: reset()
+296.3223 	EXP 	cbBuf: autoDraw = False
+296.3223 	EXP 	text_8: autoDraw = False
+296.3223 	EXP 	text: text = 'This round you are playing with Lukas!'
+296.3223 	EXP 	imagesbRnd: image = 'images/avatar2.jpg'
+296.3223 	EXP 	text_6: text = 'How much do you want to invest?'
+296.3223 	EXP 	cB_8: autoDraw = True
+296.3223 	EXP 	text: autoDraw = True
+296.3223 	EXP 	imagesbRnd: autoDraw = True
+296.3223 	EXP 	sbChoice: autoDraw = True
+296.3223 	EXP 	text_6: autoDraw = True
+296.6655 	DATA 	Keypress: left
+296.8837 	DATA 	Keypress: left
+297.0544 	DATA 	Keypress: left
+297.2935 	DATA 	Keypress: return
+297.2972 	DATA 	RatingScale sbChoice: (key response) rating=3
+297.2972 	DATA 	RatingScale sbChoice: rating RT=1.001
+297.2972 	DATA 	RatingScale sbChoice: history=[('5', 0.0), ('4', 0.591), ('3', 0.762), ('3', 1.001)]
+297.3273 	EXP 	cB_8: autoDraw = False
+297.3273 	EXP 	text: autoDraw = False
+297.3273 	EXP 	imagesbRnd: autoDraw = False
+297.3273 	EXP 	sbChoice: autoDraw = False
+297.3273 	EXP 	text_6: autoDraw = False
+297.3273 	EXP 	text_7: text = 'waiting for other player'
+297.3273 	EXP 	cB_9: autoDraw = True
+297.3273 	EXP 	text_7: autoDraw = True
+299.3447 	EXP 	cB_9: autoDraw = False
+299.3447 	EXP 	text_7: autoDraw = False
+299.3447 	EXP 	cB_9: autoDraw = False
+299.3447 	EXP 	text_7: autoDraw = False
+299.3447 	EXP 	textFb: text = 'Lukas has decided to return 200 percent of your investment. \n\nYour return is 6 credits!\n\nYour total gain for this round is 13 credits!\n\n'
+299.3447 	EXP 	cbFb: autoDraw = True
+299.3447 	EXP 	textFb: autoDraw = True
+304.3393 	EXP 	cbFb: autoDraw = False
+304.3393 	EXP 	textFb: autoDraw = False
+304.3393 	EXP 	cbBuf: autoDraw = True
+304.5093 	EXP 	text_8: autoDraw = True
+305.1230 	EXP 	text_8: autoDraw = False
+305.3691 	EXP 	Imported sliders.xlsx as conditions, 6 conditions, 5 params
+305.3694 	EXP 	Created sequence: sequential, trialTypes=6, nReps=1, seed=None
+305.3698 	EXP 	New trial (rep=0, index=0): OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+305.3994 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Paul?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+305.4003 	EXP 	RatingScale rating: reset()
+305.4291 	EXP 	cbBuf: autoDraw = False
+305.4291 	EXP 	text_8: autoDraw = False
+305.4291 	EXP 	rating: flipVert = False
+305.4291 	EXP 	rating: autoLog = True
+305.4291 	EXP 	cB_11: autoDraw = True
+305.4291 	EXP 	rating: autoDraw = True
+310.1435 	DATA 	Keypress: right
+310.3144 	DATA 	Keypress: right
+310.4333 	DATA 	Keypress: right
+310.9596 	DATA 	Keypress: return
+310.9619 	DATA 	RatingScale rating: (key response) rating=7
+310.9619 	DATA 	RatingScale rating: rating RT=5.561
+310.9620 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 4.745), (6, 4.916), (7, 5.035), (7, 5.561)]
+310.9778 	EXP 	New trial (rep=0, index=1): OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+311.0114 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+311.0122 	EXP 	RatingScale rating: reset()
+311.0300 	EXP 	cB_11: autoDraw = False
+311.0300 	EXP 	rating: autoDraw = False
+311.0300 	EXP 	rating: flipVert = False
+311.0300 	EXP 	rating: autoLog = True
+311.0300 	EXP 	cB_11: autoDraw = True
+311.0300 	EXP 	rating: autoDraw = True
+311.7078 	DATA 	Keypress: right
+311.8980 	DATA 	Keypress: right
+312.0486 	DATA 	Keypress: right
+312.3567 	DATA 	Keypress: return
+312.3589 	DATA 	RatingScale rating: (key response) rating=7
+312.3589 	DATA 	RatingScale rating: rating RT=1.346
+312.3590 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.697), (6, 0.902), (7, 1.038), (7, 1.346)]
+312.3748 	EXP 	New trial (rep=0, index=2): OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+312.4072 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How much do you like Lukas?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+312.4081 	EXP 	RatingScale rating: reset()
+312.4265 	EXP 	cB_11: autoDraw = False
+312.4265 	EXP 	rating: autoDraw = False
+312.4265 	EXP 	rating: flipVert = False
+312.4265 	EXP 	rating: autoLog = True
+312.4265 	EXP 	cB_11: autoDraw = True
+312.4265 	EXP 	rating: autoDraw = True
+313.4107 	DATA 	Keypress: left
+313.5999 	DATA 	Keypress: left
+313.7203 	DATA 	Keypress: left
+313.9926 	DATA 	Keypress: return
+313.9948 	DATA 	RatingScale rating: (key response) rating=1
+313.9949 	DATA 	RatingScale rating: rating RT=1.586
+313.9949 	DATA 	RatingScale rating: history=[(4.0, 0.0), (3, 1.004), (2, 1.194), (1, 1.314), (1, 1.586)]
+314.0097 	EXP 	New trial (rep=0, index=3): OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])
+314.0424 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale=str(...), self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+314.0433 	EXP 	RatingScale rating: reset()
+314.0611 	EXP 	cB_11: autoDraw = False
+314.0611 	EXP 	rating: autoDraw = False
+314.0611 	EXP 	rating: flipVert = False
+314.0611 	EXP 	rating: autoLog = True
+314.0611 	EXP 	cB_11: autoDraw = True
+314.0611 	EXP 	rating: autoDraw = True
+314.6044 	DATA 	Keypress: left
+314.7752 	DATA 	Keypress: left
+314.9126 	DATA 	Keypress: left
+315.1689 	DATA 	Keypress: return
+315.1713 	DATA 	RatingScale rating: (key response) rating=1
+315.1713 	DATA 	RatingScale rating: rating RT=1.128
+315.1713 	DATA 	RatingScale rating: history=[(4.0, 0.0), (3, 0.562), (2, 0.734), (1, 0.871), (1, 1.127)]
+315.1871 	EXP 	New trial (rep=0, index=4): OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')])
+315.2133 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How do you feel?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+315.2142 	EXP 	RatingScale rating: reset()
+315.2347 	EXP 	cB_11: autoDraw = False
+315.2347 	EXP 	rating: autoDraw = False
+315.2347 	EXP 	rating: flipVert = False
+315.2347 	EXP 	rating: autoLog = True
+315.2347 	EXP 	cB_11: autoDraw = True
+315.2347 	EXP 	rating: autoDraw = True
+315.9697 	DATA 	Keypress: right
+316.1051 	DATA 	Keypress: right
+316.3445 	DATA 	Keypress: return
+316.3467 	DATA 	RatingScale rating: (key response) rating=6
+316.3468 	DATA 	RatingScale rating: rating RT=1.132
+316.3468 	DATA 	RatingScale rating: history=[(4.0, 0.0), (5, 0.757), (6, 0.893), (6, 1.132)]
+316.3621 	EXP 	New trial (rep=0, index=5): OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])
+316.3891 	EXP 	Created rating = RatingScale(__class__=type(...), acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText='accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkRed', markerExpansion=UNKNOWN, markerStart=4.0, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.2], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='How activated are you right now?', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=-1, tickMarks=6.0, win=Window(...))
+316.3900 	EXP 	RatingScale rating: reset()
+316.4119 	EXP 	cB_11: autoDraw = False
+316.4119 	EXP 	rating: autoDraw = False
+316.4119 	EXP 	rating: flipVert = False
+316.4119 	EXP 	rating: autoLog = True
+316.4119 	EXP 	cB_11: autoDraw = True
+316.4119 	EXP 	rating: autoDraw = True
+316.9572 	DATA 	Keypress: left
+317.1635 	DATA 	Keypress: left
+317.4359 	DATA 	Keypress: return
+317.4381 	DATA 	RatingScale rating: (key response) rating=2
+317.4382 	DATA 	RatingScale rating: rating RT=1.048
+317.4382 	DATA 	RatingScale rating: history=[(4.0, 0.0), (3, 0.568), (2, 0.773), (2, 1.048)]
+317.4538 	EXP 	Created sequence: random, trialTypes=1, nReps=4, seed=None
+317.4540 	EXP 	New trial (rep=0, index=0): None
+317.4690 	EXP 	cB_11: autoDraw = False
+317.4690 	EXP 	rating: autoDraw = False
+317.4690 	EXP 	text_7: text = 'waiting for other player'
+317.4690 	EXP 	cB_9: autoDraw = True
+317.4690 	EXP 	text_7: autoDraw = True
+322.4681 	EXP 	New trial (rep=1, index=0): None
+322.4838 	EXP 	cB_9: autoDraw = False
+322.4838 	EXP 	text_7: autoDraw = False
+322.4838 	EXP 	cB_9: autoDraw = False
+322.4838 	EXP 	text_7: autoDraw = False
+322.4838 	EXP 	text_7: text = 'waiting for other player'
+322.4838 	EXP 	cB_9: autoDraw = True
+322.4838 	EXP 	text_7: autoDraw = True
+324.4693 	EXP 	New trial (rep=2, index=0): None
+324.4853 	EXP 	cB_9: autoDraw = False
+324.4853 	EXP 	text_7: autoDraw = False
+324.4853 	EXP 	cB_9: autoDraw = False
+324.4853 	EXP 	text_7: autoDraw = False
+324.4853 	EXP 	text_7: text = 'waiting for other player'
+324.4853 	EXP 	cB_9: autoDraw = True
+324.4853 	EXP 	text_7: autoDraw = True
+325.4829 	EXP 	New trial (rep=3, index=0): None
+325.4989 	EXP 	cB_9: autoDraw = False
+325.4989 	EXP 	text_7: autoDraw = False
+325.4989 	EXP 	cB_9: autoDraw = False
+325.4989 	EXP 	text_7: autoDraw = False
+325.4989 	EXP 	text_7: text = 'waiting for other player'
+325.4989 	EXP 	cB_9: autoDraw = True
+325.4989 	EXP 	text_7: autoDraw = True
+328.5142 	EXP 	cB_9: autoDraw = False
+328.5142 	EXP 	text_7: autoDraw = False
+328.5142 	EXP 	cB_9: autoDraw = False
+328.5142 	EXP 	text_7: autoDraw = False
+328.5142 	EXP 	cbBuf: autoDraw = True
+328.6844 	EXP 	text_8: autoDraw = True
+329.2992 	EXP 	text_8: autoDraw = False
+329.6174 	EXP 	window1: mouseVisible = True

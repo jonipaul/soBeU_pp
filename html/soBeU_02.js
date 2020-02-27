@@ -65,10 +65,25 @@ flowScheduler.add(bufEndRoutineEnd);
 flowScheduler.add(sbInRoutineBegin);
 flowScheduler.add(sbInRoutineEachFrame);
 flowScheduler.add(sbInRoutineEnd);
-const trialsLoopScheduler = new Scheduler(psychoJS);
-flowScheduler.add(trialsLoopBegin, trialsLoopScheduler);
-flowScheduler.add(trialsLoopScheduler);
-flowScheduler.add(trialsLoopEnd);
+const sbLoop_0LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(sbLoop_0LoopBegin, sbLoop_0LoopScheduler);
+flowScheduler.add(sbLoop_0LoopScheduler);
+flowScheduler.add(sbLoop_0LoopEnd);
+const sliders_0LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(sliders_0LoopBegin, sliders_0LoopScheduler);
+flowScheduler.add(sliders_0LoopScheduler);
+flowScheduler.add(sliders_0LoopEnd);
+const buffer_0LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(buffer_0LoopBegin, buffer_0LoopScheduler);
+flowScheduler.add(buffer_0LoopScheduler);
+flowScheduler.add(buffer_0LoopEnd);
+flowScheduler.add(bufFixRoutineBegin);
+flowScheduler.add(bufFixRoutineEachFrame);
+flowScheduler.add(bufFixRoutineEnd);
+const trials_1LoopScheduler = new Scheduler(psychoJS);
+flowScheduler.add(trials_1LoopBegin, trials_1LoopScheduler);
+flowScheduler.add(trials_1LoopScheduler);
+flowScheduler.add(trials_1LoopEnd);
 flowScheduler.add(sbEndRoutineBegin);
 flowScheduler.add(sbEndRoutineEachFrame);
 flowScheduler.add(sbEndRoutineEnd);
@@ -702,6 +717,171 @@ function experimentInit() {
     depth: -1.0 
   });
   
+  // Initialize components for Routine "sbRnd"
+  sbRndClock = new util.Clock();
+  cB_8 = new visual.Rect ({
+    win: psychoJS.window, name: 'cB_8', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: 0, interpolate: true,
+  });
+  
+  text = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text',
+    text: 'default text',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.05,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
+  });
+  
+  imagesbRnd = new visual.ImageStim({
+    win : psychoJS.window,
+    name : 'imagesbRnd', units : undefined, 
+    image : undefined, mask : undefined,
+    ori : 0, pos : [0, 0.2], size : [0.2, 0.2],
+    color : new util.Color([1, 1, 1]), opacity : 1,
+    flipHoriz : false, flipVert : false,
+    texRes : 128, interpolate : true, depth : -2.0 
+  });
+  text_6 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_6',
+    text: 'default text',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, (- 0.1)], height: 0.025,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -5.0 
+  });
+  
+  // Initialize components for Routine "bufRand"
+  bufRandClock = new util.Clock();
+  cB_9 = new visual.Rect ({
+    win: psychoJS.window, name: 'cB_9', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: -1, interpolate: true,
+  });
+  
+  text_7 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_7',
+    text: 'default text',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
+  // Initialize components for Routine "sbFb"
+  sbFbClock = new util.Clock();
+  cbFb = new visual.Rect ({
+    win: psychoJS.window, name: 'cbFb', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: -1, interpolate: true,
+  });
+  
+  textFb = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'textFb',
+    text: 'default text',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.03,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
+  out_Fb = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
+  
+  // Initialize components for Routine "bufFix"
+  bufFixClock = new util.Clock();
+  cbBuf = new visual.Rect ({
+    win: psychoJS.window, name: 'cbBuf', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: 0, interpolate: true,
+  });
+  
+  text_8 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_8',
+    text: '+',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.4,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
+  });
+  
+  // Initialize components for Routine "sbQu"
+  sbQuClock = new util.Clock();
+  cB_11 = new visual.Rect ({
+    win: psychoJS.window, name: 'cB_11', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: 0, interpolate: true,
+  });
+  
+  // Initialize components for Routine "bufRand"
+  bufRandClock = new util.Clock();
+  cB_9 = new visual.Rect ({
+    win: psychoJS.window, name: 'cB_9', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: -1, interpolate: true,
+  });
+  
+  text_7 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_7',
+    text: 'default text',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -2.0 
+  });
+  
+  // Initialize components for Routine "bufFix"
+  bufFixClock = new util.Clock();
+  cbBuf = new visual.Rect ({
+    win: psychoJS.window, name: 'cbBuf', 
+    width: [4, 4][0], height: [4, 4][1],
+    ori: 0, pos: [0, 0],
+    lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
+    fillColor: new util.Color([(- 1), (- 1), (- 1)]),
+    opacity: 1, depth: 0, interpolate: true,
+  });
+  
+  text_8 = new visual.TextStim({
+    win: psychoJS.window,
+    name: 'text_8',
+    text: '+',
+    font: 'Arial',
+    units : undefined, 
+    pos: [0, 0], height: 0.4,  wrapWidth: undefined, ori: 0,
+    color: new util.Color('white'),  opacity: 1,
+    depth: -1.0 
+  });
+  
   // Initialize components for Routine "sbEnd"
   sbEndClock = new util.Clock();
   cB_10 = new visual.Rect ({
@@ -710,7 +890,7 @@ function experimentInit() {
     ori: 0, pos: [0, 0],
     lineWidth: 1, lineColor: new util.Color([1, 1, 1]),
     fillColor: new util.Color([(- 1), (- 1), (- 1)]),
-    opacity: 1, depth: 0, interpolate: true,
+    opacity: 1, depth: -1, interpolate: true,
   });
   
   sbEndText = new visual.TextStim({
@@ -721,7 +901,7 @@ function experimentInit() {
     units : undefined, 
     pos: [0, 0], height: 0.04,  wrapWidth: undefined, ori: 0,
     color: new util.Color('white'),  opacity: 1,
-    depth: -1.0 
+    depth: -2.0 
   });
   
   sbEndKey = new core.Keyboard({psychoJS, clock: new util.Clock(), waitForStart: true});
@@ -1559,55 +1739,20 @@ function bufferLoopLoopEnd() {
   return Scheduler.Event.NEXT;
 }
 
-function trialsLoopBegin(thisScheduler) {
+function sbLoop_0LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
-  trials = new TrialHandler({
+  sbLoop_0 = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 2, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'contitions.xlsx', '1:20'),
-    seed: undefined, name: 'trials'});
-  psychoJS.experiment.addLoop(trials); // add the loop to the experiment
-  currentLoop = trials;  // we're now the current loop
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'contitions.xlsx', '1:4'),
+    seed: undefined, name: 'sbLoop_0'});
+  psychoJS.experiment.addLoop(sbLoop_0); // add the loop to the experiment
+  currentLoop = sbLoop_0;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  for (const thisTrial of trials) {
-    thisScheduler.add(importConditions(trials));
-    const sbLoopLoopScheduler = new Scheduler(psychoJS);
-    thisScheduler.add(sbLoopLoopBegin, sbLoopLoopScheduler);
-    thisScheduler.add(sbLoopLoopScheduler);
-    thisScheduler.add(sbLoopLoopEnd);
-    const sliders_1LoopScheduler = new Scheduler(psychoJS);
-    thisScheduler.add(sliders_1LoopBegin, sliders_1LoopScheduler);
-    thisScheduler.add(sliders_1LoopScheduler);
-    thisScheduler.add(sliders_1LoopEnd);
-    const trials_2LoopScheduler = new Scheduler(psychoJS);
-    thisScheduler.add(trials_2LoopBegin, trials_2LoopScheduler);
-    thisScheduler.add(trials_2LoopScheduler);
-    thisScheduler.add(trials_2LoopEnd);
-    thisScheduler.add(bufFixRoutineBegin);
-    thisScheduler.add(bufFixRoutineEachFrame);
-    thisScheduler.add(bufFixRoutineEnd);
-    thisScheduler.add(endLoopIteration({thisScheduler, isTrials : true}));
-  }
-
-  return Scheduler.Event.NEXT;
-}
-
-function sbLoopLoopBegin(thisScheduler) {
-  // set up handler to look after randomisation of conditions etc
-  sbLoop = new TrialHandler({
-    psychoJS: psychoJS,
-    nReps: 2, method: TrialHandler.Method.RANDOM,
-    extraInfo: expInfo, originPath: undefined,
-    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'contitions.xlsx', '1:20'),
-    seed: undefined, name: 'sbLoop'});
-  psychoJS.experiment.addLoop(sbLoop); // add the loop to the experiment
-  currentLoop = sbLoop;  // we're now the current loop
-
-  // Schedule all the trials in the trialList:
-  for (const thisSbLoop of sbLoop) {
-    thisScheduler.add(importConditions(sbLoop));
+  for (const thisSbLoop_0 of sbLoop_0) {
+    thisScheduler.add(importConditions(sbLoop_0));
     thisScheduler.add(sbRndRoutineBegin);
     thisScheduler.add(sbRndRoutineEachFrame);
     thisScheduler.add(sbRndRoutineEnd);
@@ -1626,8 +1771,139 @@ function sbLoopLoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-function sbLoopLoopEnd() {
-  psychoJS.experiment.removeLoop(sbLoop);
+function sbLoop_0LoopEnd() {
+  psychoJS.experiment.removeLoop(sbLoop_0);
+
+  return Scheduler.Event.NEXT;
+}
+
+function sliders_0LoopBegin(thisScheduler) {
+  // set up handler to look after randomisation of conditions etc
+  sliders_0 = new TrialHandler({
+    psychoJS: psychoJS,
+    nReps: 1, method: TrialHandler.Method.SEQUENTIAL,
+    extraInfo: expInfo, originPath: undefined,
+    trialList: 'sliders.xlsx',
+    seed: undefined, name: 'sliders_0'});
+  psychoJS.experiment.addLoop(sliders_0); // add the loop to the experiment
+  currentLoop = sliders_0;  // we're now the current loop
+
+  // Schedule all the trials in the trialList:
+  for (const thisSlider_0 of sliders_0) {
+    thisScheduler.add(importConditions(sliders_0));
+    thisScheduler.add(sbQuRoutineBegin);
+    thisScheduler.add(sbQuRoutineEachFrame);
+    thisScheduler.add(sbQuRoutineEnd);
+    thisScheduler.add(endLoopIteration({thisScheduler, isTrials : true}));
+  }
+
+  return Scheduler.Event.NEXT;
+}
+
+function sliders_0LoopEnd() {
+  psychoJS.experiment.removeLoop(sliders_0);
+
+  return Scheduler.Event.NEXT;
+}
+
+function buffer_0LoopBegin(thisScheduler) {
+  // set up handler to look after randomisation of conditions etc
+  buffer_0 = new TrialHandler({
+    psychoJS: psychoJS,
+    nReps: 4, method: TrialHandler.Method.RANDOM,
+    extraInfo: expInfo, originPath: undefined,
+    trialList: undefined,
+    seed: undefined, name: 'buffer_0'});
+  psychoJS.experiment.addLoop(buffer_0); // add the loop to the experiment
+  currentLoop = buffer_0;  // we're now the current loop
+
+  // Schedule all the trials in the trialList:
+  for (const thisBuffer_0 of buffer_0) {
+    thisScheduler.add(importConditions(buffer_0));
+    thisScheduler.add(bufRandRoutineBegin);
+    thisScheduler.add(bufRandRoutineEachFrame);
+    thisScheduler.add(bufRandRoutineEnd);
+    thisScheduler.add(endLoopIteration({thisScheduler, isTrials : true}));
+  }
+
+  return Scheduler.Event.NEXT;
+}
+
+function buffer_0LoopEnd() {
+  psychoJS.experiment.removeLoop(buffer_0);
+
+  return Scheduler.Event.NEXT;
+}
+
+function trials_1LoopBegin(thisScheduler) {
+  // set up handler to look after randomisation of conditions etc
+  trials_1 = new TrialHandler({
+    psychoJS: psychoJS,
+    nReps: 1, method: TrialHandler.Method.RANDOM,
+    extraInfo: expInfo, originPath: undefined,
+    trialList: undefined,
+    seed: undefined, name: 'trials_1'});
+  psychoJS.experiment.addLoop(trials_1); // add the loop to the experiment
+  currentLoop = trials_1;  // we're now the current loop
+
+  // Schedule all the trials in the trialList:
+  for (const thisTrial_1 of trials_1) {
+    thisScheduler.add(importConditions(trials_1));
+    const sbLoop_1LoopScheduler = new Scheduler(psychoJS);
+    thisScheduler.add(sbLoop_1LoopBegin, sbLoop_1LoopScheduler);
+    thisScheduler.add(sbLoop_1LoopScheduler);
+    thisScheduler.add(sbLoop_1LoopEnd);
+    const sliders_1LoopScheduler = new Scheduler(psychoJS);
+    thisScheduler.add(sliders_1LoopBegin, sliders_1LoopScheduler);
+    thisScheduler.add(sliders_1LoopScheduler);
+    thisScheduler.add(sliders_1LoopEnd);
+    const buffer_1LoopScheduler = new Scheduler(psychoJS);
+    thisScheduler.add(buffer_1LoopBegin, buffer_1LoopScheduler);
+    thisScheduler.add(buffer_1LoopScheduler);
+    thisScheduler.add(buffer_1LoopEnd);
+    thisScheduler.add(bufFixRoutineBegin);
+    thisScheduler.add(bufFixRoutineEachFrame);
+    thisScheduler.add(bufFixRoutineEnd);
+    thisScheduler.add(endLoopIteration({thisScheduler, isTrials : true}));
+  }
+
+  return Scheduler.Event.NEXT;
+}
+
+function sbLoop_1LoopBegin(thisScheduler) {
+  // set up handler to look after randomisation of conditions etc
+  sbLoop_1 = new TrialHandler({
+    psychoJS: psychoJS,
+    nReps: 1, method: TrialHandler.Method.RANDOM,
+    extraInfo: expInfo, originPath: undefined,
+    trialList: TrialHandler.importConditions(psychoJS.serverManager, 'contitions.xlsx', '5:25'),
+    seed: undefined, name: 'sbLoop_1'});
+  psychoJS.experiment.addLoop(sbLoop_1); // add the loop to the experiment
+  currentLoop = sbLoop_1;  // we're now the current loop
+
+  // Schedule all the trials in the trialList:
+  for (const thisSbLoop_1 of sbLoop_1) {
+    thisScheduler.add(importConditions(sbLoop_1));
+    thisScheduler.add(sbRndRoutineBegin);
+    thisScheduler.add(sbRndRoutineEachFrame);
+    thisScheduler.add(sbRndRoutineEnd);
+    thisScheduler.add(bufRandRoutineBegin);
+    thisScheduler.add(bufRandRoutineEachFrame);
+    thisScheduler.add(bufRandRoutineEnd);
+    thisScheduler.add(sbFbRoutineBegin);
+    thisScheduler.add(sbFbRoutineEachFrame);
+    thisScheduler.add(sbFbRoutineEnd);
+    thisScheduler.add(bufFixRoutineBegin);
+    thisScheduler.add(bufFixRoutineEachFrame);
+    thisScheduler.add(bufFixRoutineEnd);
+    thisScheduler.add(endLoopIteration({thisScheduler, isTrials : true}));
+  }
+
+  return Scheduler.Event.NEXT;
+}
+
+function sbLoop_1LoopEnd() {
+  psychoJS.experiment.removeLoop(sbLoop_1);
 
   return Scheduler.Event.NEXT;
 }
@@ -1661,20 +1937,20 @@ function sliders_1LoopEnd() {
   return Scheduler.Event.NEXT;
 }
 
-function trials_2LoopBegin(thisScheduler) {
+function buffer_1LoopBegin(thisScheduler) {
   // set up handler to look after randomisation of conditions etc
-  trials_2 = new TrialHandler({
+  buffer_1 = new TrialHandler({
     psychoJS: psychoJS,
     nReps: 4, method: TrialHandler.Method.RANDOM,
     extraInfo: expInfo, originPath: undefined,
     trialList: undefined,
-    seed: undefined, name: 'trials_2'});
-  psychoJS.experiment.addLoop(trials_2); // add the loop to the experiment
-  currentLoop = trials_2;  // we're now the current loop
+    seed: undefined, name: 'buffer_1'});
+  psychoJS.experiment.addLoop(buffer_1); // add the loop to the experiment
+  currentLoop = buffer_1;  // we're now the current loop
 
   // Schedule all the trials in the trialList:
-  for (const thisTrial_2 of trials_2) {
-    thisScheduler.add(importConditions(trials_2));
+  for (const thisBuffer_1 of buffer_1) {
+    thisScheduler.add(importConditions(buffer_1));
     thisScheduler.add(bufRandRoutineBegin);
     thisScheduler.add(bufRandRoutineEachFrame);
     thisScheduler.add(bufRandRoutineEnd);
@@ -1684,14 +1960,14 @@ function trials_2LoopBegin(thisScheduler) {
   return Scheduler.Event.NEXT;
 }
 
-function trials_2LoopEnd() {
-  psychoJS.experiment.removeLoop(trials_2);
+function buffer_1LoopEnd() {
+  psychoJS.experiment.removeLoop(buffer_1);
 
   return Scheduler.Event.NEXT;
 }
 
-function trialsLoopEnd() {
-  psychoJS.experiment.removeLoop(trials);
+function trials_1LoopEnd() {
+  psychoJS.experiment.removeLoop(trials_1);
 
   return Scheduler.Event.NEXT;
 }
@@ -2722,7 +2998,7 @@ function sbEndRoutineBegin() {
   frameN = -1;
   routineTimer.add(30.000000);
   // update component parameters for each repeat
-  sbEndText.setText(textEndText);
+  sbEndText.setText(textEndFinal);
   sbEndKey.keys = undefined;
   sbEndKey.rt = undefined;
   // keep track of which components have finished

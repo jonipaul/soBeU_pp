@@ -37,7 +37,7 @@
         <Param name="Begin Experiment" updates="constant" val="sbTotal = 0&amp;#10;sbTotalPaul= 0&amp;#10;sbTotalLukas =0" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="textInstructionsSb2 = 'Hi ' + textName + '!' + textInstructionsSb&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="textInstructionsSb2 = 'Hi ' + textName + '!\n' + textInstructionsSb&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -136,7 +136,7 @@
     </Routine>
     <Routine name="wScr">
       <CodeComponent name="wCode">
-        <Param name="Begin Experiment" updates="constant" val="textWelcomeText =(&amp;#10;'Dear Participant, \n'&amp;#10;'Welcome to our experiement! \n'&amp;#10;'Please carefully go over the instructions on the following pages. \n'&amp;#10;'If you have any questions please ask the experimenter for help. \n\n'&amp;#10;'Press any key to continue'&amp;#10;)&amp;#10;&amp;#10;textInstructionsText= (&amp;#10;'You have been randomly assigned to condition B. \n\n'&amp;#10;'In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n'&amp;#10;'You will make investments and try to maximize your gains (credits).\n\n'&amp;#10;'Following a choice you will receive a short feedback on how the other player has acted.\n'&amp;#10;'At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n'&amp;#10;'see next page for more information.\n'&amp;#10;'Press c to continue.'&amp;#10;)&amp;#10;&amp;#10;textInstructionsText2 = &quot;&quot;&quot;&amp;#10;The goal is to maximize your gains.\n&amp;#10;Every round you will receive an endowment of 10 credits.&amp;#10;You will have the choice to invest part (or all) of these credits in another player.&amp;#10;The credits that you invest get triple when transfered to the other player.&amp;#10;The other player can then decide what to do with that investment. &amp;#10;They will then have to decide how many credits they want to send back to you (0% - 200%).&amp;#10;&amp;#10;For example:&amp;#10;You decide to invest 5 credits. That money gets tripled to 15 credits.&amp;#10;The other player decides to send back 150% of the investment.&amp;#10;&amp;#10;The toal for this round is 12.5 credits.&amp;#10;5 credits that you did not invest, plus 7.5 from the investement that you received back.&amp;#10;The other player gains 7.5 credits.&amp;#10;&amp;#10;Press c to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textProfileText = &quot;&quot;&quot;&amp;#10;Please type your player-name: \n&amp;#10;Importantly, this is not supposed to be your real name, just a name that other players can identify you with.&amp;#10;Type a name, and press 'enter' when you are ready.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textServerText= &quot;&quot;&quot;&amp;#10;We will now connect you to the the other Players through the Server.\n&amp;#10;This might take a minute.\n&amp;#10;Please contact the Experimenter if your Computer is unabled to connect.\n&amp;#10;Press c to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textInstructionsSb = &quot;&quot;&quot;&amp;#10;You are now ready to start with the experiment. \n&amp;#10;On the next screens you will make decisions on how to engage with other players.\n\n&amp;#10;Make a choice using your left or right keys and confirm with enter&amp;#10;&amp;#10;Note, all decisions (yours and others) happen simultaneously, and not in response to each other.&amp;#10;&amp;#10;Press c to begin.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textSbText = 'How much do you want to invest?'&amp;#10;&amp;#10;textSbFeed1 = ' has decided to return '&amp;#10;textSbFeed2 = ' percent of your investment. \n\n'&amp;#10;textSbFeed3 = 'Your return is '&amp;#10;textSbFeed4 = ' credits!\n\n'&amp;#10;textSbFeed5 = 'Your total gain for this round is '&amp;#10;&amp;#10;textEndText = &quot;&quot;&quot;Thank you for participating.&amp;#10;&amp;#10;This part of the experiment is now completed.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;bufText = &quot;&quot;&quot;waiting for other player&quot;&quot;&quot;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="textWelcomeText =(&amp;#10;'Dear Participant, \n'&amp;#10;'Welcome to our experiement! \n'&amp;#10;'Please carefully go over the instructions on the following pages. \n'&amp;#10;'If you have any questions please ask the experimenter for help. \n\n'&amp;#10;'Press any key to continue'&amp;#10;)&amp;#10;&amp;#10;textInstructionsText= (&amp;#10;'You have been randomly assigned to condition B. \n\n'&amp;#10;'In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n'&amp;#10;'You will make investments and try to maximize your gains (credits).\n\n'&amp;#10;'Following a choice you will receive a short feedback on how the other player has acted.\n'&amp;#10;'At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n'&amp;#10;'see next page for more information.\n'&amp;#10;'Press c to continue.'&amp;#10;)&amp;#10;&amp;#10;textInstructionsText2 = &quot;&quot;&quot;&amp;#10;The goal is to maximize your gains.\n&amp;#10;Every round you will receive an endowment of 10 credits.&amp;#10;You will have the choice to invest part (or all) of these credits in another player.&amp;#10;The credits that you invest get triple when transfered to the other player.&amp;#10;The other player can then decide what to do with that investment. &amp;#10;They will then have to decide how many credits they want to send back to you (0% - 200%).&amp;#10;&amp;#10;For example:&amp;#10;You decide to invest 5 credits. That money gets tripled to 15 credits.&amp;#10;The other player decides to send back 150% of the investment.&amp;#10;&amp;#10;The toal for this round is 12.5 credits.&amp;#10;5 credits that you did not invest, plus 7.5 from the investement that you received back.&amp;#10;The other player gains 7.5 credits.&amp;#10;&amp;#10;Press c to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textProfileText = &quot;&quot;&quot;&amp;#10;Please type your player-name: \n&amp;#10;Importantly, this is not supposed to be your real name, just a name that other players can identify you with.&amp;#10;Type a name, and press 'enter' when you are ready.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textServerText= &quot;&quot;&quot;&amp;#10;We will now connect you to the the other Players through the Server.\n&amp;#10;This might take a minute.\n&amp;#10;Please contact the Experimenter if your Computer is unabled to connect.\n&amp;#10;Press c to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textInstructionsSb = &quot;&quot;&quot;&amp;#10;You are now ready to start with the experiment. \n&amp;#10;On the next screens you will make decisions on how to engage with other players.\n\n&amp;#10;Make a choice using your left or right keys and confirm with enter&amp;#10;&amp;#10;Note, all decisions (yours and others) happen simultaneously, and not in response to each other.&amp;#10;&amp;#10;Press c to begin.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textSbText = 'How much do you want to invest?'&amp;#10;&amp;#10;textSbFeed1 = ' has decided to return '&amp;#10;textSbFeed2 = ' percent of your investment. \n\n'&amp;#10;textSbFeed3 = 'Your return is '&amp;#10;textSbFeed4 = ' credits!\n\n'&amp;#10;textSbFeed5 = 'Your total gain for this round is '&amp;#10;&amp;#10;textEndText = &quot;&quot;&quot;Thank you for participating.&amp;#10;&amp;#10;This part of the experiment is now completed.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textEndText2 = 'We randomly selected one interaction. Your gain is: '&amp;#10;textEndText3 = '\nPlease wait for the experimenter before continuing'&amp;#10;&amp;#10;bufText = &quot;&quot;&quot;waiting for other player&quot;&quot;&quot;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="textWelcomeText =&quot;&quot;&quot;&amp;#10;Dear Participant, \n&amp;#10;Welcome to our experiement! \n&amp;#10;Please carefully go over the instructions on the following pages. \n&amp;#10;If you have any questions please ask the experimenter for help. \n\n&amp;#10;Press any key to continue&amp;#10;&quot;&quot;&quot;&amp;#10;textWelcomeText = str(textWelcomeText)&amp;#10;&amp;#10;textInstructionsText= &quot;&quot;&quot;&amp;#10;You have been randomly assigned to condition B. \n\n&amp;#10;In the following task you will repeatedly interact with two other players.You will have to make choices on how to engage with the other players.\n&amp;#10;You will make investments and try to maximize your gains (credits).\n\n&amp;#10;Following a choice you will receive a short feedback on how the other player has acted.\n&amp;#10;At the end of all interactions one random interaction will be selected and payed-out the sum of credits gained.\n\n&amp;#10;see next page for more information.\n&amp;#10;Press \'c\' to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textInstructionsText2 = &quot;&quot;&quot;&amp;#10;The goal is to maximize your gains.\n&amp;#10;Every round you will receive an endowment of 10 credits.&amp;#10;You will have the choice to invest part (or all) of these credits in another player.&amp;#10;The credits that you invest get triple when transfered to the other player.&amp;#10;The other player can then decide what to do with that investment. &amp;#10;They will then have to decide how many credits they want to send back to you (0% - 200%).&amp;#10;&amp;#10;For example:&amp;#10;You decide to invest 5 credits. That money gets tripled to 15 credits.&amp;#10;The other player decides to send back 150% of the investment.&amp;#10;&amp;#10;The toal for this round is 12.5 credits.&amp;#10;5 credits that you did not invest, plus 7.5 from the investement that you received back.&amp;#10;The other player gains 7.5 credits.&amp;#10;&amp;#10;Press \'c\' to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textProfileText = &quot;&quot;&quot;&amp;#10;Please type your player-name: \n&amp;#10;Importantly, this is not supposed to be your real name, just a name that other players can identify you with.&amp;#10;Type a name, and press 'enter' when you are ready.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textServerText= &quot;&quot;&quot;&amp;#10;We will now connect you to the the other Players through the Server.\n&amp;#10;This might take a minute.\n&amp;#10;Please contact the Experimenter if your Computer is unabled to connect.\n&amp;#10;Press \'c\' to continue.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textInstructionsSb = &quot;&quot;&quot;&amp;#10;You are now ready to start with the experiment. \n&amp;#10;On the next screens you will make decisions on how to engage with other players.\n\n&amp;#10;Make a choice using your \'left\' or \'right\' keys and confirm with \'enter\'&amp;#10;&amp;#10;Note, all decisions (yours and others) happen simultaneously, and not in response to each other.&amp;#10;&amp;#10;Press \'c\' to begin.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;textSbText = &quot;&quot;&quot; How much do you want to invest?&quot;&quot;&quot;&amp;#10;&amp;#10;textSbFeed1 = ' has decided to return '&amp;#10;textSbFeed2 = ' percent of your investment. \n\n'&amp;#10;textSbFeed3 = 'Your return is '&amp;#10;textSbFeed4 = ' credits!\n\n'&amp;#10;textSbFeed5 = 'Your total gain for this round is '&amp;#10;&amp;#10;textEndText = &quot;&quot;&quot;Thank you for participating.&amp;#10;&amp;#10;This part of the experiment is now completed.&amp;#10;&quot;&quot;&quot;&amp;#10;&amp;#10;bufText = &quot;&quot;&quot;waiting for other player&quot;&quot;&quot;" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -1052,6 +1052,21 @@
       </TextComponent>
     </Routine>
     <Routine name="sbEnd">
+      <CodeComponent name="code_7">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="drawRound = random.choice(roundGain)&amp;#10;print(drawRound)&amp;#10;&amp;#10;&amp;#10;textEndFinal = textEndText2 + str(drawRound) + ' credits!\n' + textEndText3&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_7" valType="code"/>
+      </CodeComponent>
       <PolygonComponent name="cB_10">
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
@@ -1097,7 +1112,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="30" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="set every repeat" val="$textEndText" valType="str"/>
+        <Param name="text" updates="set every repeat" val="$textEndFinal" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
@@ -1122,17 +1137,17 @@
     </Routine>
     <Routine name="sbFb">
       <CodeComponent name="sbFbCode">
-        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;&amp;#10;&amp;#10;creditResponseCoop = [1,1.5,2]&amp;#10;creditResponseUnco = [1,0.5,.75]&amp;#10;creditMultiPlier = 3&amp;#10;&amp;#10;roundGain = []" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;&amp;#10;roundGain = []" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="creditInvestment = sbResp&amp;#10;creditLeft = 10 - sbResp&amp;#10;&amp;#10;if actionLabel == 0:&amp;#10;    multiPlier = int(random.choice(creditResponseUnco))&amp;#10;elif actionLabel == 1:&amp;#10;    multiPlier =  int(random.choice(creditResponseCoop))&amp;#10;else:&amp;#10;    pass&amp;#10;    &amp;#10;creditGain = creditInvestment * multiPlier&amp;#10;creditTotal = creditGain + creditLeft&amp;#10;mpText = multiPlier*100&amp;#10;&amp;#10;textforThis1 = playerId + textSbFeed1 + str(mpText) + textSbFeed2&amp;#10;textforThis2 = textSbFeed3 + str(creditGain) + textSbFeed4&amp;#10;textforThis3 = textSbFeed5 + str(creditTotal) + textSbFeed4&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="ResponseCoop = [1,1.5,2]&amp;#10;ResponseUnco = [0.5,0.75,1]&amp;#10;creditMultiPlier = 3&amp;#10;&amp;#10;if actionLabel == 0:&amp;#10;    multiPlier = random.choice(ResponseUnco)&amp;#10;elif actionLabel == 1:&amp;#10;    multiPlier = random.choice(ResponseCoop)&amp;#10;else:&amp;#10;    multiPlier= int(99)&amp;#10;&amp;#10;creditInvestment = sbResp&amp;#10;creditLeft = 10 - sbResp&amp;#10;&amp;#10;creditGain = creditInvestment * multiPlier&amp;#10;creditTotal = creditGain + creditLeft&amp;#10;mpText = multiPlier*100&amp;#10;&amp;#10;textforThis1 = playerId + textSbFeed1 + str(mpText) + textSbFeed2&amp;#10;textforThis2 = textSbFeed3 + str(creditGain) + textSbFeed4&amp;#10;textforThis3 = textSbFeed5 + str(creditTotal) + textSbFeed4&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if actionLabel == 0:&amp;#10;    sbGain = 0&amp;#10;elif actionLabel == 1:&amp;#10;    sbGain = sbResp&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;sbTotal += sbGain&amp;#10;&amp;#10;if playerId == 'Paul':&amp;#10;    sbTotalPaul += sbGain&amp;#10;elif playerId == 'Lukas':&amp;#10;    sbTotalLukas += sbGain&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;print(sbTotal)&amp;#10;print(sbTotalPaul)&amp;#10;print(sbTotalLukas)&amp;#10;&amp;#10;&amp;#10;roundGain.append(sbResp)&amp;#10;&amp;#10;thisExp.addData(&quot;totalMoney&quot;, sbTotal)&amp;#10;thisExp.addData(&quot;paulMoney&quot;, sbTotalPaul)&amp;#10;thisExp.addData(&quot;lukasMoney&quot;, sbTotalLukas)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if actionLabel == 0:&amp;#10;    sbGain = 0&amp;#10;elif actionLabel == 1:&amp;#10;    sbGain = sbResp&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;sbTotal += sbGain&amp;#10;&amp;#10;if playerId == 'Paul':&amp;#10;    sbTotalPaul += sbGain&amp;#10;elif playerId == 'Lukas':&amp;#10;    sbTotalLukas += sbGain&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;roundGain.append(creditTotal)&amp;#10;&amp;#10;print(sbTotal)&amp;#10;print(roundGain)&amp;#10;&amp;#10;thisExp.addData(&quot;totalMoney&quot;, sbTotal)&amp;#10;thisExp.addData(&quot;paulMoney&quot;, sbTotalPaul)&amp;#10;thisExp.addData(&quot;lukasMoney&quot;, sbTotalLukas)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="sbFbCode" valType="code"/>
       </CodeComponent>
@@ -1574,12 +1589,12 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
-    <Routine name="bufRand">
+    <Routine name="bufWait">
       <CodeComponent name="code_5">
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="import random &amp;#10;&amp;#10;timeR= [1,2,3,3,4,4,5]&amp;#10;intTime= int(random.choice(timeR))&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="import random &amp;#10;&amp;#10;timeR= [0,1,1,1,1,2,2,2,3,3,4,4,5]&amp;#10;intTime= int(random.choice(timeR))&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1640,6 +1655,48 @@
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
     </Routine>
+    <Routine name="reset">
+      <CodeComponent name="code_8">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="roundGain = []" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_8" valType="code"/>
+      </CodeComponent>
+      <PolygonComponent name="cB_13">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="cB_13" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(4, 4)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val=".01" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="wScr"/>
@@ -1662,33 +1719,77 @@
     <LoopTerminator name="bufferLoop"/>
     <Routine name="bufEnd"/>
     <Routine name="sbIn"/>
-    <LoopInitiator loopType="TrialHandler" name="trials">
-      <Param name="Selected rows" updates="None" val="1:20" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)])]" valType="str"/>
+    <LoopInitiator loopType="TrialHandler" name="sbLoop_0">
+      <Param name="Selected rows" updates="None" val="0:4" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="contitions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
-      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="2" valType="code"/>
-      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="name" updates="None" val="sbLoop_0" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <LoopInitiator loopType="TrialHandler" name="sbLoop">
-      <Param name="Selected rows" updates="None" val="1:20" valType="str"/>
+    <Routine name="sbRnd"/>
+    <Routine name="bufWait"/>
+    <Routine name="sbFb"/>
+    <Routine name="bufFix"/>
+    <LoopTerminator name="sbLoop_0"/>
+    <LoopInitiator loopType="TrialHandler" name="sliders_0">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sliders.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="sliders_0" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="sbQu"/>
+    <LoopTerminator name="sliders_0"/>
+    <LoopInitiator loopType="TrialHandler" name="buffer_0">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="4" valType="code"/>
+      <Param name="name" updates="None" val="buffer_0" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="bufWait"/>
+    <LoopTerminator name="buffer_0"/>
+    <Routine name="bufFix"/>
+    <Routine name="reset"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_1">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="None" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_1" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <LoopInitiator loopType="TrialHandler" name="sbLoop_1">
+      <Param name="Selected rows" updates="None" val="5:25" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'trust'), ('correctResponse', 'trust')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')]), OrderedDict([('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('actionLabel', 'defect'), ('correctResponse', 'defect')])]" valType="str"/>
       <Param name="conditionsFile" updates="None" val="contitions.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="2" valType="code"/>
-      <Param name="name" updates="None" val="sbLoop" valType="code"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="sbLoop_1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="sbRnd"/>
-    <Routine name="bufRand"/>
+    <Routine name="bufWait"/>
     <Routine name="sbFb"/>
     <Routine name="bufFix"/>
-    <LoopTerminator name="sbLoop"/>
+    <LoopTerminator name="sbLoop_1"/>
     <LoopInitiator loopType="TrialHandler" name="sliders_1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderLabels', 'negative, positive'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderLabels', 'low, high'), ('sliderMin', 1), ('sliderMax', 7)])]" valType="str"/>
@@ -1702,7 +1803,7 @@
     </LoopInitiator>
     <Routine name="sbQu"/>
     <LoopTerminator name="sliders_1"/>
-    <LoopInitiator loopType="TrialHandler" name="trials_2">
+    <LoopInitiator loopType="TrialHandler" name="buffer_1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
       <Param name="conditionsFile" updates="None" val="" valType="str"/>
@@ -1710,13 +1811,13 @@
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
       <Param name="nReps" updates="None" val="4" valType="code"/>
-      <Param name="name" updates="None" val="trials_2" valType="code"/>
+      <Param name="name" updates="None" val="buffer_1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="bufRand"/>
-    <LoopTerminator name="trials_2"/>
+    <Routine name="bufWait"/>
+    <LoopTerminator name="buffer_1"/>
     <Routine name="bufFix"/>
-    <LoopTerminator name="trials"/>
+    <LoopTerminator name="trials_1"/>
     <Routine name="sbEnd"/>
   </Flow>
 </PsychoPy2experiment>
