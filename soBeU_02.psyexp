@@ -1147,7 +1147,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if actionLabel == 0:&amp;#10;    sbGain = 0&amp;#10;elif actionLabel == 1:&amp;#10;    sbGain = sbResp&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;sbTotal += sbGain&amp;#10;&amp;#10;if playerId == 'Paul':&amp;#10;    sbTotalPaul += sbGain&amp;#10;elif playerId == 'Lukas':&amp;#10;    sbTotalLukas += sbGain&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;roundGain.append(creditTotal)&amp;#10;&amp;#10;print(sbTotal)&amp;#10;print(roundGain)&amp;#10;&amp;#10;thisExp.addData(&quot;totalMoney&quot;, sbTotal)&amp;#10;thisExp.addData(&quot;paulMoney&quot;, sbTotalPaul)&amp;#10;thisExp.addData(&quot;lukasMoney&quot;, sbTotalLukas)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="lastPlayer = playerId&amp;#10;&amp;#10;if actionLabel == 0:&amp;#10;    sbGain = 0&amp;#10;elif actionLabel == 1:&amp;#10;    sbGain = sbResp&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;sbTotal += sbGain&amp;#10;&amp;#10;if playerId == 'Paul':&amp;#10;    sbTotalPaul += sbGain&amp;#10;elif playerId == 'Lukas':&amp;#10;    sbTotalLukas += sbGain&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;roundGain.append(creditTotal)&amp;#10;&amp;#10;print(sbTotal)&amp;#10;print(roundGain)&amp;#10;&amp;#10;thisExp.addData(&quot;totalMoney&quot;, sbTotal)&amp;#10;thisExp.addData(&quot;paulMoney&quot;, sbTotalPaul)&amp;#10;thisExp.addData(&quot;lukasMoney&quot;, sbTotalLukas)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="sbFbCode" valType="code"/>
       </CodeComponent>
@@ -1269,79 +1269,6 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="code"/>
       </TextComponent>
-    </Routine>
-    <Routine name="sbQu">
-      <PolygonComponent name="cB_11">
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
-        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
-        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
-        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
-        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
-        <Param name="nVertices" updates="constant" val="4" valType="int"/>
-        <Param name="name" updates="None" val="cB_11" valType="code"/>
-        <Param name="opacity" updates="constant" val="1" valType="code"/>
-        <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
-        <Param name="size" updates="constant" val="(4, 4)" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="units" updates="None" val="from exp settings" valType="str"/>
-      </PolygonComponent>
-      <CodeComponent name="code">
-        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="rating = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], &amp;#10;    scale=sliderText, labels = [sliderMin, sliderMax],&amp;#10;    tickHeight=-1,&amp;#10;    marker='triangle', markerStart=4, markerColor='DarkRed')&amp;#10;&amp;#10;&amp;#10;# leftKeys='left', rightKeys = 'right',acceptKeys='space'&amp;#10;" valType="extendedCode"/>
-        <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="name" updates="None" val="code" valType="code"/>
-      </CodeComponent>
-      <RatingScaleComponent name="rating">
-        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
-        <Param name="customize_everything" updates="constant" val="" valType="str"/>
-        <Param name="disabled" updates="None" val="False" valType="bool"/>
-        <Param name="disappear" updates="constant" val="False" valType="bool"/>
-        <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
-        <Param name="high" updates="constant" val="7" valType="code"/>
-        <Param name="labels" updates="constant" val="" valType="str"/>
-        <Param name="low" updates="constant" val="1" valType="code"/>
-        <Param name="marker" updates="constant" val="" valType="str"/>
-        <Param name="markerStart" updates="constant" val="" valType="str"/>
-        <Param name="name" updates="None" val="rating" valType="code"/>
-        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
-        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
-        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
-        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
-        <Param name="size" updates="constant" val="1.0" valType="code"/>
-        <Param name="startEstim" updates="None" val="" valType="code"/>
-        <Param name="startType" updates="None" val="time (s)" valType="str"/>
-        <Param name="startVal" updates="None" val="0.0" valType="code"/>
-        <Param name="stopType" updates="None" val="condition" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
-        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
-        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
-        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
-        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
-        <Param name="tickHeight" updates="constant" val="" valType="str"/>
-        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
-      </RatingScaleComponent>
     </Routine>
     <Routine name="sbFbSum">
       <PolygonComponent name="cbBuf_2">
@@ -1697,6 +1624,152 @@
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </PolygonComponent>
     </Routine>
+    <Routine name="sbQu2">
+      <PolygonComponent name="cB_14">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="cB_14" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(4, 4)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <CodeComponent name="code_9">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="rating_you = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], &amp;#10;    scale=sliderText + '?', labels = [sliderMin, sliderMax],&amp;#10;    tickHeight=-1,&amp;#10;    marker='triangle', markerStart=4, markerColor='DarkRed')&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_9" valType="code"/>
+      </CodeComponent>
+      <RatingScaleComponent name="rating_you">
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating_you" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="1.0" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
+    <Routine name="sbQu1">
+      <PolygonComponent name="cB_11">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="$[-1,-1,-1]" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="cB_11" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="rectangle" valType="str"/>
+        <Param name="size" updates="constant" val="(4, 4)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if lastPlayer == 'Paul':&amp;#10;    playerQ = 'Lukas' &amp;#10;    if lastPlayer == 'Lukas':&amp;#10;        playerQ = 'Paul'&amp;#10;if lastPlayer == 'Lukas':&amp;#10;    playerQ = 'Paul' &amp;#10;    if lastPlayer == 'Paul':&amp;#10;        playerQ = 'Lukas'&amp;#10;else:&amp;#10;    pass&amp;#10;&amp;#10;rating_they = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], &amp;#10;    scale=sliderText +' ' + playerQ + '?', labels = [sliderMin, sliderMax],&amp;#10;    tickHeight=-1,&amp;#10;    marker='triangle', markerStart=4, markerColor='DarkRed')&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="lastPlayer = playerQ" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+      <RatingScaleComponent name="rating_they">
+        <Param name="categoryChoices" updates="constant" val="" valType="str"/>
+        <Param name="customize_everything" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="disappear" updates="constant" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="high" updates="constant" val="7" valType="code"/>
+        <Param name="labels" updates="constant" val="" valType="str"/>
+        <Param name="low" updates="constant" val="1" valType="code"/>
+        <Param name="marker" updates="constant" val="" valType="str"/>
+        <Param name="markerStart" updates="constant" val="" valType="str"/>
+        <Param name="name" updates="None" val="rating_they" valType="code"/>
+        <Param name="pos" updates="constant" val="0, -0.4" valType="str"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="scaleDescription" updates="constant" val="" valType="str"/>
+        <Param name="showAccept" updates="constant" val="True" valType="bool"/>
+        <Param name="singleClick" updates="constant" val="False" valType="bool"/>
+        <Param name="size" updates="constant" val="1.0" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="condition" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="storeHistory" updates="constant" val="False" valType="bool"/>
+        <Param name="storeRating" updates="constant" val="True" valType="bool"/>
+        <Param name="storeRatingTime" updates="constant" val="True" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="tickHeight" updates="constant" val="" valType="str"/>
+        <Param name="visualAnalogScale" updates="constant" val="False" valType="bool"/>
+      </RatingScaleComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="wScr"/>
@@ -1719,6 +1792,17 @@
     <LoopTerminator name="bufferLoop"/>
     <Routine name="bufEnd"/>
     <Routine name="sbIn"/>
+    <LoopInitiator loopType="TrialHandler" name="trials_0">
+      <Param name="Selected rows" updates="None" val="0:4" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 0)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="contitions.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials_0" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
     <LoopInitiator loopType="TrialHandler" name="sbLoop_0">
       <Param name="Selected rows" updates="None" val="0:4" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 1)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerA'), ('playerId', 'Paul'), ('avatarFile', 'images/avatar1.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'keep the investment'), ('actionLabel', 0), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)]), OrderedDict([('playerAn', 'PlayerB'), ('playerId', 'Lukas'), ('avatarFile', 'images/avatar2.jpg'), ('choiceLabel', 'reciprocate'), ('actionLabel', 1), ('actionRound', 2)])]" valType="str"/>
@@ -1735,19 +1819,32 @@
     <Routine name="sbFb"/>
     <Routine name="bufFix"/>
     <LoopTerminator name="sbLoop_0"/>
-    <LoopInitiator loopType="TrialHandler" name="sliders_0">
+    <LoopInitiator loopType="TrialHandler" name="sliders_01">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="sliders.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with '), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sliders_they.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="sliders_0" valType="code"/>
+      <Param name="name" updates="None" val="sliders_01" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="sbQu"/>
-    <LoopTerminator name="sliders_0"/>
+    <Routine name="sbQu1"/>
+    <LoopTerminator name="sliders_01"/>
+    <LoopInitiator loopType="TrialHandler" name="slider_02">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sliders_you.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="slider_02" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="sbQu2"/>
+    <LoopTerminator name="slider_02"/>
     <LoopInitiator loopType="TrialHandler" name="buffer_0">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -1762,6 +1859,7 @@
     <Routine name="bufWait"/>
     <LoopTerminator name="buffer_0"/>
     <Routine name="bufFix"/>
+    <LoopTerminator name="trials_0"/>
     <Routine name="reset"/>
     <LoopInitiator loopType="TrialHandler" name="trials_1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
@@ -1790,19 +1888,32 @@
     <Routine name="sbFb"/>
     <Routine name="bufFix"/>
     <LoopTerminator name="sbLoop_1"/>
-    <LoopInitiator loopType="TrialHandler" name="sliders_1">
+    <LoopInitiator loopType="TrialHandler" name="sliders_11">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
-      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like Paul?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with Paul?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like Lukas?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with Lukas?'), ('sliderLabels', 'not at all, very much'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderLabels', 'negative, positive'), ('sliderMin', 1), ('sliderMax', 7)]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderLabels', 'low, high'), ('sliderMin', 1), ('sliderMax', 7)])]" valType="str"/>
-      <Param name="conditionsFile" updates="None" val="sliders.xlsx" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 1), ('sliderText', 'How much do you like'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 2), ('sliderText', 'How much do you want to continue playing with'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 3), ('sliderText', 'How much do you like'), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 4), ('sliderText', 'How much do you want to continue playing with '), ('sliderMin', 'not at all'), ('sliderMax', 'very much'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sliders_they.xlsx" valType="str"/>
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
       <Param name="nReps" updates="None" val="1" valType="code"/>
-      <Param name="name" updates="None" val="sliders_1" valType="code"/>
+      <Param name="name" updates="None" val="sliders_11" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="sbQu"/>
-    <LoopTerminator name="sliders_1"/>
+    <Routine name="sbQu1"/>
+    <LoopTerminator name="sliders_11"/>
+    <LoopInitiator loopType="TrialHandler" name="sliders_12">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('sliderID', 5), ('sliderText', 'How do you feel?'), ('sliderMin', 'negative'), ('sliderMax', 'positive'), ('sliderChoices', '1 2 3 4 5 6 7')]), OrderedDict([('sliderID', 6), ('sliderText', 'How activated are you right now?'), ('sliderMin', 'low'), ('sliderMax', 'high'), ('sliderChoices', '1 2 3 4 5 6 7')])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="sliders_you.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="sequential" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="sliders_12" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="sbQu2"/>
+    <LoopTerminator name="sliders_12"/>
     <LoopInitiator loopType="TrialHandler" name="buffer_1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>

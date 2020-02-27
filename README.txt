@@ -2,15 +2,16 @@
 soBeU
 
 ---To dos and issues---
+
 General:
 - Code cleaning
+- Instructions need to be fixed
 
 Simuli:
-- neutral images (not sure person v. RE stimuli)
-- Names vs neutral descriptions (Player A,... v Paul, ...)
+- neutral images (abstract person ( v. RE stimuli)
+- names vs neutral descriptions (Player A,... vs Paul, ...)
 
 Run:
-- First four trials should be high coop for all players (easy fix = trial Round; but best?)
 - Adaptive post-10 round questions 
 
 Pavlovia:
@@ -22,11 +23,12 @@ Pavlovia:
 - sync errors for github-gitlab-pavlovia (new repository on gitlab ?)
 
 ---Versions---
-v.02: 2502-2020
-- probabilistic responses
+v.02: 2702-2020
+- probabilistic responses (fixed)
 - instructions (rough)
 - moved all text content to the first routine (for ease of translating)
 - random intervall buffer
+- first 4 interactions are cooperative
 
 v.01: 2002-2020
 - rough design implementation

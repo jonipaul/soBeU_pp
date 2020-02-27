@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on February 27, 2020, at 11:16
+    on February 27, 2020, at 12:04
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -500,8 +500,8 @@ text_8 = visual.TextStim(win=win, name='text_8',
     languageStyle='LTR',
     depth=-1.0);
 
-# Initialize components for Routine "sbQu"
-sbQuClock = core.Clock()
+# Initialize components for Routine "sbQu1"
+sbQu1Clock = core.Clock()
 cB_11 = visual.Rect(
     win=win, name='cB_11',
     width=(4, 4)[0], height=(4, 4)[1],
@@ -509,7 +509,18 @@ cB_11 = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-rating = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
+rating_they = visual.RatingScale(win=win, name='rating_they', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
+
+# Initialize components for Routine "sbQu2"
+sbQu2Clock = core.Clock()
+cB_14 = visual.Rect(
+    win=win, name='cB_14',
+    width=(4, 4)[0], height=(4, 4)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[-1,-1,-1], fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+rating_you = visual.RatingScale(win=win, name='rating_you', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
 
 # Initialize components for Routine "bufWait"
 bufWaitClock = core.Clock()
@@ -643,8 +654,8 @@ text_8 = visual.TextStim(win=win, name='text_8',
     languageStyle='LTR',
     depth=-1.0);
 
-# Initialize components for Routine "sbQu"
-sbQuClock = core.Clock()
+# Initialize components for Routine "sbQu1"
+sbQu1Clock = core.Clock()
 cB_11 = visual.Rect(
     win=win, name='cB_11',
     width=(4, 4)[0], height=(4, 4)[1],
@@ -652,7 +663,18 @@ cB_11 = visual.Rect(
     lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
     fillColor=[-1,-1,-1], fillColorSpace='rgb',
     opacity=1, depth=0.0, interpolate=True)
-rating = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
+rating_they = visual.RatingScale(win=win, name='rating_they', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
+
+# Initialize components for Routine "sbQu2"
+sbQu2Clock = core.Clock()
+cB_14 = visual.Rect(
+    win=win, name='cB_14',
+    width=(4, 4)[0], height=(4, 4)[1],
+    ori=0, pos=(0, 0),
+    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
+    fillColor=[-1,-1,-1], fillColorSpace='rgb',
+    opacity=1, depth=0.0, interpolate=True)
+rating_you = visual.RatingScale(win=win, name='rating_you', size=1.0, pos=[0.0, -0.4], low=1, high=7, labels=[''], scale='')
 
 # Initialize components for Routine "bufWait"
 bufWaitClock = core.Clock()
@@ -2065,419 +2087,878 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-sbLoop_0 = data.TrialHandler(nReps=2, method='sequential', 
+trials_0 = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('contitions.xlsx', selection='0:4'),
-    seed=None, name='sbLoop_0')
-thisExp.addLoop(sbLoop_0)  # add the loop to the experiment
-thisSbLoop_0 = sbLoop_0.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisSbLoop_0.rgb)
-if thisSbLoop_0 != None:
-    for paramName in thisSbLoop_0:
-        exec('{} = thisSbLoop_0[paramName]'.format(paramName))
+    seed=None, name='trials_0')
+thisExp.addLoop(trials_0)  # add the loop to the experiment
+thisTrial_0 = trials_0.trialList[0]  # so we can initialise stimuli with some values
+# abbreviate parameter names if possible (e.g. rgb = thisTrial_0.rgb)
+if thisTrial_0 != None:
+    for paramName in thisTrial_0:
+        exec('{} = thisTrial_0[paramName]'.format(paramName))
 
-for thisSbLoop_0 in sbLoop_0:
-    currentLoop = sbLoop_0
+for thisTrial_0 in trials_0:
+    currentLoop = trials_0
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_0.rgb)
+    if thisTrial_0 != None:
+        for paramName in thisTrial_0:
+            exec('{} = thisTrial_0[paramName]'.format(paramName))
+    
+    # set up handler to look after randomisation of conditions etc
+    sbLoop_0 = data.TrialHandler(nReps=2, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=data.importConditions('contitions.xlsx', selection='0:4'),
+        seed=None, name='sbLoop_0')
+    thisExp.addLoop(sbLoop_0)  # add the loop to the experiment
+    thisSbLoop_0 = sbLoop_0.trialList[0]  # so we can initialise stimuli with some values
     # abbreviate parameter names if possible (e.g. rgb = thisSbLoop_0.rgb)
     if thisSbLoop_0 != None:
         for paramName in thisSbLoop_0:
             exec('{} = thisSbLoop_0[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "sbRnd"-------
-    # update component parameters for each repeat
-    text.setText('This round you are playing with ' + playerId + '!')
-    imagesbRnd.setImage(avatarFile)
-    sbChoice.reset()
-    text_6.setText(textSbText)
-    # keep track of which components have finished
-    sbRndComponents = [cB_8, text, imagesbRnd, sbChoice, text_6]
-    for thisComponent in sbRndComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    sbRndClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "sbRnd"-------
-    while continueRoutine:
-        # get current time
-        t = sbRndClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=sbRndClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+    for thisSbLoop_0 in sbLoop_0:
+        currentLoop = sbLoop_0
+        # abbreviate parameter names if possible (e.g. rgb = thisSbLoop_0.rgb)
+        if thisSbLoop_0 != None:
+            for paramName in thisSbLoop_0:
+                exec('{} = thisSbLoop_0[paramName]'.format(paramName))
         
-        # *cB_8* updates
-        if cB_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cB_8.frameNStart = frameN  # exact frame index
-            cB_8.tStart = t  # local t and not account for scr refresh
-            cB_8.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cB_8, 'tStartRefresh')  # time at next scr refresh
-            cB_8.setAutoDraw(True)
-        
-        # *text* updates
-        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
-            text.setAutoDraw(True)
-        
-        # *imagesbRnd* updates
-        if imagesbRnd.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            imagesbRnd.frameNStart = frameN  # exact frame index
-            imagesbRnd.tStart = t  # local t and not account for scr refresh
-            imagesbRnd.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(imagesbRnd, 'tStartRefresh')  # time at next scr refresh
-            imagesbRnd.setAutoDraw(True)
-        # *sbChoice* updates
-        if sbChoice.status == NOT_STARTED and t >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            sbChoice.frameNStart = frameN  # exact frame index
-            sbChoice.tStart = t  # local t and not account for scr refresh
-            sbChoice.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(sbChoice, 'tStartRefresh')  # time at next scr refresh
-            sbChoice.setAutoDraw(True)
-        continueRoutine &= sbChoice.noResponse  # a response ends the trial
-        
-        # *text_6* updates
-        if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_6.frameNStart = frameN  # exact frame index
-            text_6.tStart = t  # local t and not account for scr refresh
-            text_6.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
-            text_6.setAutoDraw(True)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        # ------Prepare to start Routine "sbRnd"-------
+        # update component parameters for each repeat
+        text.setText('This round you are playing with ' + playerId + '!')
+        imagesbRnd.setImage(avatarFile)
+        sbChoice.reset()
+        text_6.setText(textSbText)
+        # keep track of which components have finished
+        sbRndComponents = [cB_8, text, imagesbRnd, sbChoice, text_6]
         for thisComponent in sbRndComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        sbRndClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "sbRnd"-------
-    for thisComponent in sbRndComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    sbLoop_0.addData('cB_8.started', cB_8.tStartRefresh)
-    sbLoop_0.addData('cB_8.stopped', cB_8.tStopRefresh)
-    sbLoop_0.addData('text.started', text.tStartRefresh)
-    sbLoop_0.addData('text.stopped', text.tStopRefresh)
-    sbLoop_0.addData('imagesbRnd.started', imagesbRnd.tStartRefresh)
-    sbLoop_0.addData('imagesbRnd.stopped', imagesbRnd.tStopRefresh)
-    # store data for sbLoop_0 (TrialHandler)
-    sbLoop_0.addData('sbChoice.response', sbChoice.getRating())
-    sbLoop_0.addData('sbChoice.rt', sbChoice.getRT())
-    sbLoop_0.addData('sbChoice.history', sbChoice.getHistory())
-    sbLoop_0.addData('sbChoice.started', sbChoice.tStart)
-    sbLoop_0.addData('sbChoice.stopped', sbChoice.tStop)
-    sbResp = int(sbChoice.getRating())
-    sbRT = sbChoice.getRT()
-    
-    print(sbRT)
-    print(sbResp)
-    sbLoop_0.addData('text_6.started', text_6.tStartRefresh)
-    sbLoop_0.addData('text_6.stopped', text_6.tStopRefresh)
-    # the Routine "sbRnd" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "bufWait"-------
-    # update component parameters for each repeat
-    import random 
-    
-    timeR= [0,1,1,1,1,2,2,2,3,3,4,4,5]
-    intTime= int(random.choice(timeR))
-    
-    
-    text_7.setText(bufText)
-    # keep track of which components have finished
-    bufWaitComponents = [cB_9, text_7]
-    for thisComponent in bufWaitComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    bufWaitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "bufWait"-------
-    while continueRoutine:
-        # get current time
-        t = bufWaitClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=bufWaitClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+        # -------Run Routine "sbRnd"-------
+        while continueRoutine:
+            # get current time
+            t = sbRndClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbRndClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_8* updates
+            if cB_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_8.frameNStart = frameN  # exact frame index
+                cB_8.tStart = t  # local t and not account for scr refresh
+                cB_8.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_8, 'tStartRefresh')  # time at next scr refresh
+                cB_8.setAutoDraw(True)
+            
+            # *text* updates
+            if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text.frameNStart = frameN  # exact frame index
+                text.tStart = t  # local t and not account for scr refresh
+                text.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+                text.setAutoDraw(True)
+            
+            # *imagesbRnd* updates
+            if imagesbRnd.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                imagesbRnd.frameNStart = frameN  # exact frame index
+                imagesbRnd.tStart = t  # local t and not account for scr refresh
+                imagesbRnd.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(imagesbRnd, 'tStartRefresh')  # time at next scr refresh
+                imagesbRnd.setAutoDraw(True)
+            # *sbChoice* updates
+            if sbChoice.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                sbChoice.frameNStart = frameN  # exact frame index
+                sbChoice.tStart = t  # local t and not account for scr refresh
+                sbChoice.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(sbChoice, 'tStartRefresh')  # time at next scr refresh
+                sbChoice.setAutoDraw(True)
+            continueRoutine &= sbChoice.noResponse  # a response ends the trial
+            
+            # *text_6* updates
+            if text_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_6.frameNStart = frameN  # exact frame index
+                text_6.tStart = t  # local t and not account for scr refresh
+                text_6.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_6, 'tStartRefresh')  # time at next scr refresh
+                text_6.setAutoDraw(True)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in sbRndComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
         
-        # *cB_9* updates
-        if cB_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cB_9.frameNStart = frameN  # exact frame index
-            cB_9.tStart = t  # local t and not account for scr refresh
-            cB_9.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cB_9, 'tStartRefresh')  # time at next scr refresh
-            cB_9.setAutoDraw(True)
-        if cB_9.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cB_9.tStartRefresh + intTime-frameTolerance:
-                # keep track of stop time/frame for later
-                cB_9.tStop = t  # not accounting for scr refresh
-                cB_9.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(cB_9, 'tStopRefresh')  # time at next scr refresh
-                cB_9.setAutoDraw(False)
+        # -------Ending Routine "sbRnd"-------
+        for thisComponent in sbRndComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        sbLoop_0.addData('cB_8.started', cB_8.tStartRefresh)
+        sbLoop_0.addData('cB_8.stopped', cB_8.tStopRefresh)
+        sbLoop_0.addData('text.started', text.tStartRefresh)
+        sbLoop_0.addData('text.stopped', text.tStopRefresh)
+        sbLoop_0.addData('imagesbRnd.started', imagesbRnd.tStartRefresh)
+        sbLoop_0.addData('imagesbRnd.stopped', imagesbRnd.tStopRefresh)
+        # store data for sbLoop_0 (TrialHandler)
+        sbLoop_0.addData('sbChoice.response', sbChoice.getRating())
+        sbLoop_0.addData('sbChoice.rt', sbChoice.getRT())
+        sbLoop_0.addData('sbChoice.history', sbChoice.getHistory())
+        sbLoop_0.addData('sbChoice.started', sbChoice.tStart)
+        sbLoop_0.addData('sbChoice.stopped', sbChoice.tStop)
+        sbResp = int(sbChoice.getRating())
+        sbRT = sbChoice.getRT()
         
-        # *text_7* updates
-        if text_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_7.frameNStart = frameN  # exact frame index
-            text_7.tStart = t  # local t and not account for scr refresh
-            text_7.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
-            text_7.setAutoDraw(True)
-        if text_7.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_7.tStartRefresh + intTime-frameTolerance:
-                # keep track of stop time/frame for later
-                text_7.tStop = t  # not accounting for scr refresh
-                text_7.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_7, 'tStopRefresh')  # time at next scr refresh
-                text_7.setAutoDraw(False)
+        print(sbRT)
+        print(sbResp)
+        sbLoop_0.addData('text_6.started', text_6.tStartRefresh)
+        sbLoop_0.addData('text_6.stopped', text_6.tStopRefresh)
+        # the Routine "sbRnd" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+        # ------Prepare to start Routine "bufWait"-------
+        # update component parameters for each repeat
+        import random 
         
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        timeR= [0,1,1,1,1,2,2,2,3,3,4,4,5]
+        intTime= int(random.choice(timeR))
+        
+        
+        text_7.setText(bufText)
+        # keep track of which components have finished
+        bufWaitComponents = [cB_9, text_7]
         for thisComponent in bufWaitComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        bufWaitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "bufWait"-------
-    for thisComponent in bufWaitComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    sbLoop_0.addData('cB_9.started', cB_9.tStartRefresh)
-    sbLoop_0.addData('cB_9.stopped', cB_9.tStopRefresh)
-    sbLoop_0.addData('text_7.started', text_7.tStartRefresh)
-    sbLoop_0.addData('text_7.stopped', text_7.tStopRefresh)
-    # the Routine "bufWait" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # ------Prepare to start Routine "sbFb"-------
-    routineTimer.add(5.000000)
-    # update component parameters for each repeat
-    ResponseCoop = [1,1.5,2]
-    ResponseUnco = [0.5,0.75,1]
-    creditMultiPlier = 3
-    
-    if actionLabel == 0:
-        multiPlier = random.choice(ResponseUnco)
-    elif actionLabel == 1:
-        multiPlier = random.choice(ResponseCoop)
-    else:
-        multiPlier= int(99)
-    
-    creditInvestment = sbResp
-    creditLeft = 10 - sbResp
-    
-    creditGain = creditInvestment * multiPlier
-    creditTotal = creditGain + creditLeft
-    mpText = multiPlier*100
-    
-    textforThis1 = playerId + textSbFeed1 + str(mpText) + textSbFeed2
-    textforThis2 = textSbFeed3 + str(creditGain) + textSbFeed4
-    textforThis3 = textSbFeed5 + str(creditTotal) + textSbFeed4
-    
-    
-    
-    textFb.setText(textforThis1 + textforThis2 + textforThis3)
-    out_Fb.keys = []
-    out_Fb.rt = []
-    # keep track of which components have finished
-    sbFbComponents = [cbFb, textFb, out_Fb]
-    for thisComponent in sbFbComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    sbFbClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "sbFb"-------
-    while continueRoutine and routineTimer.getTime() > 0:
-        # get current time
-        t = sbFbClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=sbFbClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+        # -------Run Routine "bufWait"-------
+        while continueRoutine:
+            # get current time
+            t = bufWaitClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=bufWaitClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_9* updates
+            if cB_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_9.frameNStart = frameN  # exact frame index
+                cB_9.tStart = t  # local t and not account for scr refresh
+                cB_9.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_9, 'tStartRefresh')  # time at next scr refresh
+                cB_9.setAutoDraw(True)
+            if cB_9.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > cB_9.tStartRefresh + intTime-frameTolerance:
+                    # keep track of stop time/frame for later
+                    cB_9.tStop = t  # not accounting for scr refresh
+                    cB_9.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(cB_9, 'tStopRefresh')  # time at next scr refresh
+                    cB_9.setAutoDraw(False)
+            
+            # *text_7* updates
+            if text_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_7.frameNStart = frameN  # exact frame index
+                text_7.tStart = t  # local t and not account for scr refresh
+                text_7.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
+                text_7.setAutoDraw(True)
+            if text_7.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_7.tStartRefresh + intTime-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_7.tStop = t  # not accounting for scr refresh
+                    text_7.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_7, 'tStopRefresh')  # time at next scr refresh
+                    text_7.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in bufWaitComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
         
-        # *cbFb* updates
-        if cbFb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cbFb.frameNStart = frameN  # exact frame index
-            cbFb.tStart = t  # local t and not account for scr refresh
-            cbFb.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cbFb, 'tStartRefresh')  # time at next scr refresh
-            cbFb.setAutoDraw(True)
-        if cbFb.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cbFb.tStartRefresh + 5-frameTolerance:
-                # keep track of stop time/frame for later
-                cbFb.tStop = t  # not accounting for scr refresh
-                cbFb.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(cbFb, 'tStopRefresh')  # time at next scr refresh
-                cbFb.setAutoDraw(False)
+        # -------Ending Routine "bufWait"-------
+        for thisComponent in bufWaitComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        sbLoop_0.addData('cB_9.started', cB_9.tStartRefresh)
+        sbLoop_0.addData('cB_9.stopped', cB_9.tStopRefresh)
+        sbLoop_0.addData('text_7.started', text_7.tStartRefresh)
+        sbLoop_0.addData('text_7.stopped', text_7.tStopRefresh)
+        # the Routine "bufWait" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
-        # *textFb* updates
-        if textFb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            textFb.frameNStart = frameN  # exact frame index
-            textFb.tStart = t  # local t and not account for scr refresh
-            textFb.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(textFb, 'tStartRefresh')  # time at next scr refresh
-            textFb.setAutoDraw(True)
-        if textFb.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > textFb.tStartRefresh + 5-frameTolerance:
-                # keep track of stop time/frame for later
-                textFb.tStop = t  # not accounting for scr refresh
-                textFb.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(textFb, 'tStopRefresh')  # time at next scr refresh
-                textFb.setAutoDraw(False)
+        # ------Prepare to start Routine "sbFb"-------
+        routineTimer.add(5.000000)
+        # update component parameters for each repeat
+        ResponseCoop = [1,1.5,2]
+        ResponseUnco = [0.5,0.75,1]
+        creditMultiPlier = 3
         
-        # *out_Fb* updates
-        waitOnFlip = False
-        if out_Fb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            out_Fb.frameNStart = frameN  # exact frame index
-            out_Fb.tStart = t  # local t and not account for scr refresh
-            out_Fb.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(out_Fb, 'tStartRefresh')  # time at next scr refresh
-            out_Fb.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(out_Fb.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(out_Fb.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if out_Fb.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > out_Fb.tStartRefresh + 5-frameTolerance:
-                # keep track of stop time/frame for later
-                out_Fb.tStop = t  # not accounting for scr refresh
-                out_Fb.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(out_Fb, 'tStopRefresh')  # time at next scr refresh
-                out_Fb.status = FINISHED
-        if out_Fb.status == STARTED and not waitOnFlip:
-            theseKeys = out_Fb.getKeys(keyList=['1'], waitRelease=False)
-            if len(theseKeys):
-                theseKeys = theseKeys[0]  # at least one key was pressed
-                
-                # check for quit:
-                if "escape" == theseKeys:
-                    endExpNow = True
-                out_Fb.keys = theseKeys.name  # just the last key pressed
-                out_Fb.rt = theseKeys.rt
-                # a response ends the routine
-                continueRoutine = False
+        if actionLabel == 0:
+            multiPlier = random.choice(ResponseUnco)
+        elif actionLabel == 1:
+            multiPlier = random.choice(ResponseCoop)
+        else:
+            multiPlier= int(99)
         
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
+        creditInvestment = sbResp
+        creditLeft = 10 - sbResp
         
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
+        creditGain = creditInvestment * multiPlier
+        creditTotal = creditGain + creditLeft
+        mpText = multiPlier*100
+        
+        textforThis1 = playerId + textSbFeed1 + str(mpText) + textSbFeed2
+        textforThis2 = textSbFeed3 + str(creditGain) + textSbFeed4
+        textforThis3 = textSbFeed5 + str(creditTotal) + textSbFeed4
+        
+        
+        
+        textFb.setText(textforThis1 + textforThis2 + textforThis3)
+        out_Fb.keys = []
+        out_Fb.rt = []
+        # keep track of which components have finished
+        sbFbComponents = [cbFb, textFb, out_Fb]
         for thisComponent in sbFbComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        sbFbClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
         
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+        # -------Run Routine "sbFb"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = sbFbClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbFbClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cbFb* updates
+            if cbFb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cbFb.frameNStart = frameN  # exact frame index
+                cbFb.tStart = t  # local t and not account for scr refresh
+                cbFb.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cbFb, 'tStartRefresh')  # time at next scr refresh
+                cbFb.setAutoDraw(True)
+            if cbFb.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > cbFb.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    cbFb.tStop = t  # not accounting for scr refresh
+                    cbFb.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(cbFb, 'tStopRefresh')  # time at next scr refresh
+                    cbFb.setAutoDraw(False)
+            
+            # *textFb* updates
+            if textFb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                textFb.frameNStart = frameN  # exact frame index
+                textFb.tStart = t  # local t and not account for scr refresh
+                textFb.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(textFb, 'tStartRefresh')  # time at next scr refresh
+                textFb.setAutoDraw(True)
+            if textFb.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > textFb.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    textFb.tStop = t  # not accounting for scr refresh
+                    textFb.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(textFb, 'tStopRefresh')  # time at next scr refresh
+                    textFb.setAutoDraw(False)
+            
+            # *out_Fb* updates
+            waitOnFlip = False
+            if out_Fb.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                out_Fb.frameNStart = frameN  # exact frame index
+                out_Fb.tStart = t  # local t and not account for scr refresh
+                out_Fb.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(out_Fb, 'tStartRefresh')  # time at next scr refresh
+                out_Fb.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(out_Fb.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(out_Fb.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if out_Fb.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > out_Fb.tStartRefresh + 5-frameTolerance:
+                    # keep track of stop time/frame for later
+                    out_Fb.tStop = t  # not accounting for scr refresh
+                    out_Fb.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(out_Fb, 'tStopRefresh')  # time at next scr refresh
+                    out_Fb.status = FINISHED
+            if out_Fb.status == STARTED and not waitOnFlip:
+                theseKeys = out_Fb.getKeys(keyList=['1'], waitRelease=False)
+                if len(theseKeys):
+                    theseKeys = theseKeys[0]  # at least one key was pressed
+                    
+                    # check for quit:
+                    if "escape" == theseKeys:
+                        endExpNow = True
+                    out_Fb.keys = theseKeys.name  # just the last key pressed
+                    out_Fb.rt = theseKeys.rt
+                    # a response ends the routine
+                    continueRoutine = False
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in sbFbComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "sbFb"-------
+        for thisComponent in sbFbComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        lastPlayer = playerId
+        
+        if actionLabel == 0:
+            sbGain = 0
+        elif actionLabel == 1:
+            sbGain = sbResp
+        else:
+            pass
+        
+        sbTotal += sbGain
+        
+        if playerId == 'Paul':
+            sbTotalPaul += sbGain
+        elif playerId == 'Lukas':
+            sbTotalLukas += sbGain
+        else:
+            pass
+        
+        roundGain.append(creditTotal)
+        
+        print(sbTotal)
+        print(roundGain)
+        
+        thisExp.addData("totalMoney", sbTotal)
+        thisExp.addData("paulMoney", sbTotalPaul)
+        thisExp.addData("lukasMoney", sbTotalLukas)
+        sbLoop_0.addData('cbFb.started', cbFb.tStartRefresh)
+        sbLoop_0.addData('cbFb.stopped', cbFb.tStopRefresh)
+        sbLoop_0.addData('textFb.started', textFb.tStartRefresh)
+        sbLoop_0.addData('textFb.stopped', textFb.tStopRefresh)
+        # check responses
+        if out_Fb.keys in ['', [], None]:  # No response was made
+            out_Fb.keys = None
+        sbLoop_0.addData('out_Fb.keys',out_Fb.keys)
+        if out_Fb.keys != None:  # we had a response
+            sbLoop_0.addData('out_Fb.rt', out_Fb.rt)
+        sbLoop_0.addData('out_Fb.started', out_Fb.tStartRefresh)
+        sbLoop_0.addData('out_Fb.stopped', out_Fb.tStopRefresh)
+        
+        # ------Prepare to start Routine "bufFix"-------
+        routineTimer.add(1.000000)
+        # update component parameters for each repeat
+        # keep track of which components have finished
+        bufFixComponents = [cbBuf, text_8]
+        for thisComponent in bufFixComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        bufFixClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "bufFix"-------
+        while continueRoutine and routineTimer.getTime() > 0:
+            # get current time
+            t = bufFixClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=bufFixClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cbBuf* updates
+            if cbBuf.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cbBuf.frameNStart = frameN  # exact frame index
+                cbBuf.tStart = t  # local t and not account for scr refresh
+                cbBuf.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cbBuf, 'tStartRefresh')  # time at next scr refresh
+                cbBuf.setAutoDraw(True)
+            if cbBuf.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
+                    # keep track of stop time/frame for later
+                    cbBuf.tStop = t  # not accounting for scr refresh
+                    cbBuf.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
+                    cbBuf.setAutoDraw(False)
+            
+            # *text_8* updates
+            if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
+                # keep track of start time/frame for later
+                text_8.frameNStart = frameN  # exact frame index
+                text_8.tStart = t  # local t and not account for scr refresh
+                text_8.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
+                text_8.setAutoDraw(True)
+            if text_8.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_8.tStop = t  # not accounting for scr refresh
+                    text_8.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
+                    text_8.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in bufFixComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "bufFix"-------
+        for thisComponent in bufFixComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        sbLoop_0.addData('cbBuf.started', cbBuf.tStartRefresh)
+        sbLoop_0.addData('cbBuf.stopped', cbBuf.tStopRefresh)
+        sbLoop_0.addData('text_8.started', text_8.tStartRefresh)
+        sbLoop_0.addData('text_8.stopped', text_8.tStopRefresh)
+        thisExp.nextEntry()
+        
+    # completed 2 repeats of 'sbLoop_0'
     
-    # -------Ending Routine "sbFb"-------
-    for thisComponent in sbFbComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    if actionLabel == 0:
-        sbGain = 0
-    elif actionLabel == 1:
-        sbGain = sbResp
-    else:
-        pass
     
-    sbTotal += sbGain
+    # set up handler to look after randomisation of conditions etc
+    sliders_01 = data.TrialHandler(nReps=1, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=data.importConditions('sliders_they.xlsx'),
+        seed=None, name='sliders_01')
+    thisExp.addLoop(sliders_01)  # add the loop to the experiment
+    thisSlider_01 = sliders_01.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisSlider_01.rgb)
+    if thisSlider_01 != None:
+        for paramName in thisSlider_01:
+            exec('{} = thisSlider_01[paramName]'.format(paramName))
     
-    if playerId == 'Paul':
-        sbTotalPaul += sbGain
-    elif playerId == 'Lukas':
-        sbTotalLukas += sbGain
-    else:
-        pass
+    for thisSlider_01 in sliders_01:
+        currentLoop = sliders_01
+        # abbreviate parameter names if possible (e.g. rgb = thisSlider_01.rgb)
+        if thisSlider_01 != None:
+            for paramName in thisSlider_01:
+                exec('{} = thisSlider_01[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "sbQu1"-------
+        # update component parameters for each repeat
+        if lastPlayer == 'Paul':
+            playerQ = 'Lukas' 
+            if lastPlayer == 'Lukas':
+                playerQ = 'Paul'
+        if lastPlayer == 'Lukas':
+            playerQ = 'Paul' 
+            if lastPlayer == 'Paul':
+                playerQ = 'Lukas'
+        else:
+            pass
+        
+        rating_they = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
+            scale=sliderText +' ' + playerQ + '?', labels = [sliderMin, sliderMax],
+            tickHeight=-1,
+            marker='triangle', markerStart=4, markerColor='DarkRed')
+        
+        
+        
+        rating_they.reset()
+        # keep track of which components have finished
+        sbQu1Components = [cB_11, rating_they]
+        for thisComponent in sbQu1Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        sbQu1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "sbQu1"-------
+        while continueRoutine:
+            # get current time
+            t = sbQu1Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbQu1Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_11* updates
+            if cB_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_11.frameNStart = frameN  # exact frame index
+                cB_11.tStart = t  # local t and not account for scr refresh
+                cB_11.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_11, 'tStartRefresh')  # time at next scr refresh
+                cB_11.setAutoDraw(True)
+            # *rating_they* updates
+            if rating_they.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating_they.frameNStart = frameN  # exact frame index
+                rating_they.tStart = t  # local t and not account for scr refresh
+                rating_they.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_they, 'tStartRefresh')  # time at next scr refresh
+                rating_they.setAutoDraw(True)
+            continueRoutine &= rating_they.noResponse  # a response ends the trial
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in sbQu1Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "sbQu1"-------
+        for thisComponent in sbQu1Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        sliders_01.addData('cB_11.started', cB_11.tStartRefresh)
+        sliders_01.addData('cB_11.stopped', cB_11.tStopRefresh)
+        lastPlayer = playerQ
+        # store data for sliders_01 (TrialHandler)
+        sliders_01.addData('rating_they.response', rating_they.getRating())
+        sliders_01.addData('rating_they.rt', rating_they.getRT())
+        sliders_01.addData('rating_they.started', rating_they.tStart)
+        sliders_01.addData('rating_they.stopped', rating_they.tStop)
+        # the Routine "sbQu1" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 1 repeats of 'sliders_01'
     
-    roundGain.append(creditTotal)
     
-    print(sbTotal)
-    print(roundGain)
+    # set up handler to look after randomisation of conditions etc
+    slider_02 = data.TrialHandler(nReps=1, method='random', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=data.importConditions('sliders_you.xlsx'),
+        seed=None, name='slider_02')
+    thisExp.addLoop(slider_02)  # add the loop to the experiment
+    thisSlider_02 = slider_02.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisSlider_02.rgb)
+    if thisSlider_02 != None:
+        for paramName in thisSlider_02:
+            exec('{} = thisSlider_02[paramName]'.format(paramName))
     
-    thisExp.addData("totalMoney", sbTotal)
-    thisExp.addData("paulMoney", sbTotalPaul)
-    thisExp.addData("lukasMoney", sbTotalLukas)
-    sbLoop_0.addData('cbFb.started', cbFb.tStartRefresh)
-    sbLoop_0.addData('cbFb.stopped', cbFb.tStopRefresh)
-    sbLoop_0.addData('textFb.started', textFb.tStartRefresh)
-    sbLoop_0.addData('textFb.stopped', textFb.tStopRefresh)
-    # check responses
-    if out_Fb.keys in ['', [], None]:  # No response was made
-        out_Fb.keys = None
-    sbLoop_0.addData('out_Fb.keys',out_Fb.keys)
-    if out_Fb.keys != None:  # we had a response
-        sbLoop_0.addData('out_Fb.rt', out_Fb.rt)
-    sbLoop_0.addData('out_Fb.started', out_Fb.tStartRefresh)
-    sbLoop_0.addData('out_Fb.stopped', out_Fb.tStopRefresh)
+    for thisSlider_02 in slider_02:
+        currentLoop = slider_02
+        # abbreviate parameter names if possible (e.g. rgb = thisSlider_02.rgb)
+        if thisSlider_02 != None:
+            for paramName in thisSlider_02:
+                exec('{} = thisSlider_02[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "sbQu2"-------
+        # update component parameters for each repeat
+        rating_you = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
+            scale=sliderText + '?', labels = [sliderMin, sliderMax],
+            tickHeight=-1,
+            marker='triangle', markerStart=4, markerColor='DarkRed')
+        
+        
+        
+        rating_you.reset()
+        # keep track of which components have finished
+        sbQu2Components = [cB_14, rating_you]
+        for thisComponent in sbQu2Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        sbQu2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "sbQu2"-------
+        while continueRoutine:
+            # get current time
+            t = sbQu2Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbQu2Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_14* updates
+            if cB_14.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_14.frameNStart = frameN  # exact frame index
+                cB_14.tStart = t  # local t and not account for scr refresh
+                cB_14.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_14, 'tStartRefresh')  # time at next scr refresh
+                cB_14.setAutoDraw(True)
+            # *rating_you* updates
+            if rating_you.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating_you.frameNStart = frameN  # exact frame index
+                rating_you.tStart = t  # local t and not account for scr refresh
+                rating_you.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_you, 'tStartRefresh')  # time at next scr refresh
+                rating_you.setAutoDraw(True)
+            continueRoutine &= rating_you.noResponse  # a response ends the trial
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in sbQu2Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "sbQu2"-------
+        for thisComponent in sbQu2Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.addData('cB_14.started', cB_14.tStartRefresh)
+        thisExp.addData('cB_14.stopped', cB_14.tStopRefresh)
+        # store data for thisExp (ExperimentHandler)
+        thisExp.addData('rating_you.response', rating_you.getRating())
+        thisExp.addData('rating_you.rt', rating_you.getRT())
+        thisExp.nextEntry()
+        thisExp.addData('rating_you.started', rating_you.tStart)
+        thisExp.addData('rating_you.stopped', rating_you.tStop)
+        # the Routine "sbQu2" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 1 repeats of 'slider_02'
+    
+    
+    # set up handler to look after randomisation of conditions etc
+    buffer_0 = data.TrialHandler(nReps=4, method='random', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='buffer_0')
+    thisExp.addLoop(buffer_0)  # add the loop to the experiment
+    thisBuffer_0 = buffer_0.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisBuffer_0.rgb)
+    if thisBuffer_0 != None:
+        for paramName in thisBuffer_0:
+            exec('{} = thisBuffer_0[paramName]'.format(paramName))
+    
+    for thisBuffer_0 in buffer_0:
+        currentLoop = buffer_0
+        # abbreviate parameter names if possible (e.g. rgb = thisBuffer_0.rgb)
+        if thisBuffer_0 != None:
+            for paramName in thisBuffer_0:
+                exec('{} = thisBuffer_0[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "bufWait"-------
+        # update component parameters for each repeat
+        import random 
+        
+        timeR= [0,1,1,1,1,2,2,2,3,3,4,4,5]
+        intTime= int(random.choice(timeR))
+        
+        
+        text_7.setText(bufText)
+        # keep track of which components have finished
+        bufWaitComponents = [cB_9, text_7]
+        for thisComponent in bufWaitComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        bufWaitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "bufWait"-------
+        while continueRoutine:
+            # get current time
+            t = bufWaitClock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=bufWaitClock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_9* updates
+            if cB_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_9.frameNStart = frameN  # exact frame index
+                cB_9.tStart = t  # local t and not account for scr refresh
+                cB_9.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_9, 'tStartRefresh')  # time at next scr refresh
+                cB_9.setAutoDraw(True)
+            if cB_9.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > cB_9.tStartRefresh + intTime-frameTolerance:
+                    # keep track of stop time/frame for later
+                    cB_9.tStop = t  # not accounting for scr refresh
+                    cB_9.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(cB_9, 'tStopRefresh')  # time at next scr refresh
+                    cB_9.setAutoDraw(False)
+            
+            # *text_7* updates
+            if text_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                text_7.frameNStart = frameN  # exact frame index
+                text_7.tStart = t  # local t and not account for scr refresh
+                text_7.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
+                text_7.setAutoDraw(True)
+            if text_7.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > text_7.tStartRefresh + intTime-frameTolerance:
+                    # keep track of stop time/frame for later
+                    text_7.tStop = t  # not accounting for scr refresh
+                    text_7.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(text_7, 'tStopRefresh')  # time at next scr refresh
+                    text_7.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in bufWaitComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "bufWait"-------
+        for thisComponent in bufWaitComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        buffer_0.addData('cB_9.started', cB_9.tStartRefresh)
+        buffer_0.addData('cB_9.stopped', cB_9.tStopRefresh)
+        buffer_0.addData('text_7.started', text_7.tStartRefresh)
+        buffer_0.addData('text_7.stopped', text_7.tStopRefresh)
+        # the Routine "bufWait" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 4 repeats of 'buffer_0'
+    
     
     # ------Prepare to start Routine "bufFix"-------
     routineTimer.add(1.000000)
@@ -2562,329 +3043,14 @@ for thisSbLoop_0 in sbLoop_0:
     for thisComponent in bufFixComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    sbLoop_0.addData('cbBuf.started', cbBuf.tStartRefresh)
-    sbLoop_0.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-    sbLoop_0.addData('text_8.started', text_8.tStartRefresh)
-    sbLoop_0.addData('text_8.stopped', text_8.tStopRefresh)
+    trials_0.addData('cbBuf.started', cbBuf.tStartRefresh)
+    trials_0.addData('cbBuf.stopped', cbBuf.tStopRefresh)
+    trials_0.addData('text_8.started', text_8.tStartRefresh)
+    trials_0.addData('text_8.stopped', text_8.tStopRefresh)
     thisExp.nextEntry()
     
-# completed 2 repeats of 'sbLoop_0'
+# completed 1 repeats of 'trials_0'
 
-
-# set up handler to look after randomisation of conditions etc
-sliders_0 = data.TrialHandler(nReps=1, method='sequential', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=data.importConditions('sliders.xlsx'),
-    seed=None, name='sliders_0')
-thisExp.addLoop(sliders_0)  # add the loop to the experiment
-thisSlider_0 = sliders_0.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisSlider_0.rgb)
-if thisSlider_0 != None:
-    for paramName in thisSlider_0:
-        exec('{} = thisSlider_0[paramName]'.format(paramName))
-
-for thisSlider_0 in sliders_0:
-    currentLoop = sliders_0
-    # abbreviate parameter names if possible (e.g. rgb = thisSlider_0.rgb)
-    if thisSlider_0 != None:
-        for paramName in thisSlider_0:
-            exec('{} = thisSlider_0[paramName]'.format(paramName))
-    
-    # ------Prepare to start Routine "sbQu"-------
-    # update component parameters for each repeat
-    rating = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
-        scale=sliderText, labels = [sliderMin, sliderMax],
-        tickHeight=-1,
-        marker='triangle', markerStart=4, markerColor='DarkRed')
-    
-    
-    # leftKeys='left', rightKeys = 'right',acceptKeys='space'
-    
-    rating.reset()
-    # keep track of which components have finished
-    sbQuComponents = [cB_11, rating]
-    for thisComponent in sbQuComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    sbQuClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "sbQu"-------
-    while continueRoutine:
-        # get current time
-        t = sbQuClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=sbQuClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *cB_11* updates
-        if cB_11.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cB_11.frameNStart = frameN  # exact frame index
-            cB_11.tStart = t  # local t and not account for scr refresh
-            cB_11.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cB_11, 'tStartRefresh')  # time at next scr refresh
-            cB_11.setAutoDraw(True)
-        # *rating* updates
-        if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            rating.frameNStart = frameN  # exact frame index
-            rating.tStart = t  # local t and not account for scr refresh
-            rating.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-            rating.setAutoDraw(True)
-        continueRoutine &= rating.noResponse  # a response ends the trial
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in sbQuComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "sbQu"-------
-    for thisComponent in sbQuComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    sliders_0.addData('cB_11.started', cB_11.tStartRefresh)
-    sliders_0.addData('cB_11.stopped', cB_11.tStopRefresh)
-    # store data for sliders_0 (TrialHandler)
-    sliders_0.addData('rating.response', rating.getRating())
-    sliders_0.addData('rating.rt', rating.getRT())
-    sliders_0.addData('rating.started', rating.tStart)
-    sliders_0.addData('rating.stopped', rating.tStop)
-    # the Routine "sbQu" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed 1 repeats of 'sliders_0'
-
-
-# set up handler to look after randomisation of conditions etc
-buffer_0 = data.TrialHandler(nReps=4, method='random', 
-    extraInfo=expInfo, originPath=-1,
-    trialList=[None],
-    seed=None, name='buffer_0')
-thisExp.addLoop(buffer_0)  # add the loop to the experiment
-thisBuffer_0 = buffer_0.trialList[0]  # so we can initialise stimuli with some values
-# abbreviate parameter names if possible (e.g. rgb = thisBuffer_0.rgb)
-if thisBuffer_0 != None:
-    for paramName in thisBuffer_0:
-        exec('{} = thisBuffer_0[paramName]'.format(paramName))
-
-for thisBuffer_0 in buffer_0:
-    currentLoop = buffer_0
-    # abbreviate parameter names if possible (e.g. rgb = thisBuffer_0.rgb)
-    if thisBuffer_0 != None:
-        for paramName in thisBuffer_0:
-            exec('{} = thisBuffer_0[paramName]'.format(paramName))
-    
-    # ------Prepare to start Routine "bufWait"-------
-    # update component parameters for each repeat
-    import random 
-    
-    timeR= [0,1,1,1,1,2,2,2,3,3,4,4,5]
-    intTime= int(random.choice(timeR))
-    
-    
-    text_7.setText(bufText)
-    # keep track of which components have finished
-    bufWaitComponents = [cB_9, text_7]
-    for thisComponent in bufWaitComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    bufWaitClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-    frameN = -1
-    continueRoutine = True
-    
-    # -------Run Routine "bufWait"-------
-    while continueRoutine:
-        # get current time
-        t = bufWaitClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=bufWaitClock)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *cB_9* updates
-        if cB_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            cB_9.frameNStart = frameN  # exact frame index
-            cB_9.tStart = t  # local t and not account for scr refresh
-            cB_9.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cB_9, 'tStartRefresh')  # time at next scr refresh
-            cB_9.setAutoDraw(True)
-        if cB_9.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cB_9.tStartRefresh + intTime-frameTolerance:
-                # keep track of stop time/frame for later
-                cB_9.tStop = t  # not accounting for scr refresh
-                cB_9.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(cB_9, 'tStopRefresh')  # time at next scr refresh
-                cB_9.setAutoDraw(False)
-        
-        # *text_7* updates
-        if text_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            text_7.frameNStart = frameN  # exact frame index
-            text_7.tStart = t  # local t and not account for scr refresh
-            text_7.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text_7, 'tStartRefresh')  # time at next scr refresh
-            text_7.setAutoDraw(True)
-        if text_7.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text_7.tStartRefresh + intTime-frameTolerance:
-                # keep track of stop time/frame for later
-                text_7.tStop = t  # not accounting for scr refresh
-                text_7.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(text_7, 'tStopRefresh')  # time at next scr refresh
-                text_7.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-            core.quit()
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in bufWaitComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # -------Ending Routine "bufWait"-------
-    for thisComponent in bufWaitComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    buffer_0.addData('cB_9.started', cB_9.tStartRefresh)
-    buffer_0.addData('cB_9.stopped', cB_9.tStopRefresh)
-    buffer_0.addData('text_7.started', text_7.tStartRefresh)
-    buffer_0.addData('text_7.stopped', text_7.tStopRefresh)
-    # the Routine "bufWait" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    thisExp.nextEntry()
-    
-# completed 4 repeats of 'buffer_0'
-
-
-# ------Prepare to start Routine "bufFix"-------
-routineTimer.add(1.000000)
-# update component parameters for each repeat
-# keep track of which components have finished
-bufFixComponents = [cbBuf, text_8]
-for thisComponent in bufFixComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-bufFixClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-continueRoutine = True
-
-# -------Run Routine "bufFix"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = bufFixClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=bufFixClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *cbBuf* updates
-    if cbBuf.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        cbBuf.frameNStart = frameN  # exact frame index
-        cbBuf.tStart = t  # local t and not account for scr refresh
-        cbBuf.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(cbBuf, 'tStartRefresh')  # time at next scr refresh
-        cbBuf.setAutoDraw(True)
-    if cbBuf.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > cbBuf.tStartRefresh + 1-frameTolerance:
-            # keep track of stop time/frame for later
-            cbBuf.tStop = t  # not accounting for scr refresh
-            cbBuf.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(cbBuf, 'tStopRefresh')  # time at next scr refresh
-            cbBuf.setAutoDraw(False)
-    
-    # *text_8* updates
-    if text_8.status == NOT_STARTED and tThisFlip >= 0.2-frameTolerance:
-        # keep track of start time/frame for later
-        text_8.frameNStart = frameN  # exact frame index
-        text_8.tStart = t  # local t and not account for scr refresh
-        text_8.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_8, 'tStartRefresh')  # time at next scr refresh
-        text_8.setAutoDraw(True)
-    if text_8.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > text_8.tStartRefresh + 0.6-frameTolerance:
-            # keep track of stop time/frame for later
-            text_8.tStop = t  # not accounting for scr refresh
-            text_8.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(text_8, 'tStopRefresh')  # time at next scr refresh
-            text_8.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in bufFixComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "bufFix"-------
-for thisComponent in bufFixComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-thisExp.addData('cbBuf.started', cbBuf.tStartRefresh)
-thisExp.addData('cbBuf.stopped', cbBuf.tStopRefresh)
-thisExp.addData('text_8.started', text_8.tStartRefresh)
-thisExp.addData('text_8.stopped', text_8.tStopRefresh)
 
 # ------Prepare to start Routine "reset"-------
 routineTimer.add(0.010000)
@@ -3353,6 +3519,8 @@ for thisTrial_1 in trials_1:
         for thisComponent in sbFbComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
+        lastPlayer = playerId
+        
         if actionLabel == 0:
             sbGain = 0
         elif actionLabel == 1:
@@ -3483,38 +3651,48 @@ for thisTrial_1 in trials_1:
     
     
     # set up handler to look after randomisation of conditions etc
-    sliders_1 = data.TrialHandler(nReps=1, method='sequential', 
+    sliders_11 = data.TrialHandler(nReps=1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
-        trialList=data.importConditions('sliders.xlsx'),
-        seed=None, name='sliders_1')
-    thisExp.addLoop(sliders_1)  # add the loop to the experiment
-    thisSlider_1 = sliders_1.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisSlider_1.rgb)
-    if thisSlider_1 != None:
-        for paramName in thisSlider_1:
-            exec('{} = thisSlider_1[paramName]'.format(paramName))
+        trialList=data.importConditions('sliders_they.xlsx'),
+        seed=None, name='sliders_11')
+    thisExp.addLoop(sliders_11)  # add the loop to the experiment
+    thisSlider_11 = sliders_11.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisSlider_11.rgb)
+    if thisSlider_11 != None:
+        for paramName in thisSlider_11:
+            exec('{} = thisSlider_11[paramName]'.format(paramName))
     
-    for thisSlider_1 in sliders_1:
-        currentLoop = sliders_1
-        # abbreviate parameter names if possible (e.g. rgb = thisSlider_1.rgb)
-        if thisSlider_1 != None:
-            for paramName in thisSlider_1:
-                exec('{} = thisSlider_1[paramName]'.format(paramName))
+    for thisSlider_11 in sliders_11:
+        currentLoop = sliders_11
+        # abbreviate parameter names if possible (e.g. rgb = thisSlider_11.rgb)
+        if thisSlider_11 != None:
+            for paramName in thisSlider_11:
+                exec('{} = thisSlider_11[paramName]'.format(paramName))
         
-        # ------Prepare to start Routine "sbQu"-------
+        # ------Prepare to start Routine "sbQu1"-------
         # update component parameters for each repeat
-        rating = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
-            scale=sliderText, labels = [sliderMin, sliderMax],
+        if lastPlayer == 'Paul':
+            playerQ = 'Lukas' 
+            if lastPlayer == 'Lukas':
+                playerQ = 'Paul'
+        if lastPlayer == 'Lukas':
+            playerQ = 'Paul' 
+            if lastPlayer == 'Paul':
+                playerQ = 'Lukas'
+        else:
+            pass
+        
+        rating_they = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
+            scale=sliderText +' ' + playerQ + '?', labels = [sliderMin, sliderMax],
             tickHeight=-1,
             marker='triangle', markerStart=4, markerColor='DarkRed')
         
         
-        # leftKeys='left', rightKeys = 'right',acceptKeys='space'
         
-        rating.reset()
+        rating_they.reset()
         # keep track of which components have finished
-        sbQuComponents = [cB_11, rating]
-        for thisComponent in sbQuComponents:
+        sbQu1Components = [cB_11, rating_they]
+        for thisComponent in sbQu1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
             thisComponent.tStartRefresh = None
@@ -3524,15 +3702,15 @@ for thisTrial_1 in trials_1:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        sbQuClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        sbQu1Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         continueRoutine = True
         
-        # -------Run Routine "sbQu"-------
+        # -------Run Routine "sbQu1"-------
         while continueRoutine:
             # get current time
-            t = sbQuClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=sbQuClock)
+            t = sbQu1Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbQu1Clock)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
@@ -3545,15 +3723,15 @@ for thisTrial_1 in trials_1:
                 cB_11.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(cB_11, 'tStartRefresh')  # time at next scr refresh
                 cB_11.setAutoDraw(True)
-            # *rating* updates
-            if rating.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # *rating_they* updates
+            if rating_they.status == NOT_STARTED and t >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                rating.frameNStart = frameN  # exact frame index
-                rating.tStart = t  # local t and not account for scr refresh
-                rating.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(rating, 'tStartRefresh')  # time at next scr refresh
-                rating.setAutoDraw(True)
-            continueRoutine &= rating.noResponse  # a response ends the trial
+                rating_they.frameNStart = frameN  # exact frame index
+                rating_they.tStart = t  # local t and not account for scr refresh
+                rating_they.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_they, 'tStartRefresh')  # time at next scr refresh
+                rating_they.setAutoDraw(True)
+            continueRoutine &= rating_they.noResponse  # a response ends the trial
             
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3563,7 +3741,7 @@ for thisTrial_1 in trials_1:
             if not continueRoutine:  # a component has requested a forced-end of Routine
                 break
             continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in sbQuComponents:
+            for thisComponent in sbQu1Components:
                 if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                     continueRoutine = True
                     break  # at least one component has not yet finished
@@ -3572,22 +3750,131 @@ for thisTrial_1 in trials_1:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "sbQu"-------
-        for thisComponent in sbQuComponents:
+        # -------Ending Routine "sbQu1"-------
+        for thisComponent in sbQu1Components:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        sliders_1.addData('cB_11.started', cB_11.tStartRefresh)
-        sliders_1.addData('cB_11.stopped', cB_11.tStopRefresh)
-        # store data for sliders_1 (TrialHandler)
-        sliders_1.addData('rating.response', rating.getRating())
-        sliders_1.addData('rating.rt', rating.getRT())
-        sliders_1.addData('rating.started', rating.tStart)
-        sliders_1.addData('rating.stopped', rating.tStop)
-        # the Routine "sbQu" was not non-slip safe, so reset the non-slip timer
+        sliders_11.addData('cB_11.started', cB_11.tStartRefresh)
+        sliders_11.addData('cB_11.stopped', cB_11.tStopRefresh)
+        lastPlayer = playerQ
+        # store data for sliders_11 (TrialHandler)
+        sliders_11.addData('rating_they.response', rating_they.getRating())
+        sliders_11.addData('rating_they.rt', rating_they.getRT())
+        sliders_11.addData('rating_they.started', rating_they.tStart)
+        sliders_11.addData('rating_they.stopped', rating_they.tStop)
+        # the Routine "sbQu1" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
         
-    # completed 1 repeats of 'sliders_1'
+    # completed 1 repeats of 'sliders_11'
+    
+    
+    # set up handler to look after randomisation of conditions etc
+    sliders_12 = data.TrialHandler(nReps=1, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=data.importConditions('sliders_you.xlsx'),
+        seed=None, name='sliders_12')
+    thisExp.addLoop(sliders_12)  # add the loop to the experiment
+    thisSlider_12 = sliders_12.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisSlider_12.rgb)
+    if thisSlider_12 != None:
+        for paramName in thisSlider_12:
+            exec('{} = thisSlider_12[paramName]'.format(paramName))
+    
+    for thisSlider_12 in sliders_12:
+        currentLoop = sliders_12
+        # abbreviate parameter names if possible (e.g. rgb = thisSlider_12.rgb)
+        if thisSlider_12 != None:
+            for paramName in thisSlider_12:
+                exec('{} = thisSlider_12[paramName]'.format(paramName))
+        
+        # ------Prepare to start Routine "sbQu2"-------
+        # update component parameters for each repeat
+        rating_you = visual.RatingScale(win=win, name='rating', size=1.0, pos=[0.0, -0.2], 
+            scale=sliderText + '?', labels = [sliderMin, sliderMax],
+            tickHeight=-1,
+            marker='triangle', markerStart=4, markerColor='DarkRed')
+        
+        
+        
+        rating_you.reset()
+        # keep track of which components have finished
+        sbQu2Components = [cB_14, rating_you]
+        for thisComponent in sbQu2Components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        sbQu2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+        frameN = -1
+        continueRoutine = True
+        
+        # -------Run Routine "sbQu2"-------
+        while continueRoutine:
+            # get current time
+            t = sbQu2Clock.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=sbQu2Clock)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *cB_14* updates
+            if cB_14.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                cB_14.frameNStart = frameN  # exact frame index
+                cB_14.tStart = t  # local t and not account for scr refresh
+                cB_14.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(cB_14, 'tStartRefresh')  # time at next scr refresh
+                cB_14.setAutoDraw(True)
+            # *rating_you* updates
+            if rating_you.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                rating_you.frameNStart = frameN  # exact frame index
+                rating_you.tStart = t  # local t and not account for scr refresh
+                rating_you.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(rating_you, 'tStartRefresh')  # time at next scr refresh
+                rating_you.setAutoDraw(True)
+            continueRoutine &= rating_you.noResponse  # a response ends the trial
+            
+            # check for quit (typically the Esc key)
+            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+                core.quit()
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in sbQu2Components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # -------Ending Routine "sbQu2"-------
+        for thisComponent in sbQu2Components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.addData('cB_14.started', cB_14.tStartRefresh)
+        thisExp.addData('cB_14.stopped', cB_14.tStopRefresh)
+        # store data for thisExp (ExperimentHandler)
+        thisExp.addData('rating_you.response', rating_you.getRating())
+        thisExp.addData('rating_you.rt', rating_you.getRT())
+        thisExp.nextEntry()
+        thisExp.addData('rating_you.started', rating_you.tStart)
+        thisExp.addData('rating_you.stopped', rating_you.tStop)
+        # the Routine "sbQu2" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        thisExp.nextEntry()
+        
+    # completed 1 repeats of 'sliders_12'
     
     
     # set up handler to look after randomisation of conditions etc
